@@ -9,21 +9,285 @@
 /* Begin PBXBuildFile section */
 		1807ED5426B32AE60039A37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807ED5326B32AE60039A37D /* AppDelegate.swift */; };
 		1807ED5626B32AE60039A37D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807ED5526B32AE60039A37D /* SceneDelegate.swift */; };
-		1807ED5826B32AE60039A37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807ED5726B32AE60039A37D /* ViewController.swift */; };
 		1807ED5B26B32AE60039A37D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807ED5926B32AE60039A37D /* Main.storyboard */; };
 		1807ED5D26B32AE90039A37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1807ED5C26B32AE90039A37D /* Assets.xcassets */; };
 		1807ED6026B32AE90039A37D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807ED5E26B32AE90039A37D /* LaunchScreen.storyboard */; };
+		1807EDBC26B3534A0039A37D /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDBB26B3534A0039A37D /* Onboarding.storyboard */; };
+		1807EDBE26B3537B0039A37D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDBD26B3537B0039A37D /* OnboardingViewController.swift */; };
+		1807EDC026B3538D0039A37D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDBF26B3538D0039A37D /* OnboardingViewModel.swift */; };
+		1807EDC226B353A20039A37D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDC126B353A20039A37D /* OnboardingModel.swift */; };
+		1807EDC426B353C50039A37D /* ProfileRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDC326B353C50039A37D /* ProfileRegistration.storyboard */; };
+		1807EDC626B353DF0039A37D /* ProfileRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDC526B353DF0039A37D /* ProfileRegistrationViewController.swift */; };
+		1807EDC826B353F30039A37D /* ProfileRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDC726B353F30039A37D /* ProfileRegistrationViewModel.swift */; };
+		1807EDCA26B354070039A37D /* ProfileRegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDC926B354070039A37D /* ProfileRegistrationModel.swift */; };
+		1807EDCC26B3541F0039A37D /* TermsOfService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDCB26B3541F0039A37D /* TermsOfService.storyboard */; };
+		1807EDCE26B3542D0039A37D /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDCD26B3542D0039A37D /* TermsOfServiceViewController.swift */; };
+		1807EDD026B354460039A37D /* TermsOfServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDCF26B354460039A37D /* TermsOfServiceViewModel.swift */; };
+		1807EDD226B354540039A37D /* TermsOfServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDD126B354540039A37D /* TermsOfServiceModel.swift */; };
+		1807EDD426B354700039A37D /* NotificationAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDD326B354700039A37D /* NotificationAlert.storyboard */; };
+		1807EDD626B3547E0039A37D /* NotificationAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDD526B3547E0039A37D /* NotificationAlertViewController.swift */; };
+		1807EDD826B3548C0039A37D /* NotificationAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDD726B3548C0039A37D /* NotificationAlertViewModel.swift */; };
+		1807EDDA26B3549D0039A37D /* NotificationAlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDD926B3549D0039A37D /* NotificationAlertModel.swift */; };
+		1807EDDC26B354B10039A37D /* WelcomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDDB26B354B10039A37D /* WelcomePage.storyboard */; };
+		1807EDDE26B354BF0039A37D /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDDD26B354BF0039A37D /* WelcomePageViewController.swift */; };
+		1807EDE026B354D20039A37D /* WelcomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDDF26B354D20039A37D /* WelcomePageViewModel.swift */; };
+		1807EDE226B354DF0039A37D /* WelcomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDE126B354DF0039A37D /* WelcomePageModel.swift */; };
+		1807EDE426B354FC0039A37D /* CarRidesGuideLines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDE326B354FC0039A37D /* CarRidesGuideLines.storyboard */; };
+		1807EDE626B355080039A37D /* CarRidesGuideLinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDE526B355080039A37D /* CarRidesGuideLinesViewController.swift */; };
+		1807EDE826B355230039A37D /* CarRidesGuideLinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDE726B355230039A37D /* CarRidesGuideLinesViewModel.swift */; };
+		1807EDEA26B355370039A37D /* CarRidesGuideLinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDE926B355370039A37D /* CarRidesGuideLinesModel.swift */; };
+		1807EDEC26B355C60039A37D /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDEB26B355C60039A37D /* HomePage.storyboard */; };
+		1807EDEE26B355D30039A37D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDED26B355D30039A37D /* HomePageViewController.swift */; };
+		1807EDF026B355E70039A37D /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDEF26B355E70039A37D /* HomePageViewModel.swift */; };
+		1807EDF226B3560C0039A37D /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDF126B3560C0039A37D /* HomePageModel.swift */; };
+		1807EDF426B356630039A37D /* SideScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDF326B356630039A37D /* SideScreen.storyboard */; };
+		1807EDF626B3566E0039A37D /* SideScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDF526B3566E0039A37D /* SideScreenViewController.swift */; };
+		1807EDF826B356910039A37D /* SideScreenViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDF726B356910039A37D /* SideScreenViewModels.swift */; };
+		1807EDFA26B3569D0039A37D /* SideScreenViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDF926B3569D0039A37D /* SideScreenViewModels.swift */; };
+		1807EDFC26B356CD0039A37D /* Messsages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDFB26B356CD0039A37D /* Messsages.storyboard */; };
+		1807EDFE26B356D90039A37D /* MesssagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDFD26B356D90039A37D /* MesssagesViewController.swift */; };
+		1807EE0026B356FB0039A37D /* MesssagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDFF26B356FB0039A37D /* MesssagesViewModel.swift */; };
+		1807EE0226B357080039A37D /* MesssagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0126B357080039A37D /* MesssagesModel.swift */; };
+		1807EE0426B357450039A37D /* YourTrips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE0326B357450039A37D /* YourTrips.storyboard */; };
+		1807EE0626B3574F0039A37D /* YourTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0526B3574F0039A37D /* YourTripsViewController.swift */; };
+		1807EE0826B357720039A37D /* YourTripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0726B357720039A37D /* YourTripsViewModel.swift */; };
+		1807EE0A26B3578A0039A37D /* YourTripsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0926B3578A0039A37D /* YourTripsModel.swift */; };
+		1807EE0C26B357B80039A37D /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE0B26B357B80039A37D /* Wallet.storyboard */; };
+		1807EE0E26B357CE0039A37D /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0D26B357CE0039A37D /* WalletViewController.swift */; };
+		1807EE1026B357EA0039A37D /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0F26B357EA0039A37D /* WalletViewModel.swift */; };
+		1807EE1226B357F80039A37D /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1126B357F80039A37D /* WalletViewModel.swift */; };
+		1807EE1426B358280039A37D /* Cash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE1326B358280039A37D /* Cash.storyboard */; };
+		1807EE1626B358340039A37D /* CashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1526B358340039A37D /* CashViewController.swift */; };
+		1807EE1826B358F50039A37D /* AddPaymentMethod.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE1726B358F50039A37D /* AddPaymentMethod.storyboard */; };
+		1807EE1A26B359000039A37D /* AddPaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1926B359000039A37D /* AddPaymentMethodViewController.swift */; };
+		1807EE1C26B3592B0039A37D /* AddPaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1B26B3592B0039A37D /* AddPaymentMethodViewModel.swift */; };
+		1807EE1E26B359460039A37D /* AddPaymentMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1D26B359460039A37D /* AddPaymentMethodModel.swift */; };
+		1807EE2026B359A20039A37D /* AddPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1F26B359A20039A37D /* AddPasswordViewController.swift */; };
+		1807EE2226B359AC0039A37D /* AddPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE2126B359AC0039A37D /* AddPassword.storyboard */; };
+		1807EE2426B359C20039A37D /* AddPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE2326B359C20039A37D /* AddPasswordViewModel.swift */; };
+		1807EE2626B359D60039A37D /* AddPasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE2526B359D60039A37D /* AddPasswordModel.swift */; };
+		1807EE2826B35A410039A37D /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE2726B35A410039A37D /* AddCardViewController.swift */; };
+		1807EE2B26B35A590039A37D /* AddCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE2A26B35A590039A37D /* AddCard.storyboard */; };
+		1807EE2D26B35A740039A37D /* AddCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE2C26B35A740039A37D /* AddCardViewModel.swift */; };
+		1807EE2F26B35A7F0039A37D /* AddCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE2E26B35A7F0039A37D /* AddCardModel.swift */; };
+		1807EE3126B35BE50039A37D /* ProfileSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE3026B35BE50039A37D /* ProfileSettingsViewController.swift */; };
+		1807EE3326B35BEE0039A37D /* ProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE3226B35BEE0039A37D /* ProfileSettings.storyboard */; };
+		1807EE3526B35C110039A37D /* ProfileSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE3426B35C110039A37D /* ProfileSettingsViewModel.swift */; };
+		1807EE3726B35C240039A37D /* ProfileSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE3626B35C240039A37D /* ProfileSettingsModel.swift */; };
+		1807EE3926B35C990039A37D /* EditPersonalNameViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE3826B35C990039A37D /* EditPersonalNameViewsViewController.swift */; };
+		1807EE3B26B35CE00039A37D /* EditPersonalName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE3A26B35CE00039A37D /* EditPersonalName.storyboard */; };
+		1807EE3D26B35D0C0039A37D /* EditPersonalNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE3C26B35D0C0039A37D /* EditPersonalNameViewModel.swift */; };
+		1807EE3F26B35D2A0039A37D /* EditPersonalNameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE3E26B35D2A0039A37D /* EditPersonalNameModel.swift */; };
+		1807EE4126B35D860039A37D /* EditPaymentMethod.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE4026B35D860039A37D /* EditPaymentMethod.storyboard */; };
+		1807EE4326B35D930039A37D /* EditPaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4226B35D930039A37D /* EditPaymentMethodViewController.swift */; };
+		1807EE4526B35DB60039A37D /* EditPaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4426B35DB60039A37D /* EditPaymentMethodViewModel.swift */; };
+		1807EE4726B35DBF0039A37D /* EditPaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4626B35DBF0039A37D /* EditPaymentMethodViewModel.swift */; };
+		1807EE4926B35E1D0039A37D /* Vouchers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE4826B35E1D0039A37D /* Vouchers.storyboard */; };
+		1807EE4B26B35E2C0039A37D /* VouchersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4A26B35E2C0039A37D /* VouchersViewController.swift */; };
+		1807EE4D26B35E570039A37D /* VouchersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4C26B35E570039A37D /* VouchersViewModel.swift */; };
+		1807EE4F26B35E680039A37D /* VouchersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4E26B35E680039A37D /* VouchersModel.swift */; };
+		1807EE5126B35EC00039A37D /* AddVoucherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE5026B35EC00039A37D /* AddVoucherViewController.swift */; };
+		1807EE5326B35EDE0039A37D /* AddVoucherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE5226B35EDE0039A37D /* AddVoucherViewModel.swift */; };
+		1807EE5526B35EEF0039A37D /* AddVoucherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE5426B35EEF0039A37D /* AddVoucherModel.swift */; };
+		1807EE6426B361260039A37D /* CarRidesCreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE6326B361260039A37D /* CarRidesCreditViewController.swift */; };
+		1807EE6626B361320039A37D /* CarRidesCredit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE6526B361320039A37D /* CarRidesCredit.storyboard */; };
+		1807EE6826B361650039A37D /* CarRidesCreditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE6726B361650039A37D /* CarRidesCreditViewModel.swift */; };
+		1807EE6A26B361740039A37D /* CarRidesCreditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE6926B361740039A37D /* CarRidesCreditModel.swift */; };
+		1807EE6C26B361A50039A37D /* PromoCodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE6B26B361A50039A37D /* PromoCodesViewController.swift */; };
+		1807EE6E26B361AF0039A37D /* PromoCodes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE6D26B361AF0039A37D /* PromoCodes.storyboard */; };
+		1807EE7026B361D20039A37D /* PromoCodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE6F26B361D20039A37D /* PromoCodesViewModel.swift */; };
+		1807EE7226B361DE0039A37D /* PromoCodesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE7126B361DE0039A37D /* PromoCodesModel.swift */; };
+		1807EE7426B362690039A37D /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE7326B362690039A37D /* Help.storyboard */; };
+		1807EE7626B362750039A37D /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE7526B362750039A37D /* HelpViewController.swift */; };
+		1807EE7826B362920039A37D /* HelpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE7726B362920039A37D /* HelpViewModel.swift */; };
+		1807EE7A26B362A50039A37D /* HelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE7926B362A50039A37D /* HelpModel.swift */; };
+		1807EE7E26B363C50039A37D /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE7D26B363C50039A37D /* Settings.storyboard */; };
+		1807EE8026B363D20039A37D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE7F26B363D20039A37D /* SettingsViewController.swift */; };
+		1807EE8326B363EE0039A37D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE8226B363EE0039A37D /* SettingsViewModel.swift */; };
+		1807EE8626B364050039A37D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE8526B364050039A37D /* SettingsModel.swift */; };
+		1807EEB026B366E60039A37D /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEAF26B366E60039A37D /* EditAccountViewController.swift */; };
+		1807EEB226B366F10039A37D /* EditAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EEB126B366F10039A37D /* EditAccount.storyboard */; };
+		1807EEB426B3670C0039A37D /* EditAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEB326B3670C0039A37D /* EditAccountViewModel.swift */; };
+		1807EEB626B3671F0039A37D /* EditAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEB526B3671F0039A37D /* EditAccountModel.swift */; };
+		1807EEB826B367470039A37D /* AddHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EEB726B367470039A37D /* AddHome.storyboard */; };
+		1807EEBA26B367500039A37D /* AddHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEB926B367500039A37D /* AddHomeViewController.swift */; };
+		1807EEBC26B3676F0039A37D /* AddHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEBB26B3676F0039A37D /* AddHomeViewModel.swift */; };
+		1807EEBE26B367830039A37D /* AddHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEBD26B367830039A37D /* AddHomeModel.swift */; };
+		1807EEC026B3679E0039A37D /* AddWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EEBF26B3679E0039A37D /* AddWork.storyboard */; };
+		1807EEC226B367AA0039A37D /* AddWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEC126B367AA0039A37D /* AddWorkViewController.swift */; };
+		1807EEC426B367CC0039A37D /* AddWorkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEC326B367CC0039A37D /* AddWorkViewModel.swift */; };
+		1807EEC626B367DD0039A37D /* AddWorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEC526B367DD0039A37D /* AddWorkModel.swift */; };
+		1807EEC826B368090039A37D /* MoreSavedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEC726B368090039A37D /* MoreSavedPlacesViewController.swift */; };
+		1807EECA26B368140039A37D /* MoreSavedPlaces.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EEC926B368140039A37D /* MoreSavedPlaces.storyboard */; };
+		1807EECC26B3682E0039A37D /* MoreSavedPlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EECB26B3682E0039A37D /* MoreSavedPlacesViewModel.swift */; };
+		1807EECE26B368450039A37D /* MoreSavedPlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EECD26B368450039A37D /* MoreSavedPlacesModel.swift */; };
+		1807EED026B368630039A37D /* VerifyTrip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EECF26B368630039A37D /* VerifyTrip.storyboard */; };
+		1807EED226B3686E0039A37D /* VerifyTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EED126B3686E0039A37D /* VerifyTripViewController.swift */; };
+		1807EED426B3688C0039A37D /* VerifyTripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EED326B3688C0039A37D /* VerifyTripModel.swift */; };
+		1807EED626B3689A0039A37D /* VerifyTripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EED526B3689A0039A37D /* VerifyTripViewModel.swift */; };
+		1807EED826B368C70039A37D /* ManageTrustedContacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EED726B368C70039A37D /* ManageTrustedContacts.storyboard */; };
+		1807EEDA26B368D10039A37D /* ManageTrustedContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EED926B368D10039A37D /* ManageTrustedContactsViewController.swift */; };
+		1807EEDC26B368F10039A37D /* ManageTrustedContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEDB26B368F10039A37D /* ManageTrustedContactsViewModel.swift */; };
+		1807EEDE26B369070039A37D /* ManageTrustedContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEDD26B369070039A37D /* ManageTrustedContactsModel.swift */; };
+		1807EEE026B3692B0039A37D /* VerifyEmail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EEDF26B3692B0039A37D /* VerifyEmail.storyboard */; };
+		1807EEE226B369370039A37D /* VerifyEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEE126B369370039A37D /* VerifyEmailViewController.swift */; };
+		1807EEE426B369500039A37D /* VerifyEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEE326B369500039A37D /* VerifyEmailViewModel.swift */; };
+		1807EEE626B369620039A37D /* VerifyEmailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEE526B369620039A37D /* VerifyEmailModel.swift */; };
+		1807EEE826B369850039A37D /* ChooseSavedPlace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EEE726B369850039A37D /* ChooseSavedPlace.storyboard */; };
+		1807EEEA26B369930039A37D /* ChooseSavedPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEE926B369930039A37D /* ChooseSavedPlaceViewController.swift */; };
+		1807EEEC26B369B20039A37D /* ChooseSavedPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEEB26B369B20039A37D /* ChooseSavedPlaceViewModel.swift */; };
+		1807EEEE26B369D40039A37D /* ChooseSavedPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEED26B369D40039A37D /* ChooseSavedPlaceModel.swift */; };
+		1807EEF026B369FE0039A37D /* SetDestination.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EEEF26B369FE0039A37D /* SetDestination.storyboard */; };
+		1807EEF226B36A0A0039A37D /* SetDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEF126B36A0A0039A37D /* SetDestinationViewController.swift */; };
+		1807EEF426B36A250039A37D /* SetDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEF326B36A250039A37D /* SetDestinationViewModel.swift */; };
+		1807EEF626B36A3A0039A37D /* SetDestinationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEF526B36A3A0039A37D /* SetDestinationModel.swift */; };
+		1807EEF826B36A520039A37D /* AroundYou.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EEF726B36A520039A37D /* AroundYou.storyboard */; };
+		1807EEFA26B36A5F0039A37D /* AroundYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEF926B36A5F0039A37D /* AroundYouViewController.swift */; };
+		1807EEFC26B36A760039A37D /* AroundYouViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEFB26B36A760039A37D /* AroundYouViewModel.swift */; };
+		1807EEFE26B36A8F0039A37D /* AroundYouModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EEFD26B36A8F0039A37D /* AroundYouModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1807ED5026B32AE60039A37D /* Car-Rides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Car-Rides.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1807ED5326B32AE60039A37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1807ED5526B32AE60039A37D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1807ED5726B32AE60039A37D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1807ED5A26B32AE60039A37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1807ED5C26B32AE90039A37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1807ED5F26B32AE90039A37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1807ED6126B32AE90039A37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1807EDBB26B3534A0039A37D /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		1807EDBD26B3537B0039A37D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1807EDBF26B3538D0039A37D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewModel.swift; path = "Car-Rides/Onboarding/OnboardingViews/OnboardingViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		1807EDC126B353A20039A37D /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		1807EDC326B353C50039A37D /* ProfileRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileRegistration.storyboard; sourceTree = "<group>"; };
+		1807EDC526B353DF0039A37D /* ProfileRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegistrationViewController.swift; sourceTree = "<group>"; };
+		1807EDC726B353F30039A37D /* ProfileRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegistrationViewModel.swift; sourceTree = "<group>"; };
+		1807EDC926B354070039A37D /* ProfileRegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegistrationModel.swift; sourceTree = "<group>"; };
+		1807EDCB26B3541F0039A37D /* TermsOfService.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsOfService.storyboard; sourceTree = "<group>"; };
+		1807EDCD26B3542D0039A37D /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewController.swift; sourceTree = "<group>"; };
+		1807EDCF26B354460039A37D /* TermsOfServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewModel.swift; sourceTree = "<group>"; };
+		1807EDD126B354540039A37D /* TermsOfServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceModel.swift; sourceTree = "<group>"; };
+		1807EDD326B354700039A37D /* NotificationAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationAlert.storyboard; sourceTree = "<group>"; };
+		1807EDD526B3547E0039A37D /* NotificationAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertViewController.swift; sourceTree = "<group>"; };
+		1807EDD726B3548C0039A37D /* NotificationAlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertViewModel.swift; sourceTree = "<group>"; };
+		1807EDD926B3549D0039A37D /* NotificationAlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertModel.swift; sourceTree = "<group>"; };
+		1807EDDB26B354B10039A37D /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
+		1807EDDD26B354BF0039A37D /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		1807EDDF26B354D20039A37D /* WelcomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewModel.swift; sourceTree = "<group>"; };
+		1807EDE126B354DF0039A37D /* WelcomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageModel.swift; sourceTree = "<group>"; };
+		1807EDE326B354FC0039A37D /* CarRidesGuideLines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarRidesGuideLines.storyboard; sourceTree = "<group>"; };
+		1807EDE526B355080039A37D /* CarRidesGuideLinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRidesGuideLinesViewController.swift; sourceTree = "<group>"; };
+		1807EDE726B355230039A37D /* CarRidesGuideLinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRidesGuideLinesViewModel.swift; sourceTree = "<group>"; };
+		1807EDE926B355370039A37D /* CarRidesGuideLinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRidesGuideLinesModel.swift; sourceTree = "<group>"; };
+		1807EDEB26B355C60039A37D /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		1807EDED26B355D30039A37D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		1807EDEF26B355E70039A37D /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		1807EDF126B3560C0039A37D /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
+		1807EDF326B356630039A37D /* SideScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideScreen.storyboard; sourceTree = "<group>"; };
+		1807EDF526B3566E0039A37D /* SideScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideScreenViewController.swift; sourceTree = "<group>"; };
+		1807EDF726B356910039A37D /* SideScreenViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideScreenViewModels.swift; sourceTree = "<group>"; };
+		1807EDF926B3569D0039A37D /* SideScreenViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideScreenViewModels.swift; sourceTree = "<group>"; };
+		1807EDFB26B356CD0039A37D /* Messsages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messsages.storyboard; sourceTree = "<group>"; };
+		1807EDFD26B356D90039A37D /* MesssagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesssagesViewController.swift; sourceTree = "<group>"; };
+		1807EDFF26B356FB0039A37D /* MesssagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesssagesViewModel.swift; sourceTree = "<group>"; };
+		1807EE0126B357080039A37D /* MesssagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesssagesModel.swift; sourceTree = "<group>"; };
+		1807EE0326B357450039A37D /* YourTrips.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YourTrips.storyboard; sourceTree = "<group>"; };
+		1807EE0526B3574F0039A37D /* YourTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTripsViewController.swift; sourceTree = "<group>"; };
+		1807EE0726B357720039A37D /* YourTripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTripsViewModel.swift; sourceTree = "<group>"; };
+		1807EE0926B3578A0039A37D /* YourTripsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTripsModel.swift; sourceTree = "<group>"; };
+		1807EE0B26B357B80039A37D /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
+		1807EE0D26B357CE0039A37D /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		1807EE0F26B357EA0039A37D /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		1807EE1126B357F80039A37D /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		1807EE1326B358280039A37D /* Cash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cash.storyboard; sourceTree = "<group>"; };
+		1807EE1526B358340039A37D /* CashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashViewController.swift; sourceTree = "<group>"; };
+		1807EE1726B358F50039A37D /* AddPaymentMethod.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPaymentMethod.storyboard; sourceTree = "<group>"; };
+		1807EE1926B359000039A37D /* AddPaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodViewController.swift; sourceTree = "<group>"; };
+		1807EE1B26B3592B0039A37D /* AddPaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodViewModel.swift; sourceTree = "<group>"; };
+		1807EE1D26B359460039A37D /* AddPaymentMethodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodModel.swift; sourceTree = "<group>"; };
+		1807EE1F26B359A20039A37D /* AddPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordViewController.swift; sourceTree = "<group>"; };
+		1807EE2126B359AC0039A37D /* AddPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPassword.storyboard; sourceTree = "<group>"; };
+		1807EE2326B359C20039A37D /* AddPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordViewModel.swift; sourceTree = "<group>"; };
+		1807EE2526B359D60039A37D /* AddPasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordModel.swift; sourceTree = "<group>"; };
+		1807EE2726B35A410039A37D /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		1807EE2A26B35A590039A37D /* AddCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCard.storyboard; sourceTree = "<group>"; };
+		1807EE2C26B35A740039A37D /* AddCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewModel.swift; sourceTree = "<group>"; };
+		1807EE2E26B35A7F0039A37D /* AddCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardModel.swift; sourceTree = "<group>"; };
+		1807EE3026B35BE50039A37D /* ProfileSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsViewController.swift; sourceTree = "<group>"; };
+		1807EE3226B35BEE0039A37D /* ProfileSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileSettings.storyboard; sourceTree = "<group>"; };
+		1807EE3426B35C110039A37D /* ProfileSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsViewModel.swift; sourceTree = "<group>"; };
+		1807EE3626B35C240039A37D /* ProfileSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsModel.swift; sourceTree = "<group>"; };
+		1807EE3826B35C990039A37D /* EditPersonalNameViewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonalNameViewsViewController.swift; sourceTree = "<group>"; };
+		1807EE3A26B35CE00039A37D /* EditPersonalName.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditPersonalName.storyboard; sourceTree = "<group>"; };
+		1807EE3C26B35D0C0039A37D /* EditPersonalNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonalNameViewModel.swift; sourceTree = "<group>"; };
+		1807EE3E26B35D2A0039A37D /* EditPersonalNameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonalNameModel.swift; sourceTree = "<group>"; };
+		1807EE4026B35D860039A37D /* EditPaymentMethod.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditPaymentMethod.storyboard; sourceTree = "<group>"; };
+		1807EE4226B35D930039A37D /* EditPaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPaymentMethodViewController.swift; sourceTree = "<group>"; };
+		1807EE4426B35DB60039A37D /* EditPaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPaymentMethodViewModel.swift; sourceTree = "<group>"; };
+		1807EE4626B35DBF0039A37D /* EditPaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPaymentMethodViewModel.swift; sourceTree = "<group>"; };
+		1807EE4826B35E1D0039A37D /* Vouchers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vouchers.storyboard; sourceTree = "<group>"; };
+		1807EE4A26B35E2C0039A37D /* VouchersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouchersViewController.swift; sourceTree = "<group>"; };
+		1807EE4C26B35E570039A37D /* VouchersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouchersViewModel.swift; sourceTree = "<group>"; };
+		1807EE4E26B35E680039A37D /* VouchersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouchersModel.swift; sourceTree = "<group>"; };
+		1807EE5026B35EC00039A37D /* AddVoucherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVoucherViewController.swift; sourceTree = "<group>"; };
+		1807EE5226B35EDE0039A37D /* AddVoucherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVoucherViewModel.swift; sourceTree = "<group>"; };
+		1807EE5426B35EEF0039A37D /* AddVoucherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVoucherModel.swift; sourceTree = "<group>"; };
+		1807EE6326B361260039A37D /* CarRidesCreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRidesCreditViewController.swift; sourceTree = "<group>"; };
+		1807EE6526B361320039A37D /* CarRidesCredit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarRidesCredit.storyboard; sourceTree = "<group>"; };
+		1807EE6726B361650039A37D /* CarRidesCreditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRidesCreditViewModel.swift; sourceTree = "<group>"; };
+		1807EE6926B361740039A37D /* CarRidesCreditModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRidesCreditModel.swift; sourceTree = "<group>"; };
+		1807EE6B26B361A50039A37D /* PromoCodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCodesViewController.swift; sourceTree = "<group>"; };
+		1807EE6D26B361AF0039A37D /* PromoCodes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PromoCodes.storyboard; sourceTree = "<group>"; };
+		1807EE6F26B361D20039A37D /* PromoCodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCodesViewModel.swift; sourceTree = "<group>"; };
+		1807EE7126B361DE0039A37D /* PromoCodesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCodesModel.swift; sourceTree = "<group>"; };
+		1807EE7326B362690039A37D /* Help.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Help.storyboard; sourceTree = "<group>"; };
+		1807EE7526B362750039A37D /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		1807EE7726B362920039A37D /* HelpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewModel.swift; sourceTree = "<group>"; };
+		1807EE7926B362A50039A37D /* HelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModel.swift; sourceTree = "<group>"; };
+		1807EE7D26B363C50039A37D /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		1807EE7F26B363D20039A37D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1807EE8226B363EE0039A37D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		1807EE8526B364050039A37D /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		1807EEAF26B366E60039A37D /* EditAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
+		1807EEB126B366F10039A37D /* EditAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditAccount.storyboard; sourceTree = "<group>"; };
+		1807EEB326B3670C0039A37D /* EditAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountViewModel.swift; sourceTree = "<group>"; };
+		1807EEB526B3671F0039A37D /* EditAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountModel.swift; sourceTree = "<group>"; };
+		1807EEB726B367470039A37D /* AddHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddHome.storyboard; sourceTree = "<group>"; };
+		1807EEB926B367500039A37D /* AddHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeViewController.swift; sourceTree = "<group>"; };
+		1807EEBB26B3676F0039A37D /* AddHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeViewModel.swift; sourceTree = "<group>"; };
+		1807EEBD26B367830039A37D /* AddHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeModel.swift; sourceTree = "<group>"; };
+		1807EEBF26B3679E0039A37D /* AddWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddWork.storyboard; sourceTree = "<group>"; };
+		1807EEC126B367AA0039A37D /* AddWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkViewController.swift; sourceTree = "<group>"; };
+		1807EEC326B367CC0039A37D /* AddWorkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkViewModel.swift; sourceTree = "<group>"; };
+		1807EEC526B367DD0039A37D /* AddWorkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkModel.swift; sourceTree = "<group>"; };
+		1807EEC726B368090039A37D /* MoreSavedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSavedPlacesViewController.swift; sourceTree = "<group>"; };
+		1807EEC926B368140039A37D /* MoreSavedPlaces.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreSavedPlaces.storyboard; sourceTree = "<group>"; };
+		1807EECB26B3682E0039A37D /* MoreSavedPlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSavedPlacesViewModel.swift; sourceTree = "<group>"; };
+		1807EECD26B368450039A37D /* MoreSavedPlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSavedPlacesModel.swift; sourceTree = "<group>"; };
+		1807EECF26B368630039A37D /* VerifyTrip.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyTrip.storyboard; sourceTree = "<group>"; };
+		1807EED126B3686E0039A37D /* VerifyTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyTripViewController.swift; sourceTree = "<group>"; };
+		1807EED326B3688C0039A37D /* VerifyTripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyTripModel.swift; sourceTree = "<group>"; };
+		1807EED526B3689A0039A37D /* VerifyTripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyTripViewModel.swift; sourceTree = "<group>"; };
+		1807EED726B368C70039A37D /* ManageTrustedContacts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageTrustedContacts.storyboard; sourceTree = "<group>"; };
+		1807EED926B368D10039A37D /* ManageTrustedContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTrustedContactsViewController.swift; sourceTree = "<group>"; };
+		1807EEDB26B368F10039A37D /* ManageTrustedContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTrustedContactsViewModel.swift; sourceTree = "<group>"; };
+		1807EEDD26B369070039A37D /* ManageTrustedContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTrustedContactsModel.swift; sourceTree = "<group>"; };
+		1807EEDF26B3692B0039A37D /* VerifyEmail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyEmail.storyboard; sourceTree = "<group>"; };
+		1807EEE126B369370039A37D /* VerifyEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewController.swift; sourceTree = "<group>"; };
+		1807EEE326B369500039A37D /* VerifyEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewModel.swift; sourceTree = "<group>"; };
+		1807EEE526B369620039A37D /* VerifyEmailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailModel.swift; sourceTree = "<group>"; };
+		1807EEE726B369850039A37D /* ChooseSavedPlace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseSavedPlace.storyboard; sourceTree = "<group>"; };
+		1807EEE926B369930039A37D /* ChooseSavedPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSavedPlaceViewController.swift; sourceTree = "<group>"; };
+		1807EEEB26B369B20039A37D /* ChooseSavedPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSavedPlaceViewModel.swift; sourceTree = "<group>"; };
+		1807EEED26B369D40039A37D /* ChooseSavedPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSavedPlaceModel.swift; sourceTree = "<group>"; };
+		1807EEEF26B369FE0039A37D /* SetDestination.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetDestination.storyboard; sourceTree = "<group>"; };
+		1807EEF126B36A0A0039A37D /* SetDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDestinationViewController.swift; sourceTree = "<group>"; };
+		1807EEF326B36A250039A37D /* SetDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDestinationViewModel.swift; sourceTree = "<group>"; };
+		1807EEF526B36A3A0039A37D /* SetDestinationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDestinationModel.swift; sourceTree = "<group>"; };
+		1807EEF726B36A520039A37D /* AroundYou.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AroundYou.storyboard; sourceTree = "<group>"; };
+		1807EEF926B36A5F0039A37D /* AroundYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundYouViewController.swift; sourceTree = "<group>"; };
+		1807EEFB26B36A760039A37D /* AroundYouViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundYouViewModel.swift; sourceTree = "<group>"; };
+		1807EEFD26B36A8F0039A37D /* AroundYouModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundYouModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +320,1253 @@
 		1807ED5226B32AE60039A37D /* Car-Rides */ = {
 			isa = PBXGroup;
 			children = (
+				1807ED7B26B32CA30039A37D /* Onboarding */,
+				1807ED7A26B32C9E0039A37D /* ProfileRegistration */,
+				1807ED7926B32C9A0039A37D /* TermsOfService */,
+				1807ED7826B32C950039A37D /* NotificationAlert */,
+				1807ED7726B32C7D0039A37D /* WelcomePage */,
+				1807ED7626B32C720039A37D /* CarRidesGuideLines */,
+				1807ED7526B32C6B0039A37D /* HomePage */,
+				1807ED7426B32C630039A37D /* SideScreenOnHomePage */,
+				1807ED7326B32C590039A37D /* Messsages */,
+				1807ED7226B32C490039A37D /* YourTrips */,
+				1807ED7126B32C450039A37D /* Wallet */,
+				1807ED7026B32C410039A37D /* Cash */,
+				1807ED6F26B32C3E0039A37D /* AddPaymentMethod */,
+				1807ED6E26B32C3A0039A37D /* AddPassword */,
+				1807ED6D26B32C370039A37D /* AddCard */,
+				1807ED6C26B32C340039A37D /* ProfileSettings */,
+				1807ED6B26B32C2F0039A37D /* EditPersonalName */,
+				1807ED6926B32C280039A37D /* EditPaymentMethod */,
+				1807ED6826B32C230039A37D /* Vouchers */,
+				1807ED6726B32C1B0039A37D /* AddVoucher */,
+				1807EE5726B35F150039A37D /* CarRidesCredit */,
+				1807EE5826B35F270039A37D /* PromoCodes */,
+				1807EE5926B35F340039A37D /* Help */,
+				1807EE7B26B3635C0039A37D /* Settings */,
+				1807EE8E26B3651F0039A37D /* EditAccount */,
+				1807EE8D26B3651C0039A37D /* AddHome */,
+				1807EE8C26B365180039A37D /* AddWork */,
+				1807EE8B26B364240039A37D /* MoreSavedPlaces */,
+				1807EE8A26B364210039A37D /* VerifyTrip */,
+				1807EE8926B3641E0039A37D /* ManageTrustedContacts */,
+				1807EE8826B3641A0039A37D /* VerifyEmail */,
+				1807EE8726B364160039A37D /* ChooseSavedPlace */,
+				1807EE8F26B365FC0039A37D /* SetDestination */,
+				1807EE9026B366340039A37D /* AroundYou */,
+				1807EF0426B36AFB0039A37D /* Network */,
+				1807EEFF26B36A9F0039A37D /* Helpers */,
 				1807ED5326B32AE60039A37D /* AppDelegate.swift */,
 				1807ED5526B32AE60039A37D /* SceneDelegate.swift */,
-				1807ED5726B32AE60039A37D /* ViewController.swift */,
-				1807ED5926B32AE60039A37D /* Main.storyboard */,
 				1807ED5C26B32AE90039A37D /* Assets.xcassets */,
 				1807ED5E26B32AE90039A37D /* LaunchScreen.storyboard */,
 				1807ED6126B32AE90039A37D /* Info.plist */,
 			);
 			path = "Car-Rides";
+			sourceTree = "<group>";
+		};
+		1807ED6726B32C1B0039A37D /* AddVoucher */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED7E26B32F880039A37D /* AddVoucherViews */,
+				1807ED7D26B32F840039A37D /* AddVoucherViewModel */,
+				1807ED7C26B32F7E0039A37D /* AddVoucherModel */,
+			);
+			path = AddVoucher;
+			sourceTree = "<group>";
+		};
+		1807ED6826B32C230039A37D /* Vouchers */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED8126B32F980039A37D /* VouchersViews */,
+				1807ED8026B32F940039A37D /* VouchersViewModel */,
+				1807ED7F26B32F900039A37D /* VouchersModel */,
+			);
+			path = Vouchers;
+			sourceTree = "<group>";
+		};
+		1807ED6926B32C280039A37D /* EditPaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED8426B32FC20039A37D /* EditPaymentMethodViews */,
+				1807ED8326B32FBF0039A37D /* EditPaymentMethodViewModel */,
+				1807ED8226B32FBB0039A37D /* EditPaymentMethodModel */,
+			);
+			path = EditPaymentMethod;
+			sourceTree = "<group>";
+		};
+		1807ED6A26B32C2C0039A37D /* EditPersonalNameViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE3826B35C990039A37D /* EditPersonalNameViewsViewController.swift */,
+				1807EE3A26B35CE00039A37D /* EditPersonalName.storyboard */,
+			);
+			path = EditPersonalNameViews;
+			sourceTree = "<group>";
+		};
+		1807ED6B26B32C2F0039A37D /* EditPersonalName */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED8726B32FD20039A37D /* EditPersonalNameViewModel */,
+				1807ED8626B32FCF0039A37D /* EditPersonalNameModel */,
+				1807ED6A26B32C2C0039A37D /* EditPersonalNameViews */,
+			);
+			path = EditPersonalName;
+			sourceTree = "<group>";
+		};
+		1807ED6C26B32C340039A37D /* ProfileSettings */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED8D26B32FFC0039A37D /* ProfileSettingsViews */,
+				1807ED8C26B32FF90039A37D /* ProfileSettingsViewModel */,
+				1807ED8B26B32FF50039A37D /* ProfileSettingsModel */,
+			);
+			path = ProfileSettings;
+			sourceTree = "<group>";
+		};
+		1807ED6D26B32C370039A37D /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED9026B330190039A37D /* AddCardViews */,
+				1807ED8F26B330160039A37D /* AddCardViewModel */,
+				1807ED8E26B3300D0039A37D /* AddCardModel */,
+			);
+			path = AddCard;
+			sourceTree = "<group>";
+		};
+		1807ED6E26B32C3A0039A37D /* AddPassword */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED9326B3302C0039A37D /* AddPasswordViews */,
+				1807ED9226B330280039A37D /* AddPasswordViewModel */,
+				1807ED9126B330250039A37D /* AddPasswordModel */,
+			);
+			path = AddPassword;
+			sourceTree = "<group>";
+		};
+		1807ED6F26B32C3E0039A37D /* AddPaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED9626B3303A0039A37D /* AddPaymentMethodViews */,
+				1807ED9526B330360039A37D /* AddPaymentMethodViewModel */,
+				1807ED9426B330330039A37D /* AddPaymentMethodModel */,
+			);
+			path = AddPaymentMethod;
+			sourceTree = "<group>";
+		};
+		1807ED7026B32C410039A37D /* Cash */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED9926B3307D0039A37D /* cashViews */,
+				1807ED9826B330780039A37D /* CashViewModel */,
+				1807ED9726B330730039A37D /* CashModel */,
+			);
+			path = Cash;
+			sourceTree = "<group>";
+		};
+		1807ED7126B32C450039A37D /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED9C26B330BA0039A37D /* WalletViews */,
+				1807ED9B26B330B70039A37D /* WalletViewModel */,
+				1807ED9A26B330B30039A37D /* WalletModel */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		1807ED7226B32C490039A37D /* YourTrips */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED9F26B330E20039A37D /* YourTripsViews */,
+				1807ED9E26B330DF0039A37D /* YourTripsViewModel */,
+				1807ED9D26B330DA0039A37D /* YourTripsModel */,
+			);
+			path = YourTrips;
+			sourceTree = "<group>";
+		};
+		1807ED7326B32C590039A37D /* Messsages */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDA226B330FD0039A37D /* MesssagesViews */,
+				1807EDA126B330F90039A37D /* MesssagesViewModel */,
+				1807EDA026B330E90039A37D /* MesssagesModel */,
+			);
+			path = Messsages;
+			sourceTree = "<group>";
+		};
+		1807ED7426B32C630039A37D /* SideScreenOnHomePage */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDA526B331140039A37D /* SideScreenViews */,
+				1807EDA426B331110039A37D /* SideScreenViewModels */,
+				1807EDA326B3310C0039A37D /* SideScreenModels */,
+			);
+			path = SideScreenOnHomePage;
+			sourceTree = "<group>";
+		};
+		1807ED7526B32C6B0039A37D /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDA826B331370039A37D /* HomePageViews */,
+				1807EDA726B331340039A37D /* HomePageViewModel */,
+				1807EDA626B331220039A37D /* HomePageModel */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		1807ED7626B32C720039A37D /* CarRidesGuideLines */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDAB26B331510039A37D /* CarRidesGuideLinesViews */,
+				1807EDAA26B331490039A37D /* CarRidesGuideLinesViewModel */,
+				1807EDA926B331430039A37D /* CarRidesGuideLinesModel */,
+			);
+			path = CarRidesGuideLines;
+			sourceTree = "<group>";
+		};
+		1807ED7726B32C7D0039A37D /* WelcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDAE26B331680039A37D /* WelcomePageViews */,
+				1807EDAD26B331620039A37D /* WelcomePageViewModel */,
+				1807EDAC26B3315F0039A37D /* WelcomePageModel */,
+			);
+			path = WelcomePage;
+			sourceTree = "<group>";
+		};
+		1807ED7826B32C950039A37D /* NotificationAlert */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDB126B3317B0039A37D /* NotificationAlertViews */,
+				1807EDB026B331770039A37D /* NotificationAlertViewModel */,
+				1807EDAF26B3316F0039A37D /* NotificationAlertModel */,
+			);
+			path = NotificationAlert;
+			sourceTree = "<group>";
+		};
+		1807ED7926B32C9A0039A37D /* TermsOfService */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDB426B350100039A37D /* TermsOfServiceViews */,
+				1807EDB326B3500C0039A37D /* TermsOfServiceViewModel */,
+				1807EDB226B3318C0039A37D /* TermsOfServiceModel */,
+			);
+			path = TermsOfService;
+			sourceTree = "<group>";
+		};
+		1807ED7A26B32C9E0039A37D /* ProfileRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDB726B350290039A37D /* ProfileRegistrationViews */,
+				1807EDB626B350210039A37D /* ProfileRegistrationViewModel */,
+				1807EDB526B3501C0039A37D /* ProfileRegistrationModel */,
+			);
+			path = ProfileRegistration;
+			sourceTree = "<group>";
+		};
+		1807ED7B26B32CA30039A37D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDBA26B3503C0039A37D /* OnboardingViews */,
+				1807EDB926B350360039A37D /* OnboardingViewModel */,
+				1807EDB826B350320039A37D /* OnboardingModel */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1807ED7C26B32F7E0039A37D /* AddVoucherModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE5426B35EEF0039A37D /* AddVoucherModel.swift */,
+			);
+			path = AddVoucherModel;
+			sourceTree = "<group>";
+		};
+		1807ED7D26B32F840039A37D /* AddVoucherViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE5226B35EDE0039A37D /* AddVoucherViewModel.swift */,
+			);
+			path = AddVoucherViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED7E26B32F880039A37D /* AddVoucherViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807ED5926B32AE60039A37D /* Main.storyboard */,
+				1807EE5026B35EC00039A37D /* AddVoucherViewController.swift */,
+			);
+			path = AddVoucherViews;
+			sourceTree = "<group>";
+		};
+		1807ED7F26B32F900039A37D /* VouchersModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE4E26B35E680039A37D /* VouchersModel.swift */,
+			);
+			path = VouchersModel;
+			sourceTree = "<group>";
+		};
+		1807ED8026B32F940039A37D /* VouchersViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE4C26B35E570039A37D /* VouchersViewModel.swift */,
+			);
+			path = VouchersViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED8126B32F980039A37D /* VouchersViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE4826B35E1D0039A37D /* Vouchers.storyboard */,
+				1807EE4A26B35E2C0039A37D /* VouchersViewController.swift */,
+			);
+			path = VouchersViews;
+			sourceTree = "<group>";
+		};
+		1807ED8226B32FBB0039A37D /* EditPaymentMethodModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE4626B35DBF0039A37D /* EditPaymentMethodViewModel.swift */,
+			);
+			path = EditPaymentMethodModel;
+			sourceTree = "<group>";
+		};
+		1807ED8326B32FBF0039A37D /* EditPaymentMethodViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE4426B35DB60039A37D /* EditPaymentMethodViewModel.swift */,
+			);
+			path = EditPaymentMethodViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED8426B32FC20039A37D /* EditPaymentMethodViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE4026B35D860039A37D /* EditPaymentMethod.storyboard */,
+				1807EE4226B35D930039A37D /* EditPaymentMethodViewController.swift */,
+			);
+			path = EditPaymentMethodViews;
+			sourceTree = "<group>";
+		};
+		1807ED8626B32FCF0039A37D /* EditPersonalNameModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE3E26B35D2A0039A37D /* EditPersonalNameModel.swift */,
+			);
+			name = EditPersonalNameModel;
+			path = EditPersonalNameViews/EditPersonalNameModel;
+			sourceTree = "<group>";
+		};
+		1807ED8726B32FD20039A37D /* EditPersonalNameViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE3C26B35D0C0039A37D /* EditPersonalNameViewModel.swift */,
+			);
+			name = EditPersonalNameViewModel;
+			path = EditPersonalNameViews/EditPersonalNameViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED8B26B32FF50039A37D /* ProfileSettingsModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE3626B35C240039A37D /* ProfileSettingsModel.swift */,
+			);
+			path = ProfileSettingsModel;
+			sourceTree = "<group>";
+		};
+		1807ED8C26B32FF90039A37D /* ProfileSettingsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE3426B35C110039A37D /* ProfileSettingsViewModel.swift */,
+			);
+			path = ProfileSettingsViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED8D26B32FFC0039A37D /* ProfileSettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE3026B35BE50039A37D /* ProfileSettingsViewController.swift */,
+				1807EE3226B35BEE0039A37D /* ProfileSettings.storyboard */,
+			);
+			path = ProfileSettingsViews;
+			sourceTree = "<group>";
+		};
+		1807ED8E26B3300D0039A37D /* AddCardModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE2E26B35A7F0039A37D /* AddCardModel.swift */,
+			);
+			path = AddCardModel;
+			sourceTree = "<group>";
+		};
+		1807ED8F26B330160039A37D /* AddCardViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE2C26B35A740039A37D /* AddCardViewModel.swift */,
+			);
+			path = AddCardViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED9026B330190039A37D /* AddCardViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE2726B35A410039A37D /* AddCardViewController.swift */,
+				1807EE2A26B35A590039A37D /* AddCard.storyboard */,
+			);
+			path = AddCardViews;
+			sourceTree = "<group>";
+		};
+		1807ED9126B330250039A37D /* AddPasswordModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE2526B359D60039A37D /* AddPasswordModel.swift */,
+			);
+			path = AddPasswordModel;
+			sourceTree = "<group>";
+		};
+		1807ED9226B330280039A37D /* AddPasswordViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE2326B359C20039A37D /* AddPasswordViewModel.swift */,
+			);
+			path = AddPasswordViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED9326B3302C0039A37D /* AddPasswordViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE1F26B359A20039A37D /* AddPasswordViewController.swift */,
+				1807EE2126B359AC0039A37D /* AddPassword.storyboard */,
+			);
+			path = AddPasswordViews;
+			sourceTree = "<group>";
+		};
+		1807ED9426B330330039A37D /* AddPaymentMethodModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE1D26B359460039A37D /* AddPaymentMethodModel.swift */,
+			);
+			path = AddPaymentMethodModel;
+			sourceTree = "<group>";
+		};
+		1807ED9526B330360039A37D /* AddPaymentMethodViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE1B26B3592B0039A37D /* AddPaymentMethodViewModel.swift */,
+			);
+			path = AddPaymentMethodViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED9626B3303A0039A37D /* AddPaymentMethodViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE1726B358F50039A37D /* AddPaymentMethod.storyboard */,
+				1807EE1926B359000039A37D /* AddPaymentMethodViewController.swift */,
+			);
+			path = AddPaymentMethodViews;
+			sourceTree = "<group>";
+		};
+		1807ED9726B330730039A37D /* CashModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CashModel;
+			sourceTree = "<group>";
+		};
+		1807ED9826B330780039A37D /* CashViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CashViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED9926B3307D0039A37D /* cashViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE1326B358280039A37D /* Cash.storyboard */,
+				1807EE1526B358340039A37D /* CashViewController.swift */,
+			);
+			path = cashViews;
+			sourceTree = "<group>";
+		};
+		1807ED9A26B330B30039A37D /* WalletModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE1126B357F80039A37D /* WalletViewModel.swift */,
+			);
+			path = WalletModel;
+			sourceTree = "<group>";
+		};
+		1807ED9B26B330B70039A37D /* WalletViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE0F26B357EA0039A37D /* WalletViewModel.swift */,
+			);
+			path = WalletViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED9C26B330BA0039A37D /* WalletViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE0B26B357B80039A37D /* Wallet.storyboard */,
+				1807EE0D26B357CE0039A37D /* WalletViewController.swift */,
+			);
+			path = WalletViews;
+			sourceTree = "<group>";
+		};
+		1807ED9D26B330DA0039A37D /* YourTripsModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE0926B3578A0039A37D /* YourTripsModel.swift */,
+			);
+			path = YourTripsModel;
+			sourceTree = "<group>";
+		};
+		1807ED9E26B330DF0039A37D /* YourTripsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE0726B357720039A37D /* YourTripsViewModel.swift */,
+			);
+			path = YourTripsViewModel;
+			sourceTree = "<group>";
+		};
+		1807ED9F26B330E20039A37D /* YourTripsViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE0326B357450039A37D /* YourTrips.storyboard */,
+				1807EE0526B3574F0039A37D /* YourTripsViewController.swift */,
+			);
+			path = YourTripsViews;
+			sourceTree = "<group>";
+		};
+		1807EDA026B330E90039A37D /* MesssagesModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE0126B357080039A37D /* MesssagesModel.swift */,
+			);
+			path = MesssagesModel;
+			sourceTree = "<group>";
+		};
+		1807EDA126B330F90039A37D /* MesssagesViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDFF26B356FB0039A37D /* MesssagesViewModel.swift */,
+			);
+			path = MesssagesViewModel;
+			sourceTree = "<group>";
+		};
+		1807EDA226B330FD0039A37D /* MesssagesViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDFB26B356CD0039A37D /* Messsages.storyboard */,
+				1807EDFD26B356D90039A37D /* MesssagesViewController.swift */,
+			);
+			path = MesssagesViews;
+			sourceTree = "<group>";
+		};
+		1807EDA326B3310C0039A37D /* SideScreenModels */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDF926B3569D0039A37D /* SideScreenViewModels.swift */,
+			);
+			path = SideScreenModels;
+			sourceTree = "<group>";
+		};
+		1807EDA426B331110039A37D /* SideScreenViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDF726B356910039A37D /* SideScreenViewModels.swift */,
+			);
+			path = SideScreenViewModels;
+			sourceTree = "<group>";
+		};
+		1807EDA526B331140039A37D /* SideScreenViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDF326B356630039A37D /* SideScreen.storyboard */,
+				1807EDF526B3566E0039A37D /* SideScreenViewController.swift */,
+			);
+			name = SideScreenViews;
+			sourceTree = "<group>";
+		};
+		1807EDA626B331220039A37D /* HomePageModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDF126B3560C0039A37D /* HomePageModel.swift */,
+			);
+			path = HomePageModel;
+			sourceTree = "<group>";
+		};
+		1807EDA726B331340039A37D /* HomePageViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDEF26B355E70039A37D /* HomePageViewModel.swift */,
+			);
+			path = HomePageViewModel;
+			sourceTree = "<group>";
+		};
+		1807EDA826B331370039A37D /* HomePageViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDEB26B355C60039A37D /* HomePage.storyboard */,
+				1807EDED26B355D30039A37D /* HomePageViewController.swift */,
+			);
+			path = HomePageViews;
+			sourceTree = "<group>";
+		};
+		1807EDA926B331430039A37D /* CarRidesGuideLinesModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDE926B355370039A37D /* CarRidesGuideLinesModel.swift */,
+			);
+			path = CarRidesGuideLinesModel;
+			sourceTree = "<group>";
+		};
+		1807EDAA26B331490039A37D /* CarRidesGuideLinesViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDE726B355230039A37D /* CarRidesGuideLinesViewModel.swift */,
+			);
+			path = CarRidesGuideLinesViewModel;
+			sourceTree = "<group>";
+		};
+		1807EDAB26B331510039A37D /* CarRidesGuideLinesViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDE326B354FC0039A37D /* CarRidesGuideLines.storyboard */,
+				1807EDE526B355080039A37D /* CarRidesGuideLinesViewController.swift */,
+			);
+			path = CarRidesGuideLinesViews;
+			sourceTree = "<group>";
+		};
+		1807EDAC26B3315F0039A37D /* WelcomePageModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDE126B354DF0039A37D /* WelcomePageModel.swift */,
+			);
+			path = WelcomePageModel;
+			sourceTree = "<group>";
+		};
+		1807EDAD26B331620039A37D /* WelcomePageViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDDF26B354D20039A37D /* WelcomePageViewModel.swift */,
+			);
+			path = WelcomePageViewModel;
+			sourceTree = "<group>";
+		};
+		1807EDAE26B331680039A37D /* WelcomePageViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDDB26B354B10039A37D /* WelcomePage.storyboard */,
+				1807EDDD26B354BF0039A37D /* WelcomePageViewController.swift */,
+			);
+			path = WelcomePageViews;
+			sourceTree = "<group>";
+		};
+		1807EDAF26B3316F0039A37D /* NotificationAlertModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDD926B3549D0039A37D /* NotificationAlertModel.swift */,
+			);
+			path = NotificationAlertModel;
+			sourceTree = "<group>";
+		};
+		1807EDB026B331770039A37D /* NotificationAlertViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDD726B3548C0039A37D /* NotificationAlertViewModel.swift */,
+			);
+			path = NotificationAlertViewModel;
+			sourceTree = "<group>";
+		};
+		1807EDB126B3317B0039A37D /* NotificationAlertViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDD326B354700039A37D /* NotificationAlert.storyboard */,
+				1807EDD526B3547E0039A37D /* NotificationAlertViewController.swift */,
+			);
+			path = NotificationAlertViews;
+			sourceTree = "<group>";
+		};
+		1807EDB226B3318C0039A37D /* TermsOfServiceModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDD126B354540039A37D /* TermsOfServiceModel.swift */,
+			);
+			path = TermsOfServiceModel;
+			sourceTree = "<group>";
+		};
+		1807EDB326B3500C0039A37D /* TermsOfServiceViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDCF26B354460039A37D /* TermsOfServiceViewModel.swift */,
+			);
+			path = TermsOfServiceViewModel;
+			sourceTree = "<group>";
+		};
+		1807EDB426B350100039A37D /* TermsOfServiceViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDCB26B3541F0039A37D /* TermsOfService.storyboard */,
+				1807EDCD26B3542D0039A37D /* TermsOfServiceViewController.swift */,
+			);
+			path = TermsOfServiceViews;
+			sourceTree = "<group>";
+		};
+		1807EDB526B3501C0039A37D /* ProfileRegistrationModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDC926B354070039A37D /* ProfileRegistrationModel.swift */,
+			);
+			path = ProfileRegistrationModel;
+			sourceTree = "<group>";
+		};
+		1807EDB626B350210039A37D /* ProfileRegistrationViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDC726B353F30039A37D /* ProfileRegistrationViewModel.swift */,
+			);
+			name = ProfileRegistrationViewModel;
+			sourceTree = "<group>";
+		};
+		1807EDB726B350290039A37D /* ProfileRegistrationViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDC326B353C50039A37D /* ProfileRegistration.storyboard */,
+				1807EDC526B353DF0039A37D /* ProfileRegistrationViewController.swift */,
+			);
+			path = ProfileRegistrationViews;
+			sourceTree = "<group>";
+		};
+		1807EDB826B350320039A37D /* OnboardingModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDC126B353A20039A37D /* OnboardingModel.swift */,
+			);
+			path = OnboardingModel;
+			sourceTree = "<group>";
+		};
+		1807EDB926B350360039A37D /* OnboardingViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDBF26B3538D0039A37D /* OnboardingViewModel.swift */,
+			);
+			path = OnboardingViewModel;
+			sourceTree = "<group>";
+		};
+		1807EDBA26B3503C0039A37D /* OnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EDBB26B3534A0039A37D /* Onboarding.storyboard */,
+				1807EDBD26B3537B0039A37D /* OnboardingViewController.swift */,
+			);
+			path = OnboardingViews;
+			sourceTree = "<group>";
+		};
+		1807EE5726B35F150039A37D /* CarRidesCredit */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE5C26B360440039A37D /* CarRidesCreditViews */,
+				1807EE5B26B360410039A37D /* CarRidesCreditViewModel */,
+				1807EE5A26B3603C0039A37D /* CarRidesCreditModel */,
+			);
+			path = CarRidesCredit;
+			sourceTree = "<group>";
+		};
+		1807EE5826B35F270039A37D /* PromoCodes */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE5F26B360520039A37D /* PromoCodesViews */,
+				1807EE5E26B3604F0039A37D /* PromoCodesViewModel */,
+				1807EE5D26B3604A0039A37D /* PromoCodesModel */,
+			);
+			path = PromoCodes;
+			sourceTree = "<group>";
+		};
+		1807EE5926B35F340039A37D /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE6226B360630039A37D /* HelpViews */,
+				1807EE6126B360600039A37D /* HelpViewModel */,
+				1807EE6026B3605D0039A37D /* HelpModel */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		1807EE5A26B3603C0039A37D /* CarRidesCreditModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE6926B361740039A37D /* CarRidesCreditModel.swift */,
+			);
+			path = CarRidesCreditModel;
+			sourceTree = "<group>";
+		};
+		1807EE5B26B360410039A37D /* CarRidesCreditViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE6726B361650039A37D /* CarRidesCreditViewModel.swift */,
+			);
+			path = CarRidesCreditViewModel;
+			sourceTree = "<group>";
+		};
+		1807EE5C26B360440039A37D /* CarRidesCreditViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE6326B361260039A37D /* CarRidesCreditViewController.swift */,
+				1807EE6526B361320039A37D /* CarRidesCredit.storyboard */,
+			);
+			path = CarRidesCreditViews;
+			sourceTree = "<group>";
+		};
+		1807EE5D26B3604A0039A37D /* PromoCodesModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE7126B361DE0039A37D /* PromoCodesModel.swift */,
+			);
+			path = PromoCodesModel;
+			sourceTree = "<group>";
+		};
+		1807EE5E26B3604F0039A37D /* PromoCodesViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE6F26B361D20039A37D /* PromoCodesViewModel.swift */,
+			);
+			path = PromoCodesViewModel;
+			sourceTree = "<group>";
+		};
+		1807EE5F26B360520039A37D /* PromoCodesViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE6B26B361A50039A37D /* PromoCodesViewController.swift */,
+				1807EE6D26B361AF0039A37D /* PromoCodes.storyboard */,
+			);
+			path = PromoCodesViews;
+			sourceTree = "<group>";
+		};
+		1807EE6026B3605D0039A37D /* HelpModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE7926B362A50039A37D /* HelpModel.swift */,
+			);
+			path = HelpModel;
+			sourceTree = "<group>";
+		};
+		1807EE6126B360600039A37D /* HelpViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE7726B362920039A37D /* HelpViewModel.swift */,
+			);
+			path = HelpViewModel;
+			sourceTree = "<group>";
+		};
+		1807EE6226B360630039A37D /* HelpViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE7326B362690039A37D /* Help.storyboard */,
+				1807EE7526B362750039A37D /* HelpViewController.swift */,
+			);
+			path = HelpViews;
+			sourceTree = "<group>";
+		};
+		1807EE7B26B3635C0039A37D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE8426B363F40039A37D /* SettingsModel */,
+				1807EE8126B363D90039A37D /* SettingsViewModel */,
+				1807EE7C26B363B40039A37D /* SettingsViews */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1807EE7C26B363B40039A37D /* SettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE7D26B363C50039A37D /* Settings.storyboard */,
+				1807EE7F26B363D20039A37D /* SettingsViewController.swift */,
+			);
+			path = SettingsViews;
+			sourceTree = "<group>";
+		};
+		1807EE8126B363D90039A37D /* SettingsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE8226B363EE0039A37D /* SettingsViewModel.swift */,
+			);
+			path = SettingsViewModel;
+			sourceTree = "<group>";
+		};
+		1807EE8426B363F40039A37D /* SettingsModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE8526B364050039A37D /* SettingsModel.swift */,
+			);
+			path = SettingsModel;
+			sourceTree = "<group>";
+		};
+		1807EE8726B364160039A37D /* ChooseSavedPlace */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEA826B366AF0039A37D /* ChooseSavedPlaceViews */,
+				1807EEA726B366A90039A37D /* ChooseSavedPlaceViewModel */,
+				1807EEA626B366A60039A37D /* ChooseSavedPlaceModel */,
+			);
+			path = ChooseSavedPlace;
+			sourceTree = "<group>";
+		};
+		1807EE8826B3641A0039A37D /* VerifyEmail */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEA526B366A30039A37D /* VerifyEmailViews */,
+				1807EEA426B366A00039A37D /* VerifyEmailViewModel */,
+				1807EEA326B3669D0039A37D /* VerifyEmailModel */,
+			);
+			path = VerifyEmail;
+			sourceTree = "<group>";
+		};
+		1807EE8926B3641E0039A37D /* ManageTrustedContacts */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEA226B366990039A37D /* ManageTrustedContactsViews */,
+				1807EEA126B3668B0039A37D /* ManageTrustedContactsViewModel */,
+				1807EEA026B366890039A37D /* ManageTrustedContacts */,
+			);
+			path = ManageTrustedContacts;
+			sourceTree = "<group>";
+		};
+		1807EE8A26B364210039A37D /* VerifyTrip */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE9F26B366850039A37D /* VerifyTripViews */,
+				1807EE9E26B366830039A37D /* VerifyTripViewModel */,
+				1807EE9D26B366800039A37D /* VerifyTripModel */,
+			);
+			path = VerifyTrip;
+			sourceTree = "<group>";
+		};
+		1807EE8B26B364240039A37D /* MoreSavedPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE9C26B3667C0039A37D /* MoreSavedPlacesViews */,
+				1807EE9B26B3667A0039A37D /* MoreSavedPlacesViewModel */,
+				1807EE9A26B366750039A37D /* MoreSavedPlacesModel */,
+			);
+			path = MoreSavedPlaces;
+			sourceTree = "<group>";
+		};
+		1807EE8C26B365180039A37D /* AddWork */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE9926B366710039A37D /* AddWorkViews */,
+				1807EE9826B3666E0039A37D /* AddWorkViewModel */,
+				1807EE9726B3666B0039A37D /* AddWorkModel */,
+			);
+			path = AddWork;
+			sourceTree = "<group>";
+		};
+		1807EE8D26B3651C0039A37D /* AddHome */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE9626B366670039A37D /* AddHomeViews */,
+				1807EE9526B366640039A37D /* AddHomeViewModel */,
+				1807EE9426B366610039A37D /* AddHomeModel */,
+			);
+			path = AddHome;
+			sourceTree = "<group>";
+		};
+		1807EE8E26B3651F0039A37D /* EditAccount */ = {
+			isa = PBXGroup;
+			children = (
+				1807EE9326B3665D0039A37D /* EditAccountViews */,
+				1807EE9226B366590039A37D /* EditAccountViewModel */,
+				1807EE9126B366550039A37D /* EditAccountModel */,
+			);
+			path = EditAccount;
+			sourceTree = "<group>";
+		};
+		1807EE8F26B365FC0039A37D /* SetDestination */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEAB26B366BD0039A37D /* SetDestinationViews */,
+				1807EEAA26B366BA0039A37D /* SetDestinationViewModel */,
+				1807EEA926B366B70039A37D /* SetDestinationModel */,
+			);
+			path = SetDestination;
+			sourceTree = "<group>";
+		};
+		1807EE9026B366340039A37D /* AroundYou */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEAE26B366C60039A37D /* AroundYouViews */,
+				1807EEAD26B366C40039A37D /* AroundYouViewModel */,
+				1807EEAC26B366C10039A37D /* AroundYouModel */,
+			);
+			path = AroundYou;
+			sourceTree = "<group>";
+		};
+		1807EE9126B366550039A37D /* EditAccountModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEB526B3671F0039A37D /* EditAccountModel.swift */,
+			);
+			path = EditAccountModel;
+			sourceTree = "<group>";
+		};
+		1807EE9226B366590039A37D /* EditAccountViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEB326B3670C0039A37D /* EditAccountViewModel.swift */,
+			);
+			path = EditAccountViewModel;
+			sourceTree = "<group>";
+		};
+		1807EE9326B3665D0039A37D /* EditAccountViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEAF26B366E60039A37D /* EditAccountViewController.swift */,
+				1807EEB126B366F10039A37D /* EditAccount.storyboard */,
+			);
+			path = EditAccountViews;
+			sourceTree = "<group>";
+		};
+		1807EE9426B366610039A37D /* AddHomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEBD26B367830039A37D /* AddHomeModel.swift */,
+			);
+			path = AddHomeModel;
+			sourceTree = "<group>";
+		};
+		1807EE9526B366640039A37D /* AddHomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEBB26B3676F0039A37D /* AddHomeViewModel.swift */,
+			);
+			path = AddHomeViewModel;
+			sourceTree = "<group>";
+		};
+		1807EE9626B366670039A37D /* AddHomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEB726B367470039A37D /* AddHome.storyboard */,
+				1807EEB926B367500039A37D /* AddHomeViewController.swift */,
+			);
+			path = AddHomeViews;
+			sourceTree = "<group>";
+		};
+		1807EE9726B3666B0039A37D /* AddWorkModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEC526B367DD0039A37D /* AddWorkModel.swift */,
+			);
+			path = AddWorkModel;
+			sourceTree = "<group>";
+		};
+		1807EE9826B3666E0039A37D /* AddWorkViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEC326B367CC0039A37D /* AddWorkViewModel.swift */,
+			);
+			path = AddWorkViewModel;
+			sourceTree = "<group>";
+		};
+		1807EE9926B366710039A37D /* AddWorkViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEBF26B3679E0039A37D /* AddWork.storyboard */,
+				1807EEC126B367AA0039A37D /* AddWorkViewController.swift */,
+			);
+			path = AddWorkViews;
+			sourceTree = "<group>";
+		};
+		1807EE9A26B366750039A37D /* MoreSavedPlacesModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EECD26B368450039A37D /* MoreSavedPlacesModel.swift */,
+			);
+			path = MoreSavedPlacesModel;
+			sourceTree = "<group>";
+		};
+		1807EE9B26B3667A0039A37D /* MoreSavedPlacesViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EECB26B3682E0039A37D /* MoreSavedPlacesViewModel.swift */,
+			);
+			path = MoreSavedPlacesViewModel;
+			sourceTree = "<group>";
+		};
+		1807EE9C26B3667C0039A37D /* MoreSavedPlacesViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEC726B368090039A37D /* MoreSavedPlacesViewController.swift */,
+				1807EEC926B368140039A37D /* MoreSavedPlaces.storyboard */,
+			);
+			path = MoreSavedPlacesViews;
+			sourceTree = "<group>";
+		};
+		1807EE9D26B366800039A37D /* VerifyTripModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EED326B3688C0039A37D /* VerifyTripModel.swift */,
+			);
+			path = VerifyTripModel;
+			sourceTree = "<group>";
+		};
+		1807EE9E26B366830039A37D /* VerifyTripViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EED526B3689A0039A37D /* VerifyTripViewModel.swift */,
+			);
+			path = VerifyTripViewModel;
+			sourceTree = "<group>";
+		};
+		1807EE9F26B366850039A37D /* VerifyTripViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EECF26B368630039A37D /* VerifyTrip.storyboard */,
+				1807EED126B3686E0039A37D /* VerifyTripViewController.swift */,
+			);
+			path = VerifyTripViews;
+			sourceTree = "<group>";
+		};
+		1807EEA026B366890039A37D /* ManageTrustedContacts */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEDD26B369070039A37D /* ManageTrustedContactsModel.swift */,
+			);
+			path = ManageTrustedContacts;
+			sourceTree = "<group>";
+		};
+		1807EEA126B3668B0039A37D /* ManageTrustedContactsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEDB26B368F10039A37D /* ManageTrustedContactsViewModel.swift */,
+			);
+			path = ManageTrustedContactsViewModel;
+			sourceTree = "<group>";
+		};
+		1807EEA226B366990039A37D /* ManageTrustedContactsViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EED726B368C70039A37D /* ManageTrustedContacts.storyboard */,
+				1807EED926B368D10039A37D /* ManageTrustedContactsViewController.swift */,
+			);
+			path = ManageTrustedContactsViews;
+			sourceTree = "<group>";
+		};
+		1807EEA326B3669D0039A37D /* VerifyEmailModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEE526B369620039A37D /* VerifyEmailModel.swift */,
+			);
+			path = VerifyEmailModel;
+			sourceTree = "<group>";
+		};
+		1807EEA426B366A00039A37D /* VerifyEmailViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEE326B369500039A37D /* VerifyEmailViewModel.swift */,
+			);
+			path = VerifyEmailViewModel;
+			sourceTree = "<group>";
+		};
+		1807EEA526B366A30039A37D /* VerifyEmailViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEDF26B3692B0039A37D /* VerifyEmail.storyboard */,
+				1807EEE126B369370039A37D /* VerifyEmailViewController.swift */,
+			);
+			path = VerifyEmailViews;
+			sourceTree = "<group>";
+		};
+		1807EEA626B366A60039A37D /* ChooseSavedPlaceModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEED26B369D40039A37D /* ChooseSavedPlaceModel.swift */,
+			);
+			path = ChooseSavedPlaceModel;
+			sourceTree = "<group>";
+		};
+		1807EEA726B366A90039A37D /* ChooseSavedPlaceViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEEB26B369B20039A37D /* ChooseSavedPlaceViewModel.swift */,
+			);
+			name = ChooseSavedPlaceViewModel;
+			sourceTree = "<group>";
+		};
+		1807EEA826B366AF0039A37D /* ChooseSavedPlaceViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEE726B369850039A37D /* ChooseSavedPlace.storyboard */,
+				1807EEE926B369930039A37D /* ChooseSavedPlaceViewController.swift */,
+			);
+			path = ChooseSavedPlaceViews;
+			sourceTree = "<group>";
+		};
+		1807EEA926B366B70039A37D /* SetDestinationModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEF526B36A3A0039A37D /* SetDestinationModel.swift */,
+			);
+			path = SetDestinationModel;
+			sourceTree = "<group>";
+		};
+		1807EEAA26B366BA0039A37D /* SetDestinationViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEF326B36A250039A37D /* SetDestinationViewModel.swift */,
+			);
+			path = SetDestinationViewModel;
+			sourceTree = "<group>";
+		};
+		1807EEAB26B366BD0039A37D /* SetDestinationViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEEF26B369FE0039A37D /* SetDestination.storyboard */,
+				1807EEF126B36A0A0039A37D /* SetDestinationViewController.swift */,
+			);
+			path = SetDestinationViews;
+			sourceTree = "<group>";
+		};
+		1807EEAC26B366C10039A37D /* AroundYouModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEFD26B36A8F0039A37D /* AroundYouModel.swift */,
+			);
+			path = AroundYouModel;
+			sourceTree = "<group>";
+		};
+		1807EEAD26B366C40039A37D /* AroundYouViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEFB26B36A760039A37D /* AroundYouViewModel.swift */,
+			);
+			path = AroundYouViewModel;
+			sourceTree = "<group>";
+		};
+		1807EEAE26B366C60039A37D /* AroundYouViews */ = {
+			isa = PBXGroup;
+			children = (
+				1807EEF726B36A520039A37D /* AroundYou.storyboard */,
+				1807EEF926B36A5F0039A37D /* AroundYouViewController.swift */,
+			);
+			path = AroundYouViews;
+			sourceTree = "<group>";
+		};
+		1807EEFF26B36A9F0039A37D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1807EF0426B36AFB0039A37D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +1626,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1807EDEC26B355C60039A37D /* HomePage.storyboard in Resources */,
+				1807EEF826B36A520039A37D /* AroundYou.storyboard in Resources */,
+				1807EEF026B369FE0039A37D /* SetDestination.storyboard in Resources */,
+				1807EED026B368630039A37D /* VerifyTrip.storyboard in Resources */,
+				1807EE0C26B357B80039A37D /* Wallet.storyboard in Resources */,
+				1807EDD426B354700039A37D /* NotificationAlert.storyboard in Resources */,
 				1807ED6026B32AE90039A37D /* LaunchScreen.storyboard in Resources */,
+				1807EDCC26B3541F0039A37D /* TermsOfService.storyboard in Resources */,
+				1807EE4126B35D860039A37D /* EditPaymentMethod.storyboard in Resources */,
 				1807ED5D26B32AE90039A37D /* Assets.xcassets in Resources */,
+				1807EEC026B3679E0039A37D /* AddWork.storyboard in Resources */,
+				1807EE6E26B361AF0039A37D /* PromoCodes.storyboard in Resources */,
+				1807EEB226B366F10039A37D /* EditAccount.storyboard in Resources */,
+				1807EDC426B353C50039A37D /* ProfileRegistration.storyboard in Resources */,
+				1807EDFC26B356CD0039A37D /* Messsages.storyboard in Resources */,
+				1807EE1426B358280039A37D /* Cash.storyboard in Resources */,
+				1807EE7E26B363C50039A37D /* Settings.storyboard in Resources */,
+				1807EDF426B356630039A37D /* SideScreen.storyboard in Resources */,
+				1807EE2B26B35A590039A37D /* AddCard.storyboard in Resources */,
+				1807EEB826B367470039A37D /* AddHome.storyboard in Resources */,
+				1807EECA26B368140039A37D /* MoreSavedPlaces.storyboard in Resources */,
+				1807EE1826B358F50039A37D /* AddPaymentMethod.storyboard in Resources */,
+				1807EED826B368C70039A37D /* ManageTrustedContacts.storyboard in Resources */,
+				1807EDE426B354FC0039A37D /* CarRidesGuideLines.storyboard in Resources */,
 				1807ED5B26B32AE60039A37D /* Main.storyboard in Resources */,
+				1807EEE026B3692B0039A37D /* VerifyEmail.storyboard in Resources */,
+				1807EE2226B359AC0039A37D /* AddPassword.storyboard in Resources */,
+				1807EE7426B362690039A37D /* Help.storyboard in Resources */,
+				1807EE3326B35BEE0039A37D /* ProfileSettings.storyboard in Resources */,
+				1807EE3B26B35CE00039A37D /* EditPersonalName.storyboard in Resources */,
+				1807EDDC26B354B10039A37D /* WelcomePage.storyboard in Resources */,
+				1807EEE826B369850039A37D /* ChooseSavedPlace.storyboard in Resources */,
+				1807EE4926B35E1D0039A37D /* Vouchers.storyboard in Resources */,
+				1807EE6626B361320039A37D /* CarRidesCredit.storyboard in Resources */,
+				1807EDBC26B3534A0039A37D /* Onboarding.storyboard in Resources */,
+				1807EE0426B357450039A37D /* YourTrips.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +1672,108 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1807ED5826B32AE60039A37D /* ViewController.swift in Sources */,
+				1807EE8626B364050039A37D /* SettingsModel.swift in Sources */,
+				1807EEF626B36A3A0039A37D /* SetDestinationModel.swift in Sources */,
+				1807EE0826B357720039A37D /* YourTripsViewModel.swift in Sources */,
+				1807EDC626B353DF0039A37D /* ProfileRegistrationViewController.swift in Sources */,
+				1807EE3926B35C990039A37D /* EditPersonalNameViewsViewController.swift in Sources */,
+				1807EDDA26B3549D0039A37D /* NotificationAlertModel.swift in Sources */,
+				1807EDDE26B354BF0039A37D /* WelcomePageViewController.swift in Sources */,
+				1807EE0626B3574F0039A37D /* YourTripsViewController.swift in Sources */,
+				1807EE0026B356FB0039A37D /* MesssagesViewModel.swift in Sources */,
+				1807EDC826B353F30039A37D /* ProfileRegistrationViewModel.swift in Sources */,
+				1807EEC426B367CC0039A37D /* AddWorkViewModel.swift in Sources */,
+				1807EEDE26B369070039A37D /* ManageTrustedContactsModel.swift in Sources */,
+				1807EE3526B35C110039A37D /* ProfileSettingsViewModel.swift in Sources */,
+				1807EEFC26B36A760039A37D /* AroundYouViewModel.swift in Sources */,
+				1807EED426B3688C0039A37D /* VerifyTripModel.swift in Sources */,
+				1807EEDC26B368F10039A37D /* ManageTrustedContactsViewModel.swift in Sources */,
+				1807EEB426B3670C0039A37D /* EditAccountViewModel.swift in Sources */,
+				1807EE5126B35EC00039A37D /* AddVoucherViewController.swift in Sources */,
+				1807EDE026B354D20039A37D /* WelcomePageViewModel.swift in Sources */,
+				1807EDE626B355080039A37D /* CarRidesGuideLinesViewController.swift in Sources */,
+				1807EDD826B3548C0039A37D /* NotificationAlertViewModel.swift in Sources */,
+				1807EDF626B3566E0039A37D /* SideScreenViewController.swift in Sources */,
+				1807EE2026B359A20039A37D /* AddPasswordViewController.swift in Sources */,
+				1807EE6A26B361740039A37D /* CarRidesCreditModel.swift in Sources */,
+				1807EE1C26B3592B0039A37D /* AddPaymentMethodViewModel.swift in Sources */,
+				1807EEE226B369370039A37D /* VerifyEmailViewController.swift in Sources */,
+				1807EDD226B354540039A37D /* TermsOfServiceModel.swift in Sources */,
+				1807EE3726B35C240039A37D /* ProfileSettingsModel.swift in Sources */,
+				1807EE6826B361650039A37D /* CarRidesCreditViewModel.swift in Sources */,
+				1807EDC026B3538D0039A37D /* OnboardingViewModel.swift in Sources */,
+				1807EE7A26B362A50039A37D /* HelpModel.swift in Sources */,
+				1807EE4526B35DB60039A37D /* EditPaymentMethodViewModel.swift in Sources */,
+				1807EE8026B363D20039A37D /* SettingsViewController.swift in Sources */,
+				1807EE3F26B35D2A0039A37D /* EditPersonalNameModel.swift in Sources */,
+				1807EE6426B361260039A37D /* CarRidesCreditViewController.swift in Sources */,
+				1807EE5326B35EDE0039A37D /* AddVoucherViewModel.swift in Sources */,
+				1807EE0E26B357CE0039A37D /* WalletViewController.swift in Sources */,
+				1807EE1E26B359460039A37D /* AddPaymentMethodModel.swift in Sources */,
+				1807EED226B3686E0039A37D /* VerifyTripViewController.swift in Sources */,
+				1807EEBA26B367500039A37D /* AddHomeViewController.swift in Sources */,
+				1807EECC26B3682E0039A37D /* MoreSavedPlacesViewModel.swift in Sources */,
+				1807EE4726B35DBF0039A37D /* EditPaymentMethodViewModel.swift in Sources */,
+				1807EEFA26B36A5F0039A37D /* AroundYouViewController.swift in Sources */,
+				1807EEC626B367DD0039A37D /* AddWorkModel.swift in Sources */,
+				1807EEEA26B369930039A37D /* ChooseSavedPlaceViewController.swift in Sources */,
+				1807EDFE26B356D90039A37D /* MesssagesViewController.swift in Sources */,
+				1807EDEA26B355370039A37D /* CarRidesGuideLinesModel.swift in Sources */,
+				1807EEB026B366E60039A37D /* EditAccountViewController.swift in Sources */,
+				1807EE1626B358340039A37D /* CashViewController.swift in Sources */,
+				1807EDE226B354DF0039A37D /* WelcomePageModel.swift in Sources */,
+				1807EE4F26B35E680039A37D /* VouchersModel.swift in Sources */,
+				1807EDF026B355E70039A37D /* HomePageViewModel.swift in Sources */,
+				1807EEEC26B369B20039A37D /* ChooseSavedPlaceViewModel.swift in Sources */,
+				1807EE7026B361D20039A37D /* PromoCodesViewModel.swift in Sources */,
+				1807EE2426B359C20039A37D /* AddPasswordViewModel.swift in Sources */,
+				1807EDC226B353A20039A37D /* OnboardingModel.swift in Sources */,
+				1807EE3126B35BE50039A37D /* ProfileSettingsViewController.swift in Sources */,
+				1807EE8326B363EE0039A37D /* SettingsViewModel.swift in Sources */,
 				1807ED5426B32AE60039A37D /* AppDelegate.swift in Sources */,
+				1807EEB626B3671F0039A37D /* EditAccountModel.swift in Sources */,
 				1807ED5626B32AE60039A37D /* SceneDelegate.swift in Sources */,
+				1807EEBE26B367830039A37D /* AddHomeModel.swift in Sources */,
+				1807EE0226B357080039A37D /* MesssagesModel.swift in Sources */,
+				1807EE2826B35A410039A37D /* AddCardViewController.swift in Sources */,
+				1807EDCA26B354070039A37D /* ProfileRegistrationModel.swift in Sources */,
+				1807EE4D26B35E570039A37D /* VouchersViewModel.swift in Sources */,
+				1807EDD026B354460039A37D /* TermsOfServiceViewModel.swift in Sources */,
+				1807EEEE26B369D40039A37D /* ChooseSavedPlaceModel.swift in Sources */,
+				1807EE2F26B35A7F0039A37D /* AddCardModel.swift in Sources */,
+				1807EEC826B368090039A37D /* MoreSavedPlacesViewController.swift in Sources */,
+				1807EDBE26B3537B0039A37D /* OnboardingViewController.swift in Sources */,
+				1807EEDA26B368D10039A37D /* ManageTrustedContactsViewController.swift in Sources */,
+				1807EE0A26B3578A0039A37D /* YourTripsModel.swift in Sources */,
+				1807EE1026B357EA0039A37D /* WalletViewModel.swift in Sources */,
+				1807EE4326B35D930039A37D /* EditPaymentMethodViewController.swift in Sources */,
+				1807EED626B3689A0039A37D /* VerifyTripViewModel.swift in Sources */,
+				1807EDEE26B355D30039A37D /* HomePageViewController.swift in Sources */,
+				1807EDFA26B3569D0039A37D /* SideScreenViewModels.swift in Sources */,
+				1807EE6C26B361A50039A37D /* PromoCodesViewController.swift in Sources */,
+				1807EE4B26B35E2C0039A37D /* VouchersViewController.swift in Sources */,
+				1807EEE426B369500039A37D /* VerifyEmailViewModel.swift in Sources */,
+				1807EE7226B361DE0039A37D /* PromoCodesModel.swift in Sources */,
+				1807EEBC26B3676F0039A37D /* AddHomeViewModel.swift in Sources */,
+				1807EE3D26B35D0C0039A37D /* EditPersonalNameViewModel.swift in Sources */,
+				1807EE5526B35EEF0039A37D /* AddVoucherModel.swift in Sources */,
+				1807EEF426B36A250039A37D /* SetDestinationViewModel.swift in Sources */,
+				1807EDD626B3547E0039A37D /* NotificationAlertViewController.swift in Sources */,
+				1807EECE26B368450039A37D /* MoreSavedPlacesModel.swift in Sources */,
+				1807EE2D26B35A740039A37D /* AddCardViewModel.swift in Sources */,
+				1807EEC226B367AA0039A37D /* AddWorkViewController.swift in Sources */,
+				1807EE2626B359D60039A37D /* AddPasswordModel.swift in Sources */,
+				1807EDF226B3560C0039A37D /* HomePageModel.swift in Sources */,
+				1807EEFE26B36A8F0039A37D /* AroundYouModel.swift in Sources */,
+				1807EDE826B355230039A37D /* CarRidesGuideLinesViewModel.swift in Sources */,
+				1807EE1226B357F80039A37D /* WalletViewModel.swift in Sources */,
+				1807EE7626B362750039A37D /* HelpViewController.swift in Sources */,
+				1807EDCE26B3542D0039A37D /* TermsOfServiceViewController.swift in Sources */,
+				1807EEE626B369620039A37D /* VerifyEmailModel.swift in Sources */,
+				1807EE1A26B359000039A37D /* AddPaymentMethodViewController.swift in Sources */,
+				1807EDF826B356910039A37D /* SideScreenViewModels.swift in Sources */,
+				1807EEF226B36A0A0039A37D /* SetDestinationViewController.swift in Sources */,
+				1807EE7826B362920039A37D /* HelpViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
