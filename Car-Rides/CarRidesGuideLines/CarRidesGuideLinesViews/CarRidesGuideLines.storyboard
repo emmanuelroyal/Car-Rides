@@ -1,30 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Car Rides Guide Lines View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="StoryBoard6" id="Y6W-OH-hqX" customClass="CarRidesGuideLinesViewController" customModule="Car_Rides" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ziI-5J-WrA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jlc-mj-AKf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhN-PI-VuI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Mj-1h-yV6">
+                                <rect key="frame" x="10" y="10" width="394" height="716"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FI-Oe-a1b">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="716"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BK5-Ex-aLo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Mj-1h-yV6" firstAttribute="top" secondItem="BK5-Ex-aLo" secondAttribute="top" constant="10" id="1yE-dL-4cg"/>
+                            <constraint firstItem="BK5-Ex-aLo" firstAttribute="bottom" secondItem="1Mj-1h-yV6" secondAttribute="bottom" constant="10" id="JTS-nz-3dE"/>
+                            <constraint firstItem="Jlc-mj-AKf" firstAttribute="leading" secondItem="BK5-Ex-aLo" secondAttribute="leading" id="MoS-qY-ePi"/>
+                            <constraint firstItem="BK5-Ex-aLo" firstAttribute="trailing" secondItem="1Mj-1h-yV6" secondAttribute="trailing" constant="10" id="OZu-vz-zOW"/>
+                            <constraint firstItem="BK5-Ex-aLo" firstAttribute="bottom" secondItem="Jlc-mj-AKf" secondAttribute="bottom" id="VBj-RQ-yNS"/>
+                            <constraint firstItem="BK5-Ex-aLo" firstAttribute="trailing" secondItem="Jlc-mj-AKf" secondAttribute="trailing" id="bJH-T6-Lg2"/>
+                            <constraint firstItem="1Mj-1h-yV6" firstAttribute="leading" secondItem="BK5-Ex-aLo" secondAttribute="leading" constant="10" id="gU4-fp-pRM"/>
+                            <constraint firstItem="Jlc-mj-AKf" firstAttribute="top" secondItem="BK5-Ex-aLo" secondAttribute="top" id="qml-nm-yok"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="112" y="94"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
