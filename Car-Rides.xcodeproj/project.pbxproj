@@ -12,7 +12,7 @@
 		1807ED5B26B32AE60039A37D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807ED5926B32AE60039A37D /* Main.storyboard */; };
 		1807ED5D26B32AE90039A37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1807ED5C26B32AE90039A37D /* Assets.xcassets */; };
 		1807ED6026B32AE90039A37D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807ED5E26B32AE90039A37D /* LaunchScreen.storyboard */; };
-		1807EDBC26B3534A0039A37D /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDBB26B3534A0039A37D /* Onboarding.storyboard */; };
+		1807EDBC26B3534A0039A37D /* AddVoucher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDBB26B3534A0039A37D /* AddVoucher.storyboard */; };
 		1807EDBE26B3537B0039A37D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDBD26B3537B0039A37D /* OnboardingViewController.swift */; };
 		1807EDC026B3538D0039A37D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDBF26B3538D0039A37D /* OnboardingViewModel.swift */; };
 		1807EDC226B353A20039A37D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDC126B353A20039A37D /* OnboardingModel.swift */; };
@@ -28,14 +28,6 @@
 		1807EDD626B3547E0039A37D /* NotificationAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDD526B3547E0039A37D /* NotificationAlertViewController.swift */; };
 		1807EDD826B3548C0039A37D /* NotificationAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDD726B3548C0039A37D /* NotificationAlertViewModel.swift */; };
 		1807EDDA26B3549D0039A37D /* NotificationAlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDD926B3549D0039A37D /* NotificationAlertModel.swift */; };
-		1807EDDC26B354B10039A37D /* WelcomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDDB26B354B10039A37D /* WelcomePage.storyboard */; };
-		1807EDDE26B354BF0039A37D /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDDD26B354BF0039A37D /* WelcomePageViewController.swift */; };
-		1807EDE026B354D20039A37D /* WelcomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDDF26B354D20039A37D /* WelcomePageViewModel.swift */; };
-		1807EDE226B354DF0039A37D /* WelcomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDE126B354DF0039A37D /* WelcomePageModel.swift */; };
-		1807EDE426B354FC0039A37D /* CarRidesGuideLines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDE326B354FC0039A37D /* CarRidesGuideLines.storyboard */; };
-		1807EDE626B355080039A37D /* CarRidesGuideLinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDE526B355080039A37D /* CarRidesGuideLinesViewController.swift */; };
-		1807EDE826B355230039A37D /* CarRidesGuideLinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDE726B355230039A37D /* CarRidesGuideLinesViewModel.swift */; };
-		1807EDEA26B355370039A37D /* CarRidesGuideLinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDE926B355370039A37D /* CarRidesGuideLinesModel.swift */; };
 		1807EDEC26B355C60039A37D /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDEB26B355C60039A37D /* HomePage.storyboard */; };
 		1807EDEE26B355D30039A37D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDED26B355D30039A37D /* HomePageViewController.swift */; };
 		1807EDF026B355E70039A37D /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDEF26B355E70039A37D /* HomePageViewModel.swift */; };
@@ -43,7 +35,7 @@
 		1807EDF426B356630039A37D /* SideScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDF326B356630039A37D /* SideScreen.storyboard */; };
 		1807EDF626B3566E0039A37D /* SideScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDF526B3566E0039A37D /* SideScreenViewController.swift */; };
 		1807EDF826B356910039A37D /* SideScreenViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDF726B356910039A37D /* SideScreenViewModels.swift */; };
-		1807EDFA26B3569D0039A37D /* SideScreenViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDF926B3569D0039A37D /* SideScreenViewModels.swift */; };
+		1807EDFA26B3569D0039A37D /* SideScreenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDF926B3569D0039A37D /* SideScreenModels.swift */; };
 		1807EDFC26B356CD0039A37D /* Messsages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EDFB26B356CD0039A37D /* Messsages.storyboard */; };
 		1807EDFE26B356D90039A37D /* MesssagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDFD26B356D90039A37D /* MesssagesViewController.swift */; };
 		1807EE0026B356FB0039A37D /* MesssagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EDFF26B356FB0039A37D /* MesssagesViewModel.swift */; };
@@ -55,7 +47,7 @@
 		1807EE0C26B357B80039A37D /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE0B26B357B80039A37D /* Wallet.storyboard */; };
 		1807EE0E26B357CE0039A37D /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0D26B357CE0039A37D /* WalletViewController.swift */; };
 		1807EE1026B357EA0039A37D /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0F26B357EA0039A37D /* WalletViewModel.swift */; };
-		1807EE1226B357F80039A37D /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1126B357F80039A37D /* WalletViewModel.swift */; };
+		1807EE1226B357F80039A37D /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1126B357F80039A37D /* WalletModel.swift */; };
 		1807EE1426B358280039A37D /* Cash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE1326B358280039A37D /* Cash.storyboard */; };
 		1807EE1626B358340039A37D /* CashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1526B358340039A37D /* CashViewController.swift */; };
 		1807EE1826B358F50039A37D /* AddPaymentMethod.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE1726B358F50039A37D /* AddPaymentMethod.storyboard */; };
@@ -81,7 +73,7 @@
 		1807EE4126B35D860039A37D /* EditPaymentMethod.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE4026B35D860039A37D /* EditPaymentMethod.storyboard */; };
 		1807EE4326B35D930039A37D /* EditPaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4226B35D930039A37D /* EditPaymentMethodViewController.swift */; };
 		1807EE4526B35DB60039A37D /* EditPaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4426B35DB60039A37D /* EditPaymentMethodViewModel.swift */; };
-		1807EE4726B35DBF0039A37D /* EditPaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4626B35DBF0039A37D /* EditPaymentMethodViewModel.swift */; };
+		1807EE4726B35DBF0039A37D /* EditPaymentMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4626B35DBF0039A37D /* EditPaymentMethodModel.swift */; };
 		1807EE4926B35E1D0039A37D /* Vouchers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE4826B35E1D0039A37D /* Vouchers.storyboard */; };
 		1807EE4B26B35E2C0039A37D /* VouchersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4A26B35E2C0039A37D /* VouchersViewController.swift */; };
 		1807EE4D26B35E570039A37D /* VouchersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE4C26B35E570039A37D /* VouchersViewModel.swift */; };
@@ -164,6 +156,7 @@
 		1807EF2C26B4503A0039A37D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EF2B26B4503A0039A37D /* Authentication.swift */; };
 		1807EF2E26B4510E0039A37D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EF2D26B4510E0039A37D /* UIView+Extensions.swift */; };
 		1807EF3026B4518F0039A37D /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EF2F26B4518F0039A37D /* Validations.swift */; };
+		1807EF3226B596970039A37D /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EF3126B596970039A37D /* OnBoardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,7 +167,7 @@
 		1807ED5C26B32AE90039A37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1807ED5F26B32AE90039A37D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1807ED6126B32AE90039A37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1807EDBB26B3534A0039A37D /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		1807EDBB26B3534A0039A37D /* AddVoucher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddVoucher.storyboard; sourceTree = "<group>"; };
 		1807EDBD26B3537B0039A37D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1807EDBF26B3538D0039A37D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewModel.swift; path = "Car-Rides/Onboarding/OnboardingViews/OnboardingViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		1807EDC126B353A20039A37D /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -190,14 +183,6 @@
 		1807EDD526B3547E0039A37D /* NotificationAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertViewController.swift; sourceTree = "<group>"; };
 		1807EDD726B3548C0039A37D /* NotificationAlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertViewModel.swift; sourceTree = "<group>"; };
 		1807EDD926B3549D0039A37D /* NotificationAlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertModel.swift; sourceTree = "<group>"; };
-		1807EDDB26B354B10039A37D /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
-		1807EDDD26B354BF0039A37D /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
-		1807EDDF26B354D20039A37D /* WelcomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewModel.swift; sourceTree = "<group>"; };
-		1807EDE126B354DF0039A37D /* WelcomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageModel.swift; sourceTree = "<group>"; };
-		1807EDE326B354FC0039A37D /* CarRidesGuideLines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarRidesGuideLines.storyboard; sourceTree = "<group>"; };
-		1807EDE526B355080039A37D /* CarRidesGuideLinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRidesGuideLinesViewController.swift; sourceTree = "<group>"; };
-		1807EDE726B355230039A37D /* CarRidesGuideLinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRidesGuideLinesViewModel.swift; sourceTree = "<group>"; };
-		1807EDE926B355370039A37D /* CarRidesGuideLinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRidesGuideLinesModel.swift; sourceTree = "<group>"; };
 		1807EDEB26B355C60039A37D /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		1807EDED26B355D30039A37D /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		1807EDEF26B355E70039A37D /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
@@ -205,7 +190,7 @@
 		1807EDF326B356630039A37D /* SideScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideScreen.storyboard; sourceTree = "<group>"; };
 		1807EDF526B3566E0039A37D /* SideScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideScreenViewController.swift; sourceTree = "<group>"; };
 		1807EDF726B356910039A37D /* SideScreenViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideScreenViewModels.swift; sourceTree = "<group>"; };
-		1807EDF926B3569D0039A37D /* SideScreenViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideScreenViewModels.swift; sourceTree = "<group>"; };
+		1807EDF926B3569D0039A37D /* SideScreenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideScreenModels.swift; sourceTree = "<group>"; };
 		1807EDFB26B356CD0039A37D /* Messsages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messsages.storyboard; sourceTree = "<group>"; };
 		1807EDFD26B356D90039A37D /* MesssagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesssagesViewController.swift; sourceTree = "<group>"; };
 		1807EDFF26B356FB0039A37D /* MesssagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesssagesViewModel.swift; sourceTree = "<group>"; };
@@ -217,7 +202,7 @@
 		1807EE0B26B357B80039A37D /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		1807EE0D26B357CE0039A37D /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		1807EE0F26B357EA0039A37D /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
-		1807EE1126B357F80039A37D /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		1807EE1126B357F80039A37D /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
 		1807EE1326B358280039A37D /* Cash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cash.storyboard; sourceTree = "<group>"; };
 		1807EE1526B358340039A37D /* CashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashViewController.swift; sourceTree = "<group>"; };
 		1807EE1726B358F50039A37D /* AddPaymentMethod.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPaymentMethod.storyboard; sourceTree = "<group>"; };
@@ -243,7 +228,7 @@
 		1807EE4026B35D860039A37D /* EditPaymentMethod.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditPaymentMethod.storyboard; sourceTree = "<group>"; };
 		1807EE4226B35D930039A37D /* EditPaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPaymentMethodViewController.swift; sourceTree = "<group>"; };
 		1807EE4426B35DB60039A37D /* EditPaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPaymentMethodViewModel.swift; sourceTree = "<group>"; };
-		1807EE4626B35DBF0039A37D /* EditPaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPaymentMethodViewModel.swift; sourceTree = "<group>"; };
+		1807EE4626B35DBF0039A37D /* EditPaymentMethodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPaymentMethodModel.swift; sourceTree = "<group>"; };
 		1807EE4826B35E1D0039A37D /* Vouchers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vouchers.storyboard; sourceTree = "<group>"; };
 		1807EE4A26B35E2C0039A37D /* VouchersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouchersViewController.swift; sourceTree = "<group>"; };
 		1807EE4C26B35E570039A37D /* VouchersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouchersViewModel.swift; sourceTree = "<group>"; };
@@ -316,6 +301,7 @@
 		1807EF2B26B4503A0039A37D /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		1807EF2D26B4510E0039A37D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		1807EF2F26B4518F0039A37D /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		1807EF3126B596970039A37D /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,8 +348,6 @@
 				1807ED7A26B32C9E0039A37D /* ProfileRegistration */,
 				1807ED7926B32C9A0039A37D /* TermsOfService */,
 				1807ED7826B32C950039A37D /* NotificationAlert */,
-				1807ED7726B32C7D0039A37D /* WelcomePage */,
-				1807ED7626B32C720039A37D /* CarRidesGuideLines */,
 				1807ED7526B32C6B0039A37D /* HomePage */,
 				1807ED7426B32C630039A37D /* SideScreenOnHomePage */,
 				1807ED7326B32C590039A37D /* Messsages */,
@@ -552,26 +536,6 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
-		1807ED7626B32C720039A37D /* CarRidesGuideLines */ = {
-			isa = PBXGroup;
-			children = (
-				1807EDAB26B331510039A37D /* CarRidesGuideLinesViews */,
-				1807EDAA26B331490039A37D /* CarRidesGuideLinesViewModel */,
-				1807EDA926B331430039A37D /* CarRidesGuideLinesModel */,
-			);
-			path = CarRidesGuideLines;
-			sourceTree = "<group>";
-		};
-		1807ED7726B32C7D0039A37D /* WelcomePage */ = {
-			isa = PBXGroup;
-			children = (
-				1807EDAE26B331680039A37D /* WelcomePageViews */,
-				1807EDAD26B331620039A37D /* WelcomePageViewModel */,
-				1807EDAC26B3315F0039A37D /* WelcomePageModel */,
-			);
-			path = WelcomePage;
-			sourceTree = "<group>";
-		};
 		1807ED7826B32C950039A37D /* NotificationAlert */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,8 +595,8 @@
 		1807ED7E26B32F880039A37D /* AddVoucherViews */ = {
 			isa = PBXGroup;
 			children = (
-				1807ED5926B32AE60039A37D /* Main.storyboard */,
 				1807EE5026B35EC00039A37D /* AddVoucherViewController.swift */,
+				1807EDBB26B3534A0039A37D /* AddVoucher.storyboard */,
 			);
 			path = AddVoucherViews;
 			sourceTree = "<group>";
@@ -665,7 +629,7 @@
 		1807ED8226B32FBB0039A37D /* EditPaymentMethodModel */ = {
 			isa = PBXGroup;
 			children = (
-				1807EE4626B35DBF0039A37D /* EditPaymentMethodViewModel.swift */,
+				1807EE4626B35DBF0039A37D /* EditPaymentMethodModel.swift */,
 			);
 			path = EditPaymentMethodModel;
 			sourceTree = "<group>";
@@ -831,7 +795,7 @@
 		1807ED9A26B330B30039A37D /* WalletModel */ = {
 			isa = PBXGroup;
 			children = (
-				1807EE1126B357F80039A37D /* WalletViewModel.swift */,
+				1807EE1126B357F80039A37D /* WalletModel.swift */,
 			);
 			path = WalletModel;
 			sourceTree = "<group>";
@@ -906,7 +870,7 @@
 		1807EDA326B3310C0039A37D /* SideScreenModels */ = {
 			isa = PBXGroup;
 			children = (
-				1807EDF926B3569D0039A37D /* SideScreenViewModels.swift */,
+				1807EDF926B3569D0039A37D /* SideScreenModels.swift */,
 			);
 			path = SideScreenModels;
 			sourceTree = "<group>";
@@ -951,56 +915,6 @@
 				1807EDED26B355D30039A37D /* HomePageViewController.swift */,
 			);
 			path = HomePageViews;
-			sourceTree = "<group>";
-		};
-		1807EDA926B331430039A37D /* CarRidesGuideLinesModel */ = {
-			isa = PBXGroup;
-			children = (
-				1807EDE926B355370039A37D /* CarRidesGuideLinesModel.swift */,
-			);
-			path = CarRidesGuideLinesModel;
-			sourceTree = "<group>";
-		};
-		1807EDAA26B331490039A37D /* CarRidesGuideLinesViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				1807EDE726B355230039A37D /* CarRidesGuideLinesViewModel.swift */,
-			);
-			path = CarRidesGuideLinesViewModel;
-			sourceTree = "<group>";
-		};
-		1807EDAB26B331510039A37D /* CarRidesGuideLinesViews */ = {
-			isa = PBXGroup;
-			children = (
-				1807EDE326B354FC0039A37D /* CarRidesGuideLines.storyboard */,
-				1807EDE526B355080039A37D /* CarRidesGuideLinesViewController.swift */,
-			);
-			path = CarRidesGuideLinesViews;
-			sourceTree = "<group>";
-		};
-		1807EDAC26B3315F0039A37D /* WelcomePageModel */ = {
-			isa = PBXGroup;
-			children = (
-				1807EDE126B354DF0039A37D /* WelcomePageModel.swift */,
-			);
-			path = WelcomePageModel;
-			sourceTree = "<group>";
-		};
-		1807EDAD26B331620039A37D /* WelcomePageViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				1807EDDF26B354D20039A37D /* WelcomePageViewModel.swift */,
-			);
-			path = WelcomePageViewModel;
-			sourceTree = "<group>";
-		};
-		1807EDAE26B331680039A37D /* WelcomePageViews */ = {
-			isa = PBXGroup;
-			children = (
-				1807EDDB26B354B10039A37D /* WelcomePage.storyboard */,
-				1807EDDD26B354BF0039A37D /* WelcomePageViewController.swift */,
-			);
-			path = WelcomePageViews;
 			sourceTree = "<group>";
 		};
 		1807EDAF26B3316F0039A37D /* NotificationAlertModel */ = {
@@ -1097,7 +1011,8 @@
 		1807EDBA26B3503C0039A37D /* OnboardingViews */ = {
 			isa = PBXGroup;
 			children = (
-				1807EDBB26B3534A0039A37D /* Onboarding.storyboard */,
+				1807ED5926B32AE60039A37D /* Main.storyboard */,
+				1807EF3126B596970039A37D /* OnBoardingCollectionViewCell.swift */,
 				1807EDBD26B3537B0039A37D /* OnboardingViewController.swift */,
 			);
 			path = OnboardingViews;
@@ -1737,18 +1652,16 @@
 				1807EECA26B368140039A37D /* MoreSavedPlaces.storyboard in Resources */,
 				1807EE1826B358F50039A37D /* AddPaymentMethod.storyboard in Resources */,
 				1807EED826B368C70039A37D /* ManageTrustedContacts.storyboard in Resources */,
-				1807EDE426B354FC0039A37D /* CarRidesGuideLines.storyboard in Resources */,
 				1807ED5B26B32AE60039A37D /* Main.storyboard in Resources */,
 				1807EEE026B3692B0039A37D /* VerifyEmail.storyboard in Resources */,
 				1807EE2226B359AC0039A37D /* AddPassword.storyboard in Resources */,
 				1807EE7426B362690039A37D /* Help.storyboard in Resources */,
 				1807EE3326B35BEE0039A37D /* ProfileSettings.storyboard in Resources */,
 				1807EE3B26B35CE00039A37D /* EditPersonalName.storyboard in Resources */,
-				1807EDDC26B354B10039A37D /* WelcomePage.storyboard in Resources */,
 				1807EEE826B369850039A37D /* ChooseSavedPlace.storyboard in Resources */,
 				1807EE4926B35E1D0039A37D /* Vouchers.storyboard in Resources */,
 				1807EE6626B361320039A37D /* CarRidesCredit.storyboard in Resources */,
-				1807EDBC26B3534A0039A37D /* Onboarding.storyboard in Resources */,
+				1807EDBC26B3534A0039A37D /* AddVoucher.storyboard in Resources */,
 				1807EE0426B357450039A37D /* YourTrips.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1768,7 +1681,6 @@
 				1807EF2126B44F280039A37D /* FireStoreRouter.swift in Sources */,
 				1807EE3926B35C990039A37D /* EditPersonalNameViewsViewController.swift in Sources */,
 				1807EDDA26B3549D0039A37D /* NotificationAlertModel.swift in Sources */,
-				1807EDDE26B354BF0039A37D /* WelcomePageViewController.swift in Sources */,
 				1807EE0626B3574F0039A37D /* YourTripsViewController.swift in Sources */,
 				1807EE0026B356FB0039A37D /* MesssagesViewModel.swift in Sources */,
 				1807EDC826B353F30039A37D /* ProfileRegistrationViewModel.swift in Sources */,
@@ -1780,8 +1692,6 @@
 				1807EEDC26B368F10039A37D /* ManageTrustedContactsViewModel.swift in Sources */,
 				1807EEB426B3670C0039A37D /* EditAccountViewModel.swift in Sources */,
 				1807EE5126B35EC00039A37D /* AddVoucherViewController.swift in Sources */,
-				1807EDE026B354D20039A37D /* WelcomePageViewModel.swift in Sources */,
-				1807EDE626B355080039A37D /* CarRidesGuideLinesViewController.swift in Sources */,
 				1807EDD826B3548C0039A37D /* NotificationAlertViewModel.swift in Sources */,
 				1807EDF626B3566E0039A37D /* SideScreenViewController.swift in Sources */,
 				1807EE2026B359A20039A37D /* AddPasswordViewController.swift in Sources */,
@@ -1795,6 +1705,7 @@
 				1807EDC026B3538D0039A37D /* OnboardingViewModel.swift in Sources */,
 				1807EF2E26B4510E0039A37D /* UIView+Extensions.swift in Sources */,
 				1807EE7A26B362A50039A37D /* HelpModel.swift in Sources */,
+				1807EF3226B596970039A37D /* OnBoardingCollectionViewCell.swift in Sources */,
 				1807EE4526B35DB60039A37D /* EditPaymentMethodViewModel.swift in Sources */,
 				1807EE8026B363D20039A37D /* SettingsViewController.swift in Sources */,
 				1807EE3F26B35D2A0039A37D /* EditPersonalNameModel.swift in Sources */,
@@ -1805,16 +1716,14 @@
 				1807EED226B3686E0039A37D /* VerifyTripViewController.swift in Sources */,
 				1807EEBA26B367500039A37D /* AddHomeViewController.swift in Sources */,
 				1807EECC26B3682E0039A37D /* MoreSavedPlacesViewModel.swift in Sources */,
-				1807EE4726B35DBF0039A37D /* EditPaymentMethodViewModel.swift in Sources */,
+				1807EE4726B35DBF0039A37D /* EditPaymentMethodModel.swift in Sources */,
 				1807EEFA26B36A5F0039A37D /* AroundYouViewController.swift in Sources */,
 				1807EEC626B367DD0039A37D /* AddWorkModel.swift in Sources */,
 				1807EEEA26B369930039A37D /* ChooseSavedPlaceViewController.swift in Sources */,
 				1807EDFE26B356D90039A37D /* MesssagesViewController.swift in Sources */,
 				1807EF2C26B4503A0039A37D /* Authentication.swift in Sources */,
-				1807EDEA26B355370039A37D /* CarRidesGuideLinesModel.swift in Sources */,
 				1807EEB026B366E60039A37D /* EditAccountViewController.swift in Sources */,
 				1807EE1626B358340039A37D /* CashViewController.swift in Sources */,
-				1807EDE226B354DF0039A37D /* WelcomePageModel.swift in Sources */,
 				1807EE4F26B35E680039A37D /* VouchersModel.swift in Sources */,
 				1807EDF026B355E70039A37D /* HomePageViewModel.swift in Sources */,
 				1807EEEC26B369B20039A37D /* ChooseSavedPlaceViewModel.swift in Sources */,
@@ -1844,7 +1753,7 @@
 				1807EE4326B35D930039A37D /* EditPaymentMethodViewController.swift in Sources */,
 				1807EED626B3689A0039A37D /* VerifyTripViewModel.swift in Sources */,
 				1807EDEE26B355D30039A37D /* HomePageViewController.swift in Sources */,
-				1807EDFA26B3569D0039A37D /* SideScreenViewModels.swift in Sources */,
+				1807EDFA26B3569D0039A37D /* SideScreenModels.swift in Sources */,
 				1807EE6C26B361A50039A37D /* PromoCodesViewController.swift in Sources */,
 				1807EE4B26B35E2C0039A37D /* VouchersViewController.swift in Sources */,
 				1807EEE426B369500039A37D /* VerifyEmailViewModel.swift in Sources */,
@@ -1860,8 +1769,7 @@
 				1807EE2626B359D60039A37D /* AddPasswordModel.swift in Sources */,
 				1807EDF226B3560C0039A37D /* HomePageModel.swift in Sources */,
 				1807EEFE26B36A8F0039A37D /* AroundYouModel.swift in Sources */,
-				1807EDE826B355230039A37D /* CarRidesGuideLinesViewModel.swift in Sources */,
-				1807EE1226B357F80039A37D /* WalletViewModel.swift in Sources */,
+				1807EE1226B357F80039A37D /* WalletModel.swift in Sources */,
 				1807EF2326B44F5D0039A37D /* RequestParameter.swift in Sources */,
 				1807EE7626B362750039A37D /* HelpViewController.swift in Sources */,
 				1807EDCE26B3542D0039A37D /* TermsOfServiceViewController.swift in Sources */,

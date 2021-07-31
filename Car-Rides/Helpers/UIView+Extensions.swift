@@ -5,7 +5,7 @@
 //  Created by Decagon on 7/30/21.
 //
 
-import Foundation
+import UIKit
 extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         get {
