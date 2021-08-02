@@ -44,11 +44,6 @@
                                                                 <rect key="frame" x="8" y="106" width="378" height="174"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rU1-rp-FXU">
-                                                                        <rect key="frame" x="0.0" y="8" width="378" height="158"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                    </button>
                                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W67-z7-NEX">
                                                                         <rect key="frame" x="30" y="101" width="139" height="50"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -72,6 +67,17 @@
                                                                         <rect key="frame" x="312" y="46" width="46" height="30"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <state key="normal" title="Button"/>
+                                                                        <connections>
+                                                                            <action selector="openCashPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DtQ-dS-Z6I"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rU1-rp-FXU">
+                                                                        <rect key="frame" x="0.0" y="8" width="378" height="158"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <connections>
+                                                                            <action selector="openCashPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ce6-jr-bj8"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,6 +91,9 @@
                                                                 <rect key="frame" x="8" y="8" width="46" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="backButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5fc-Ix-IKf"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7J-Xw-vJP">
                                                                 <rect key="frame" x="10" y="54" width="305" height="36"/>
@@ -141,6 +150,9 @@
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                                 <state key="normal" title="Add promo code"/>
+                                                                <connections>
+                                                                    <action selector="addPromoPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="30i-bs-APq"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </scrollView>
@@ -168,6 +180,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <size key="freeformSize" width="414" height="1050"/>
+                    <connections>
+                        <outlet property="paymentMethodTable" destination="dDY-2b-asy" id="w6f-iQ-5T8"/>
+                        <outlet property="tripProfileTable" destination="ju5-Xp-FNt" id="ZS6-mF-6Wk"/>
+                        <outlet property="voucherTable" destination="WU5-wL-vDR" id="AIh-7h-cma"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

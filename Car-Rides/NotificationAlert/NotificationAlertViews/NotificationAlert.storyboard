@@ -91,11 +91,17 @@
                                                 <state key="normal" title="I understand">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="understandPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Mnw-hK-STy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI2-pC-4gr">
                                                 <rect key="frame" x="8" y="8" width="46" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="backPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qEC-y0-bqH"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Safety is a collective business" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47z-J5-KUd">
                                                 <rect key="frame" x="64" y="440" width="322" height="35"/>
@@ -158,6 +164,12 @@
                             <constraint firstItem="XTm-bs-ov8" firstAttribute="top" secondItem="FkJ-Q3-H6H" secondAttribute="top" constant="10" id="Z3d-QY-O7C"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image1" destination="yLx-I5-fo2" id="zZE-Jl-cTK"/>
+                        <outlet property="image2" destination="fSx-H7-HIR" id="Lsq-fV-DyN"/>
+                        <outlet property="image3" destination="fVW-Xl-Tse" id="3Of-ne-9Tc"/>
+                        <outlet property="image4" destination="X0I-lX-x0E" id="MLL-zW-ILJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

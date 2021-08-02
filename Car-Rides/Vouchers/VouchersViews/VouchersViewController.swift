@@ -16,8 +16,12 @@ class VouchersViewController: UIViewController {
     }
     
 
+    @IBAction func backPressed(_ sender: Any) {
+    }
     /*
-    // MARK: - Navigation
+     @IBAction func learnPressed(_ sender: Any) {
+     }
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

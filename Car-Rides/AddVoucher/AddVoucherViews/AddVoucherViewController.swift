@@ -9,13 +9,16 @@ import UIKit
 
 class AddVoucherViewController: UIViewController {
 
+    @IBOutlet weak var voucherCode: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func continuePressed(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

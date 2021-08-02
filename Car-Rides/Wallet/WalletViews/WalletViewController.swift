@@ -8,22 +8,25 @@
 import UIKit
 
 class WalletViewController: UIViewController {
+    
+    @IBOutlet weak var paymentMethodTable: UITableView!
+    
+    @IBOutlet weak var tripProfileTable: UITableView!
+    
+    @IBOutlet weak var voucherTable: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+    }
+    @IBAction func backButtonPressed(_ sender: Any) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func openCashPressed(_ sender: Any) {
     }
-    */
-
+    
+    @IBAction func addPromoPressed(_ sender: Any) {
+    }
 }

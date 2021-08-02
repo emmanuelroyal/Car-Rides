@@ -56,6 +56,9 @@
                                                 <rect key="frame" x="17" y="637" width="360" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="continuePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gR3-jx-7Gv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -77,6 +80,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hbp-Ja-CZv"/>
+                    <connections>
+                        <outlet property="voucherCode" destination="FqS-AW-Gpg" id="b1h-Sd-FqD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

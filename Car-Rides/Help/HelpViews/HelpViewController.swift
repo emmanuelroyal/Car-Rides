@@ -8,6 +8,11 @@
 import UIKit
 
 class HelpViewController: UIViewController {
+    
+    @IBOutlet weak var helpTable: UITableView!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +21,8 @@ class HelpViewController: UIViewController {
     }
     
 
+    @IBAction func backPressed(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

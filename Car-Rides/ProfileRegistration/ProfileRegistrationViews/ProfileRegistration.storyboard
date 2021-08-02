@@ -33,7 +33,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="716"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XNc-Mx-Cyq">
-                                                <rect key="frame" x="59" y="266" width="279" height="34"/>
+                                                <rect key="frame" x="34" y="266" width="329" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -51,7 +51,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIL-D3-nod">
-                                                <rect key="frame" x="34" y="323" width="337" height="34"/>
+                                                <rect key="frame" x="34" y="323" width="329" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -69,11 +69,14 @@
                                                 <rect key="frame" x="87" y="468" width="222" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Forgot Password?"/>
+                                                <connections>
+                                                    <action selector="forgotPasswordPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1a8-U4-1zH"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGm-oJ-WzU">
-                                                <rect key="frame" x="34" y="185" width="189" height="54"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter your login details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGm-oJ-WzU">
+                                                <rect key="frame" x="15" y="185" width="294" height="54"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -103,13 +106,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="email" destination="XNc-Mx-Cyq" id="ngv-Ge-v8n"/>
                         <outlet property="image" destination="DES-os-Kyv" id="ypn-2T-B6P"/>
+                        <outlet property="password" destination="fIL-D3-nod" id="yA5-11-A2z"/>
                         <outlet property="textField" destination="XNc-Mx-Cyq" id="0RX-3Q-ZkF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.59420289855073" y="93.750000000000014"/>
+            <point key="canvasLocation" x="-178.2608695652174" y="106.79347826086958"/>
         </scene>
     </scenes>
     <resources>

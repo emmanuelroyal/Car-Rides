@@ -47,6 +47,9 @@
                                                         <rect key="frame" x="8" y="8" width="46" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="backPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fmM-0G-yqk"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BZ-sk-9DY">
                                                         <rect key="frame" x="8" y="261" width="365" height="49"/>
@@ -83,10 +86,13 @@
                         <viewLayoutGuide key="safeArea" id="rAY-hQ-Y50"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="profileSettingsTable" destination="k28-VV-Wk7" id="8nd-TD-B1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.59420289855073" y="93.750000000000014"/>
+            <point key="canvasLocation" x="-207" y="97"/>
         </scene>
     </scenes>
     <resources>

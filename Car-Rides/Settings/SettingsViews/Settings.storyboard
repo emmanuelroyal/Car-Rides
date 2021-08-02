@@ -44,6 +44,9 @@
                                                                 <rect key="frame" x="8" y="8" width="46" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="backPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Lp2-oN-Tta"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWm-RN-GCX">
                                                                 <rect key="frame" x="62" y="11" width="265" height="36"/>
@@ -73,6 +76,9 @@
                                                                 <rect key="frame" x="8" y="501" width="319" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="More saved places"/>
+                                                                <connections>
+                                                                    <action selector="morePlacesPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="b8n-9Y-YVS"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Safety" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stc-Kc-RyA">
                                                                 <rect key="frame" x="12" y="539" width="157" height="31"/>
@@ -87,9 +93,12 @@
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             </tableView>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmy-sv-2oq">
-                                                                <rect key="frame" x="8" y="836" width="60" height="30"/>
+                                                                <rect key="frame" x="14" y="831" width="60" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="Sign Out"/>
+                                                                <connections>
+                                                                    <action selector="signOutPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="f22-t5-HgC"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </scrollView>
@@ -117,10 +126,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="favouritesTable" destination="OQD-y9-Z7N" id="ffG-ma-wcz"/>
+                        <outlet property="personalDetailsTable" destination="wZd-xc-PTM" id="z4n-R4-HMQ"/>
+                        <outlet property="safetyTable" destination="27z-tE-bWx" id="jXd-2W-WfI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.59420289855073" y="93.750000000000014"/>
+            <point key="canvasLocation" x="-83" y="-368"/>
         </scene>
     </scenes>
     <resources>

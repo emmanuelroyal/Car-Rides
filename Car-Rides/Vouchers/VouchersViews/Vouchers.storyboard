@@ -58,6 +58,17 @@
                                                         <rect key="frame" x="28" y="282" width="298" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="learnPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HZV-Xj-WGZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlC-2j-CFF">
+                                                        <rect key="frame" x="8" y="8" width="46" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="backPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kCg-uH-Cgq"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>

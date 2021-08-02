@@ -54,6 +54,9 @@
                                                         <rect key="frame" x="8" y="8" width="46" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="backPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GgL-Nl-Yxu"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G78-3E-NWf">
                                                         <rect key="frame" x="12" y="46" width="211" height="44"/>
@@ -90,6 +93,9 @@
                         <viewLayoutGuide key="safeArea" id="qMo-Ni-kkv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="helpTable" destination="h5V-4W-hZI" id="Y6h-k3-5Na"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

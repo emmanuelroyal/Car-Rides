@@ -10,17 +10,23 @@ import UIKit
 class ProfileRegistrationViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var email: UITextField!
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
-    
-    @IBAction func socialButtonPressed(_ sender: Any) {
+    @IBAction func forgotPasswordPressed(_ sender: Any) {
     }
     
-    @IBAction func nextButtonPressed(_ sender: Any) {
+    @IBAction func socialButtonPressed(_ sender: Any) {
     }
     
 }
