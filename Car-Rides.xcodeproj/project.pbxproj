@@ -157,6 +157,8 @@
 		1807EF2E26B4510E0039A37D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EF2D26B4510E0039A37D /* UIView+Extensions.swift */; };
 		1807EF3026B4518F0039A37D /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EF2F26B4518F0039A37D /* Validations.swift */; };
 		1807EF3226B596970039A37D /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EF3126B596970039A37D /* OnBoardingCollectionViewCell.swift */; };
+		1807EF3526B81C000039A37D /* FABButton in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EF3426B81C000039A37D /* FABButton */; };
+		1807EF6026B83E7B0039A37D /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EF5F26B83E7B0039A37D /* FloatingPanel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -318,6 +320,8 @@
 				1807EF1126B434CF0039A37D /* FirebaseRemoteConfig in Frameworks */,
 				1807EF0726B434CF0039A37D /* FirebaseFirestore in Frameworks */,
 				1807EF0B26B434CF0039A37D /* FirebaseStorage in Frameworks */,
+				1807EF6026B83E7B0039A37D /* FloatingPanel in Frameworks */,
+				1807EF3526B81C000039A37D /* FABButton in Frameworks */,
 				1807EF1526B434CF0039A37D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1582,6 +1586,8 @@
 				1807EF1426B434CF0039A37D /* FirebaseAuth */,
 				1807EF1726B435600039A37D /* Kingfisher */,
 				1807EF1A26B436260039A37D /* IQKeyboardManagerSwift */,
+				1807EF3426B81C000039A37D /* FABButton */,
+				1807EF5F26B83E7B0039A37D /* FloatingPanel */,
 			);
 			productName = "Car-Rides";
 			productReference = 1807ED5026B32AE60039A37D /* Car-Rides.app */;
@@ -1614,6 +1620,8 @@
 				1807EF0526B434CF0039A37D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				1807EF1626B435600039A37D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				1807EF1926B436260039A37D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				1807EF3326B81BFF0039A37D /* XCRemoteSwiftPackageReference "FABButton" */,
+				1807EF5E26B83E7A0039A37D /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 			);
 			productRefGroup = 1807ED5126B32AE60039A37D /* Products */;
 			projectDirPath = "";
@@ -2006,6 +2014,22 @@
 				minimumVersion = 6.5.6;
 			};
 		};
+		1807EF3326B81BFF0039A37D /* XCRemoteSwiftPackageReference "FABButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulferrerdev/FABButton.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1807EF5E26B83E7A0039A37D /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scenee/FloatingPanel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2058,6 +2082,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1807EF1926B436260039A37D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		1807EF3426B81C000039A37D /* FABButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1807EF3326B81BFF0039A37D /* XCRemoteSwiftPackageReference "FABButton" */;
+			productName = FABButton;
+		};
+		1807EF5F26B83E7B0039A37D /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1807EF5E26B83E7A0039A37D /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

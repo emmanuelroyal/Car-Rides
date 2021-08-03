@@ -35,7 +35,18 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lr-gp-bm3">
                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="716"/>
+                                                <subviews>
+                                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MA3-wn-Awe">
+                                                        <rect key="frame" x="8" y="64" width="378" height="644"/>
+                                                    </mapView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="MA3-wn-Awe" secondAttribute="bottom" constant="8" id="6Qi-M1-dzh"/>
+                                                    <constraint firstItem="MA3-wn-Awe" firstAttribute="top" secondItem="8lr-gp-bm3" secondAttribute="top" constant="64" id="l3A-bs-GmB"/>
+                                                    <constraint firstItem="MA3-wn-Awe" firstAttribute="leading" secondItem="8lr-gp-bm3" secondAttribute="leading" constant="8" id="mrw-lf-dpF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MA3-wn-Awe" secondAttribute="trailing" constant="8" id="qm2-zm-rcH"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
@@ -57,10 +68,13 @@
                         <viewLayoutGuide key="safeArea" id="3bn-AF-HQe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="MA3-wn-Awe" id="t8R-Zi-VgE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="94"/>
+            <point key="canvasLocation" x="111.59420289855073" y="93.750000000000014"/>
         </scene>
     </scenes>
     <resources>
