@@ -159,6 +159,7 @@
 		1807EF3226B596970039A37D /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EF3126B596970039A37D /* OnBoardingCollectionViewCell.swift */; };
 		1807EF3526B81C000039A37D /* FABButton in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EF3426B81C000039A37D /* FABButton */; };
 		1807EF6026B83E7B0039A37D /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EF5F26B83E7B0039A37D /* FloatingPanel */; };
+		1807EF8E26BB0AAF0039A37D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EF8D26BB0AAF0039A37D /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -323,6 +324,7 @@
 				1807EF6026B83E7B0039A37D /* FloatingPanel in Frameworks */,
 				1807EF3526B81C000039A37D /* FABButton in Frameworks */,
 				1807EF1526B434CF0039A37D /* FirebaseAuth in Frameworks */,
+				1807EF8E26BB0AAF0039A37D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1588,6 +1590,7 @@
 				1807EF1A26B436260039A37D /* IQKeyboardManagerSwift */,
 				1807EF3426B81C000039A37D /* FABButton */,
 				1807EF5F26B83E7B0039A37D /* FloatingPanel */,
+				1807EF8D26BB0AAF0039A37D /* Alamofire */,
 			);
 			productName = "Car-Rides";
 			productReference = 1807ED5026B32AE60039A37D /* Car-Rides.app */;
@@ -1622,6 +1625,7 @@
 				1807EF1926B436260039A37D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				1807EF3326B81BFF0039A37D /* XCRemoteSwiftPackageReference "FABButton" */,
 				1807EF5E26B83E7A0039A37D /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				1807EF8C26BB0AAC0039A37D /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 1807ED5126B32AE60039A37D /* Products */;
 			projectDirPath = "";
@@ -2030,6 +2034,14 @@
 				minimumVersion = 2.4.0;
 			};
 		};
+		1807EF8C26BB0AAC0039A37D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2092,6 +2104,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1807EF5E26B83E7A0039A37D /* XCRemoteSwiftPackageReference "FloatingPanel" */;
 			productName = FloatingPanel;
+		};
+		1807EF8D26BB0AAF0039A37D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1807EF8C26BB0AAC0039A37D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

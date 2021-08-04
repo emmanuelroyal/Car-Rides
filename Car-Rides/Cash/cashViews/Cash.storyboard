@@ -69,7 +69,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="map" destination="MA3-wn-Awe" id="t8R-Zi-VgE"/>
+                        <outlet property="mapView" destination="MA3-wn-Awe" id="t8R-Zi-VgE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
