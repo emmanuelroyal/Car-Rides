@@ -43,9 +43,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-WS-po1">
-                                                <rect key="frame" x="59" y="541" width="279" height="30"/>
+                                                <rect key="frame" x="35" y="541" width="327" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Or connect with Social media"/>
+                                                <state key="normal" title="Or Sign Up if you dont already have an account"/>
                                                 <connections>
                                                     <action selector="socialButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="n08-cr-hpU"/>
                                                 </connections>
@@ -64,6 +64,9 @@
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="SighInPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6w4-0x-ciO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmj-fs-93Q">
                                                 <rect key="frame" x="87" y="468" width="222" height="30"/>
@@ -80,6 +83,15 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY9-Fr-qzQ">
+                                                <rect key="frame" x="314" y="329" width="27" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" image="eye" catalog="system"/>
+                                                <connections>
+                                                    <action selector="eyePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="86u-Mk-2x8"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                     </view>
@@ -109,6 +121,7 @@
                         <outlet property="email" destination="XNc-Mx-Cyq" id="ngv-Ge-v8n"/>
                         <outlet property="image" destination="DES-os-Kyv" id="ypn-2T-B6P"/>
                         <outlet property="password" destination="fIL-D3-nod" id="yA5-11-A2z"/>
+                        <outlet property="secureButton" destination="eY9-Fr-qzQ" id="8g5-z6-OfB"/>
                         <outlet property="textField" destination="XNc-Mx-Cyq" id="0RX-3Q-ZkF"/>
                     </connections>
                 </viewController>
@@ -118,6 +131,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="eye" catalog="system" width="128" height="81"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

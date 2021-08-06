@@ -8,7 +8,14 @@
 import UIKit
 
 class OnBoardingCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var image: UIImageView!
     
+    static let identifier = "OnboardingCollectionViewCell"
+    
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var Label: UILabel!
+    
+    func setUp(_ slide: OnboardingSlide){
+        image.image = slide.image
+        Label.text = slide.title
+    }
 }

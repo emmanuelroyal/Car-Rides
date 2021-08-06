@@ -160,6 +160,10 @@
 		1807EF3526B81C000039A37D /* FABButton in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EF3426B81C000039A37D /* FABButton */; };
 		1807EF6026B83E7B0039A37D /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EF5F26B83E7B0039A37D /* FloatingPanel */; };
 		1807EF8E26BB0AAF0039A37D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EF8D26BB0AAF0039A37D /* Alamofire */; };
+		1807EFC926BD66A80039A37D /* SvgHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFC826BD66A80039A37D /* SvgHud.swift */; };
+		1807EFCB26BD66DD0039A37D /* ViewControllers+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFCA26BD66DD0039A37D /* ViewControllers+Extension.swift */; };
+		1807EFCD26BD6D280039A37D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1807EFCC26BD6D260039A37D /* GoogleService-Info.plist */; };
+		56AC51B97B792F88AF279135 /* Pods_Car_Rides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -305,6 +309,12 @@
 		1807EF2D26B4510E0039A37D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		1807EF2F26B4518F0039A37D /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		1807EF3126B596970039A37D /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		1807EFC826BD66A80039A37D /* SvgHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgHud.swift; sourceTree = "<group>"; };
+		1807EFCA26BD66DD0039A37D /* ViewControllers+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllers+Extension.swift"; sourceTree = "<group>"; };
+		1807EFCC26BD6D260039A37D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7241E200A3748A130B921190 /* Pods-Car-Rides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.debug.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.debug.xcconfig"; sourceTree = "<group>"; };
+		8DFDBD7FF5621B9F36E3E0E6 /* Pods-Car-Rides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.release.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.release.xcconfig"; sourceTree = "<group>"; };
+		8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Car_Rides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +335,7 @@
 				1807EF3526B81C000039A37D /* FABButton in Frameworks */,
 				1807EF1526B434CF0039A37D /* FirebaseAuth in Frameworks */,
 				1807EF8E26BB0AAF0039A37D /* Alamofire in Frameworks */,
+				56AC51B97B792F88AF279135 /* Pods_Car_Rides.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +347,8 @@
 			children = (
 				1807ED5226B32AE60039A37D /* Car-Rides */,
 				1807ED5126B32AE60039A37D /* Products */,
+				9137389C9DECBED6DFB72C75 /* Pods */,
+				22EEFCA6388CD545D27A63C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -388,6 +401,7 @@
 				1807ED5526B32AE60039A37D /* SceneDelegate.swift */,
 				1807ED5C26B32AE90039A37D /* Assets.xcassets */,
 				1807ED5E26B32AE90039A37D /* LaunchScreen.storyboard */,
+				1807EFCC26BD6D260039A37D /* GoogleService-Info.plist */,
 				1807ED6126B32AE90039A37D /* Info.plist */,
 			);
 			path = "Car-Rides";
@@ -1518,7 +1532,9 @@
 			isa = PBXGroup;
 			children = (
 				1807EF2D26B4510E0039A37D /* UIView+Extensions.swift */,
+				1807EFC826BD66A80039A37D /* SvgHud.swift */,
 				1807EF2F26B4518F0039A37D /* Validations.swift */,
+				1807EFCA26BD66DD0039A37D /* ViewControllers+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1561,6 +1577,23 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		22EEFCA6388CD545D27A63C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9137389C9DECBED6DFB72C75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7241E200A3748A130B921190 /* Pods-Car-Rides.debug.xcconfig */,
+				8DFDBD7FF5621B9F36E3E0E6 /* Pods-Car-Rides.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1568,9 +1601,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1807ED6426B32AE90039A37D /* Build configuration list for PBXNativeTarget "Car-Rides" */;
 			buildPhases = (
+				AED53003DA2F3C2934DB8EE2 /* [CP] Check Pods Manifest.lock */,
 				1807ED4C26B32AE60039A37D /* Sources */,
 				1807ED4D26B32AE60039A37D /* Frameworks */,
 				1807ED4E26B32AE60039A37D /* Resources */,
+				EC665B80077A5EEC0FD43A4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1668,6 +1703,7 @@
 				1807EEE026B3692B0039A37D /* VerifyEmail.storyboard in Resources */,
 				1807EE2226B359AC0039A37D /* AddPassword.storyboard in Resources */,
 				1807EE7426B362690039A37D /* Help.storyboard in Resources */,
+				1807EFCD26BD6D280039A37D /* GoogleService-Info.plist in Resources */,
 				1807EE3326B35BEE0039A37D /* ProfileSettings.storyboard in Resources */,
 				1807EE3B26B35CE00039A37D /* EditPersonalName.storyboard in Resources */,
 				1807EEE826B369850039A37D /* ChooseSavedPlace.storyboard in Resources */,
@@ -1679,6 +1715,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AED53003DA2F3C2934DB8EE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Car-Rides-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC665B80077A5EEC0FD43A4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Car-Rides/Pods-Car-Rides-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Car-Rides/Pods-Car-Rides-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Car-Rides/Pods-Car-Rides-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1807ED4C26B32AE60039A37D /* Sources */ = {
@@ -1708,6 +1786,7 @@
 				1807EDF626B3566E0039A37D /* SideScreenViewController.swift in Sources */,
 				1807EE2026B359A20039A37D /* AddPasswordViewController.swift in Sources */,
 				1807EE6A26B361740039A37D /* CarRidesCreditModel.swift in Sources */,
+				1807EFC926BD66A80039A37D /* SvgHud.swift in Sources */,
 				1807EE1C26B3592B0039A37D /* AddPaymentMethodViewModel.swift in Sources */,
 				1807EEE226B369370039A37D /* VerifyEmailViewController.swift in Sources */,
 				1807EF3026B4518F0039A37D /* Validations.swift in Sources */,
@@ -1736,6 +1815,7 @@
 				1807EF2C26B4503A0039A37D /* Authentication.swift in Sources */,
 				1807EEB026B366E60039A37D /* EditAccountViewController.swift in Sources */,
 				1807EE1626B358340039A37D /* CashViewController.swift in Sources */,
+				1807EFCB26BD66DD0039A37D /* ViewControllers+Extension.swift in Sources */,
 				1807EE4F26B35E680039A37D /* VouchersModel.swift in Sources */,
 				1807EDF026B355E70039A37D /* HomePageViewModel.swift in Sources */,
 				1807EEEC26B369B20039A37D /* ChooseSavedPlaceViewModel.swift in Sources */,
@@ -1934,6 +2014,7 @@
 		};
 		1807ED6526B32AE90039A37D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7241E200A3748A130B921190 /* Pods-Car-Rides.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1953,6 +2034,7 @@
 		};
 		1807ED6626B32AE90039A37D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DFDBD7FF5621B9F36E3E0E6 /* Pods-Car-Rides.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -5,4 +5,25 @@
 //  Created by Decagon on 7/29/21.
 //
 
-import Foundation
+import UIKit
+
+class OnboardingViewModel {
+    var slides: [OnboardingSlide] = []
+    var updateButton: ((String, Int) -> Void)?
+    var currentPage = 0 {
+        didSet {
+            if currentPage == slides.count - 1 {
+                updateButton?("Get Started ", currentPage)
+            } else {
+                updateButton?(" Next ", currentPage)
+            }
+        }
+    }
+    
+    init() {
+        slides = [
+            OnboardingSlide(title: "Save Great Memories", image: #imageLiteral(resourceName: "Untitled design (7)")), OnboardingSlide(title: "Enjoy You Holidays", image: #imageLiteral(resourceName: "Untitled design (6)"))
+        ]
+    }
+
+}
