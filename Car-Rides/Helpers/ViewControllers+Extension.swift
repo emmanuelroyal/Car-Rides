@@ -41,7 +41,14 @@ extension UIViewController {
         newController.modalPresentationStyle = .fullScreen
         present(newController, animated: true, completion: nil)
 }
-
+    func navigateToHome() {
+        let newStoryboard = UIStoryboard(name: "HomePage", bundle: nil)
+        let newController = newStoryboard
+            .instantiateViewController(identifier: "StoryBoard7") as HomePageViewController
+        newController.modalTransitionStyle = .crossDissolve
+        newController.modalPresentationStyle = .fullScreen
+        present(newController, animated: true, completion: nil)
+}
 
 class AlertController {
     static func showAlert(_ inViewController: UIViewController, title: String, message: String) {
