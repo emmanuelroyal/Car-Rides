@@ -30,7 +30,7 @@ class SignupViewModel {
             return false
         }
         
-        if email  == "" && email.isValidEmail == false {
+        if  email.isValidEmail == false {
             inView.showAlert(alertText: "Invalid Email", alertMessage: "Please, enter a valid email")
             return false
         }
@@ -40,7 +40,7 @@ class SignupViewModel {
             return false
         }
         
-        if password != "" && password.isValidPassword == false {
+        if password.isValidPassword == false {
             inView.showAlert(alertText: "Oops",
                              alertMessage: "Password must be alphanumeric and must be greater than 8 characters")
         }
