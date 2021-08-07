@@ -24,8 +24,7 @@ class TermsOfServiceViewController: UIViewController {
     }
     
     @IBAction func signInPressed(_ sender: Any) {
-        viewModel.validateTextField(inView: self, fullName: firstName.text!, email: email.text!, password: password.text!)
-        
+        if  viewModel.validateTextField(inView: self, fullName: firstName.text!, email: email.text!, password: password.text!) == true {
         if email.text?.isEmpty == false && firstName.text?.isEmpty == false && password.text?.isEmpty == false {
             HUD.show(status: "Signing you in")
             if let email = email.text, let password = password.text, let fullName = firstName.text {
@@ -57,6 +56,10 @@ class TermsOfServiceViewController: UIViewController {
                     }
                 }
             }
+        }
+        else {
+            return
+             }
         }
         else {
             return

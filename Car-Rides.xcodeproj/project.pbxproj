@@ -162,12 +162,12 @@
 		1807EF8E26BB0AAF0039A37D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EF8D26BB0AAF0039A37D /* Alamofire */; };
 		1807EFC926BD66A80039A37D /* SvgHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFC826BD66A80039A37D /* SvgHud.swift */; };
 		1807EFCB26BD66DD0039A37D /* ViewControllers+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFCA26BD66DD0039A37D /* ViewControllers+Extension.swift */; };
-		1807EFCD26BD6D280039A37D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1807EFCC26BD6D260039A37D /* GoogleService-Info.plist */; };
 		1807EFCF26BDA0620039A37D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFCE26BDA0620039A37D /* TableViewController.swift */; };
 		1807EFD426BDFB560039A37D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EFD326BDFB560039A37D /* SwiftyJSON */; };
 		1807EFD626BDFB870039A37D /* DirectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFD526BDFB870039A37D /* DirectionModel.swift */; };
 		18426B8D26BE1F4E0083006A /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18426B8C26BE1F4E0083006A /* Search.storyboard */; };
 		18426B8F26BE1FE80083006A /* SearchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18426B8E26BE1FE80083006A /* SearchMapViewController.swift */; };
+		18426B9326BEFE0A0083006A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18426B9226BEFE0A0083006A /* GoogleService-Info.plist */; };
 		56AC51B97B792F88AF279135 /* Pods_Car_Rides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */; };
 /* End PBXBuildFile section */
 
@@ -316,11 +316,11 @@
 		1807EF3126B596970039A37D /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		1807EFC826BD66A80039A37D /* SvgHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgHud.swift; sourceTree = "<group>"; };
 		1807EFCA26BD66DD0039A37D /* ViewControllers+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllers+Extension.swift"; sourceTree = "<group>"; };
-		1807EFCC26BD6D260039A37D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1807EFCE26BDA0620039A37D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1807EFD526BDFB870039A37D /* DirectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionModel.swift; sourceTree = "<group>"; };
 		18426B8C26BE1F4E0083006A /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		18426B8E26BE1FE80083006A /* SearchMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapViewController.swift; sourceTree = "<group>"; };
+		18426B9226BEFE0A0083006A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7241E200A3748A130B921190 /* Pods-Car-Rides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.debug.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.debug.xcconfig"; sourceTree = "<group>"; };
 		8DFDBD7FF5621B9F36E3E0E6 /* Pods-Car-Rides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.release.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.release.xcconfig"; sourceTree = "<group>"; };
 		8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Car_Rides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -411,7 +411,7 @@
 				1807ED5526B32AE60039A37D /* SceneDelegate.swift */,
 				1807ED5C26B32AE90039A37D /* Assets.xcassets */,
 				1807ED5E26B32AE90039A37D /* LaunchScreen.storyboard */,
-				1807EFCC26BD6D260039A37D /* GoogleService-Info.plist */,
+				18426B9226BEFE0A0083006A /* GoogleService-Info.plist */,
 				1807ED6126B32AE90039A37D /* Info.plist */,
 			);
 			path = "Car-Rides";
@@ -1699,6 +1699,7 @@
 				1807EED026B368630039A37D /* VerifyTrip.storyboard in Resources */,
 				1807EE0C26B357B80039A37D /* Wallet.storyboard in Resources */,
 				1807EDD426B354700039A37D /* NotificationAlert.storyboard in Resources */,
+				18426B9326BEFE0A0083006A /* GoogleService-Info.plist in Resources */,
 				1807ED6026B32AE90039A37D /* LaunchScreen.storyboard in Resources */,
 				1807EDCC26B3541F0039A37D /* TermsOfService.storyboard in Resources */,
 				1807EE4126B35D860039A37D /* EditPaymentMethod.storyboard in Resources */,
@@ -1721,7 +1722,6 @@
 				1807EEE026B3692B0039A37D /* VerifyEmail.storyboard in Resources */,
 				1807EE2226B359AC0039A37D /* AddPassword.storyboard in Resources */,
 				1807EE7426B362690039A37D /* Help.storyboard in Resources */,
-				1807EFCD26BD6D280039A37D /* GoogleService-Info.plist in Resources */,
 				1807EE3326B35BEE0039A37D /* ProfileSettings.storyboard in Resources */,
 				1807EE3B26B35CE00039A37D /* EditPersonalName.storyboard in Resources */,
 				1807EEE826B369850039A37D /* ChooseSavedPlace.storyboard in Resources */,
