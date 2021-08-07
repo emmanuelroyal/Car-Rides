@@ -68,7 +68,7 @@ class TermsOfServiceViewController: UIViewController {
         
     
     @IBAction func connectWithSocialMedia(_ sender: Any) {
-        
+       navigateToLoginPage()
         
     }
     
