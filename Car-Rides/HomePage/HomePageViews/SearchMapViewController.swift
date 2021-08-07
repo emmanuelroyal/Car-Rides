@@ -19,6 +19,7 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var distanceLbl: UILabel!
     @IBOutlet weak var priceLbl: UILabel!
+    var routes = [Request]()
     
     var location = [Location]()
     var sourceLat = 0.0
@@ -150,7 +151,7 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
             {
                 let jsonData = try JSON(data: data)
                 let routes = jsonData["routes"].arrayValue
-                
+                print(jsonData)
                 for route in routes {
                     let overView = route["overview_polyline"].dictionary
                     let points = overView?["points"]?.string
@@ -172,16 +173,25 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
             } catch {
                 debugPrint(error)
             }
-            guard let cats = routeJson else { return }
-           let pmi = cats.routes[0].legs[0].distance.text
-            let dmi = cats.routes[0].legs[0].duration.text
-            let time = cats.routes[0].legs[0].duration.value
+            guard let route = routeJson else { return }
+            self.routes.removeAll()
+            self.routes.append(route)
+            if self.routes[0].status == "OK" {
+           let pmi = route.routes[0].legs[0].distance.text
+           let dmi = route.routes[0].legs[0].duration.text
+            let time = route.routes[0].legs[0].duration.value
             DispatchQueue.main.async {
+                if dmi != nil && pmi != nil {
                 self.distanceLbl.text = "distance: \(pmi)"
                 self.durationLabel.text = "duration: \(dmi)"
                 self.priceLbl.text = "\(Int((Double(time) * 0.8) + 250)) Naira"
  }
-    }
+        }
+        }
+            else {
+                self.distanceLbl.text = "Invalid address"
+            }
+        }
         
         print(self.duration, self.distance, "here")
         let camera = GMSCameraPosition(target: marker.position, zoom: 10)
