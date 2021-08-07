@@ -163,6 +163,11 @@
 		1807EFC926BD66A80039A37D /* SvgHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFC826BD66A80039A37D /* SvgHud.swift */; };
 		1807EFCB26BD66DD0039A37D /* ViewControllers+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFCA26BD66DD0039A37D /* ViewControllers+Extension.swift */; };
 		1807EFCD26BD6D280039A37D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1807EFCC26BD6D260039A37D /* GoogleService-Info.plist */; };
+		1807EFCF26BDA0620039A37D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFCE26BDA0620039A37D /* TableViewController.swift */; };
+		1807EFD426BDFB560039A37D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1807EFD326BDFB560039A37D /* SwiftyJSON */; };
+		1807EFD626BDFB870039A37D /* DirectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFD526BDFB870039A37D /* DirectionModel.swift */; };
+		18426B8D26BE1F4E0083006A /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18426B8C26BE1F4E0083006A /* Search.storyboard */; };
+		18426B8F26BE1FE80083006A /* SearchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18426B8E26BE1FE80083006A /* SearchMapViewController.swift */; };
 		56AC51B97B792F88AF279135 /* Pods_Car_Rides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */; };
 /* End PBXBuildFile section */
 
@@ -312,6 +317,10 @@
 		1807EFC826BD66A80039A37D /* SvgHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgHud.swift; sourceTree = "<group>"; };
 		1807EFCA26BD66DD0039A37D /* ViewControllers+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllers+Extension.swift"; sourceTree = "<group>"; };
 		1807EFCC26BD6D260039A37D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1807EFCE26BDA0620039A37D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1807EFD526BDFB870039A37D /* DirectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionModel.swift; sourceTree = "<group>"; };
+		18426B8C26BE1F4E0083006A /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		18426B8E26BE1FE80083006A /* SearchMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapViewController.swift; sourceTree = "<group>"; };
 		7241E200A3748A130B921190 /* Pods-Car-Rides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.debug.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.debug.xcconfig"; sourceTree = "<group>"; };
 		8DFDBD7FF5621B9F36E3E0E6 /* Pods-Car-Rides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.release.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.release.xcconfig"; sourceTree = "<group>"; };
 		8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Car_Rides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -325,6 +334,7 @@
 				1807EF0926B434CF0039A37D /* FirebaseDatabase in Frameworks */,
 				1807EF0D26B434CF0039A37D /* FirebaseCrashlytics in Frameworks */,
 				1807EF1326B434CF0039A37D /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				1807EFD426BDFB560039A37D /* SwiftyJSON in Frameworks */,
 				1807EF1826B435600039A37D /* Kingfisher in Frameworks */,
 				1807EF0F26B434CF0039A37D /* FirebaseMessaging in Frameworks */,
 				1807EF1B26B436260039A37D /* IQKeyboardManagerSwift in Frameworks */,
@@ -924,6 +934,7 @@
 			isa = PBXGroup;
 			children = (
 				1807EDEF26B355E70039A37D /* HomePageViewModel.swift */,
+				1807EFD526BDFB870039A37D /* DirectionModel.swift */,
 			);
 			path = HomePageViewModel;
 			sourceTree = "<group>";
@@ -932,7 +943,10 @@
 			isa = PBXGroup;
 			children = (
 				1807EDEB26B355C60039A37D /* HomePage.storyboard */,
+				18426B8C26BE1F4E0083006A /* Search.storyboard */,
 				1807EDED26B355D30039A37D /* HomePageViewController.swift */,
+				1807EFCE26BDA0620039A37D /* TableViewController.swift */,
+				18426B8E26BE1FE80083006A /* SearchMapViewController.swift */,
 			);
 			path = HomePageViews;
 			sourceTree = "<group>";
@@ -1606,6 +1620,7 @@
 				1807ED4D26B32AE60039A37D /* Frameworks */,
 				1807ED4E26B32AE60039A37D /* Resources */,
 				EC665B80077A5EEC0FD43A4B /* [CP] Embed Pods Frameworks */,
+				1468D7E6E5AB1A7EFDE87E64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1626,6 +1641,7 @@
 				1807EF3426B81C000039A37D /* FABButton */,
 				1807EF5F26B83E7B0039A37D /* FloatingPanel */,
 				1807EF8D26BB0AAF0039A37D /* Alamofire */,
+				1807EFD326BDFB560039A37D /* SwiftyJSON */,
 			);
 			productName = "Car-Rides";
 			productReference = 1807ED5026B32AE60039A37D /* Car-Rides.app */;
@@ -1661,6 +1677,7 @@
 				1807EF3326B81BFF0039A37D /* XCRemoteSwiftPackageReference "FABButton" */,
 				1807EF5E26B83E7A0039A37D /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 				1807EF8C26BB0AAC0039A37D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1807EFD226BDFB560039A37D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 1807ED5126B32AE60039A37D /* Products */;
 			projectDirPath = "";
@@ -1698,6 +1715,7 @@
 				1807EEB826B367470039A37D /* AddHome.storyboard in Resources */,
 				1807EECA26B368140039A37D /* MoreSavedPlaces.storyboard in Resources */,
 				1807EE1826B358F50039A37D /* AddPaymentMethod.storyboard in Resources */,
+				18426B8D26BE1F4E0083006A /* Search.storyboard in Resources */,
 				1807EED826B368C70039A37D /* ManageTrustedContacts.storyboard in Resources */,
 				1807ED5B26B32AE60039A37D /* Main.storyboard in Resources */,
 				1807EEE026B3692B0039A37D /* VerifyEmail.storyboard in Resources */,
@@ -1717,6 +1735,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1468D7E6E5AB1A7EFDE87E64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Car-Rides/Pods-Car-Rides-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Car-Rides/Pods-Car-Rides-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Car-Rides/Pods-Car-Rides-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AED53003DA2F3C2934DB8EE2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1806,6 +1841,7 @@
 				1807EE1E26B359460039A37D /* AddPaymentMethodModel.swift in Sources */,
 				1807EED226B3686E0039A37D /* VerifyTripViewController.swift in Sources */,
 				1807EEBA26B367500039A37D /* AddHomeViewController.swift in Sources */,
+				18426B8F26BE1FE80083006A /* SearchMapViewController.swift in Sources */,
 				1807EECC26B3682E0039A37D /* MoreSavedPlacesViewModel.swift in Sources */,
 				1807EE4726B35DBF0039A37D /* EditPaymentMethodModel.swift in Sources */,
 				1807EEFA26B36A5F0039A37D /* AroundYouViewController.swift in Sources */,
@@ -1813,6 +1849,7 @@
 				1807EEEA26B369930039A37D /* ChooseSavedPlaceViewController.swift in Sources */,
 				1807EDFE26B356D90039A37D /* MesssagesViewController.swift in Sources */,
 				1807EF2C26B4503A0039A37D /* Authentication.swift in Sources */,
+				1807EFCF26BDA0620039A37D /* TableViewController.swift in Sources */,
 				1807EEB026B366E60039A37D /* EditAccountViewController.swift in Sources */,
 				1807EE1626B358340039A37D /* CashViewController.swift in Sources */,
 				1807EFCB26BD66DD0039A37D /* ViewControllers+Extension.swift in Sources */,
@@ -1844,6 +1881,7 @@
 				1807EF2726B44FA70039A37D /* Collection.swift in Sources */,
 				1807EE4326B35D930039A37D /* EditPaymentMethodViewController.swift in Sources */,
 				1807EED626B3689A0039A37D /* VerifyTripViewModel.swift in Sources */,
+				1807EFD626BDFB870039A37D /* DirectionModel.swift in Sources */,
 				1807EDEE26B355D30039A37D /* HomePageViewController.swift in Sources */,
 				1807EDFA26B3569D0039A37D /* SideScreenModels.swift in Sources */,
 				1807EE6C26B361A50039A37D /* PromoCodesViewController.swift in Sources */,
@@ -2124,6 +2162,14 @@
 				minimumVersion = 5.4.3;
 			};
 		};
+		1807EFD226BDFB560039A37D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2191,6 +2237,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1807EF8C26BB0AAC0039A37D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		1807EFD326BDFB560039A37D /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1807EFD226BDFB560039A37D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

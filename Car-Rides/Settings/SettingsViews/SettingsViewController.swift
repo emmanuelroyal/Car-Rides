@@ -23,6 +23,7 @@ class SettingsViewController: UIViewController {
     
 
     @IBAction func backPressed(_ sender: Any) {
+        navigateToHome()
     }
     
     @IBAction func morePlacesPressed(_ sender: Any) {

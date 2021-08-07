@@ -33,6 +33,35 @@ extension UIViewController {
         present(newController, animated: true, completion: nil)
 }
     
+    func navigateToSearch() {
+        let newStoryboard = UIStoryboard(name: "Search", bundle: nil)
+        let newController = newStoryboard
+            .instantiateViewController(identifier: "search") as SearchMapViewController
+        newController.modalTransitionStyle = .crossDissolve
+        newController.modalPresentationStyle = .fullScreen
+        present(newController, animated: true, completion: nil)
+}
+    
+    func navigateToMpage() {
+        let newStoryboard = UIStoryboard(name: "Messsages", bundle: nil)
+        let newController = newStoryboard
+            .instantiateViewController(identifier: "StoryBoard9") as MesssagesViewController
+        newController.modalTransitionStyle = .crossDissolve
+        newController.modalPresentationStyle = .fullScreen
+        present(newController, animated: true, completion: nil)
+}
+    func navigateToYpage() {
+        let newStoryboard = UIStoryboard(name: "YourTrips", bundle: nil)
+        let newController = newStoryboard
+            .instantiateViewController(identifier: "StoryBoard10") as YourTripsViewController
+        newController.modalTransitionStyle = .crossDissolve
+        newController.modalPresentationStyle = .fullScreen
+        present(newController, animated: true, completion: nil)
+}
+    
+    
+    
+    
     func navigateToSignUp() {
         let newStoryboard = UIStoryboard(name: "TermsOfService", bundle: nil)
         let newController = newStoryboard

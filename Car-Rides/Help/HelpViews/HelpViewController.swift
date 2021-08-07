@@ -22,6 +22,7 @@ class HelpViewController: UIViewController {
     
 
     @IBAction func backPressed(_ sender: Any) {
+        navigateToHome()
     }
     /*
     // MARK: - Navigation

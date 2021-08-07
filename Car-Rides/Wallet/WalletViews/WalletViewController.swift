@@ -22,6 +22,7 @@ class WalletViewController: UIViewController {
         
     }
     @IBAction func backButtonPressed(_ sender: Any) {
+        navigateToHome()
     }
     
     @IBAction func openCashPressed(_ sender: Any) {

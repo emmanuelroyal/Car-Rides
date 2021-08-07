@@ -22,6 +22,7 @@ class YourTripsViewController: UIViewController {
     }
     
     @IBAction func backButton(_ sender: Any) {
+        navigateToHome()
     }
     
     @IBAction func pastPressed(_ sender: Any) {

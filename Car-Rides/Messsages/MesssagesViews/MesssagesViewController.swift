@@ -26,6 +26,7 @@ class MesssagesViewController: UIViewController {
 
   
     @IBAction func backButtonPressed(_ sender: Any) {
+        navigateToHome()
     }
     
 }
