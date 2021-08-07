@@ -40,7 +40,7 @@
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="08r-u9-iOy">
                                                         <rect key="frame" x="10" y="100" width="374" height="516"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="e59-NA-JbL">
                                                             <size key="itemSize" width="373" height="515"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -56,33 +56,40 @@
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wox-SB-x6I">
-                                                                            <rect key="frame" x="10" y="0.0" width="353" height="515"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="373" height="515"/>
                                                                             <subviews>
                                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xlo-il-TGq">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="453.66666666666669"/>
-                                                                                    <userDefinedRuntimeAttributes>
-                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                                            <real key="value" value="20"/>
-                                                                                        </userDefinedRuntimeAttribute>
-                                                                                    </userDefinedRuntimeAttributes>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="454"/>
                                                                                 </imageView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-h3-ZqE">
-                                                                                    <rect key="frame" x="156" y="453.66666666666669" width="41.333333333333343" height="61.333333333333314"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-h3-ZqE">
+                                                                                    <rect key="frame" x="0.0" y="454" width="373" height="61"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="61" id="Jsv-tc-vBJ"/>
+                                                                                    </constraints>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                             </subviews>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="trailing" secondItem="VMj-h3-ZqE" secondAttribute="trailing" id="1Pt-25-gyn"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="Xlo-il-TGq" secondAttribute="trailing" id="LSy-Cx-P5b"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="VMj-h3-ZqE" secondAttribute="bottom" id="YIg-wg-Hiu"/>
+                                                                                <constraint firstItem="Xlo-il-TGq" firstAttribute="leading" secondItem="Wox-SB-x6I" secondAttribute="leading" id="dHN-bz-yZB"/>
+                                                                                <constraint firstItem="VMj-h3-ZqE" firstAttribute="top" secondItem="Xlo-il-TGq" secondAttribute="bottom" id="hed-Se-3O8"/>
+                                                                                <constraint firstItem="Xlo-il-TGq" firstAttribute="top" secondItem="Wox-SB-x6I" secondAttribute="top" id="mB6-80-Fsu"/>
+                                                                                <constraint firstItem="VMj-h3-ZqE" firstAttribute="leading" secondItem="Wox-SB-x6I" secondAttribute="leading" id="uVK-Yr-ATb"/>
+                                                                            </constraints>
                                                                         </stackView>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstItem="Wox-SB-x6I" firstAttribute="top" secondItem="xlO-xk-q9x" secondAttribute="top" id="8ZY-s5-i3g"/>
-                                                                        <constraint firstItem="Wox-SB-x6I" firstAttribute="leading" secondItem="xlO-xk-q9x" secondAttribute="leading" constant="10" id="KsO-av-EYH"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="Wox-SB-x6I" secondAttribute="trailing" constant="10" id="TVn-fb-UCk"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="Wox-SB-x6I" secondAttribute="trailing" constant="10" id="UKN-Yq-zhC"/>
-                                                                        <constraint firstItem="Wox-SB-x6I" firstAttribute="leading" secondItem="xlO-xk-q9x" secondAttribute="leading" constant="10" id="gP1-6y-cqc"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="Wox-SB-x6I" secondAttribute="bottom" id="iYr-Jr-iKB"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="Wox-SB-x6I" secondAttribute="bottom" id="jTY-1Y-C6D"/>
+                                                                        <constraint firstItem="Wox-SB-x6I" firstAttribute="centerX" secondItem="xlO-xk-q9x" secondAttribute="centerX" id="AFE-P7-Ljo"/>
+                                                                        <constraint firstItem="Wox-SB-x6I" firstAttribute="top" secondItem="xlO-xk-q9x" secondAttribute="top" id="FTn-d0-DBc"/>
+                                                                        <constraint firstItem="Wox-SB-x6I" firstAttribute="leading" secondItem="xlO-xk-q9x" secondAttribute="leading" id="KwP-9r-ubo"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="Wox-SB-x6I" secondAttribute="bottom" id="TpD-Es-bFz"/>
+                                                                        <constraint firstItem="Wox-SB-x6I" firstAttribute="top" secondItem="xlO-xk-q9x" secondAttribute="top" id="uXX-5V-LST"/>
+                                                                        <constraint firstItem="Wox-SB-x6I" firstAttribute="centerY" secondItem="xlO-xk-q9x" secondAttribute="centerY" id="z1O-DZ-j0A"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Wox-SB-x6I" secondAttribute="trailing" id="zgj-nL-wUT"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
                                                                 <size key="customSize" width="373" height="515"/>

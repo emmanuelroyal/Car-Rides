@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingsViewController: UIViewController {
     
@@ -30,5 +31,14 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func signOutPressed(_ sender: Any) {
+        HUD.show(status: "Logging out...")
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            self.showAlert(alertText: "Error",
+                           alertMessage: "There was an error logging you out. Please try again.")
+        }
+        HUD.hide()
+       navigateToLoginPage()
     }
 }

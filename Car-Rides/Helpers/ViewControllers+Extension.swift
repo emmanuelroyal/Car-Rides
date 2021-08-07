@@ -23,6 +23,14 @@ extension UIViewController {
         self.navigationItem.hidesBackButton = true
     }
     
+     func navigateToLoginPage() {
+        let newStoryboard = UIStoryboard(name: "ProfileRegistration", bundle: nil)
+        let newController = newStoryboard
+            .instantiateViewController(identifier: "Storyboard2") as ProfileRegistrationViewController
+        newController.modalTransitionStyle = .crossDissolve
+        newController.modalPresentationStyle = .fullScreen
+        present(newController, animated: true, completion: nil)
+    }
     
     func navigateToWelcome() {
         let newStoryboard = UIStoryboard(name: "NotificationAlert", bundle: nil)

@@ -191,4 +191,7 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBAction func reqPressed(_ sender: Any) {
         
     }
+    @IBAction func backPressed(_ sender: Any) {
+        navigateToHome()
+    }
 }

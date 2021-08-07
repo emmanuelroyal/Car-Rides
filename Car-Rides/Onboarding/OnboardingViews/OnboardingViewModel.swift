@@ -22,7 +22,7 @@ class OnboardingViewModel {
     
     init() {
         slides = [
-            OnboardingSlide(title: "Save Great Memories", image: #imageLiteral(resourceName: "Untitled design (7)")), OnboardingSlide(title: "Enjoy You Holidays", image: #imageLiteral(resourceName: "Untitled design (6)"))
+            OnboardingSlide(title: "Commute in great comfort", image: UIImage(named: "adam-stefanca-hdMSxGizchk-unsplash")!), OnboardingSlide(title: "Enjoy easy on the pocket rides", image: UIImage(named: "thibault-penin-a8r2KKLSntA-unsplash")!)
         ]
     }
 

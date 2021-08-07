@@ -38,19 +38,27 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DES-os-Kyv">
-                                                <rect key="frame" x="136" y="28" width="124" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adam-stefanca-hdMSxGizchk-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="DES-os-Kyv">
+                                                <rect key="frame" x="110" y="28" width="150" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="Jrj-nE-6LQ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-WS-po1">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dVI-WS-po1">
                                                 <rect key="frame" x="35" y="541" width="327" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <state key="normal" title="Or Sign Up if you dont already have an account"/>
                                                 <connections>
                                                     <action selector="socialButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="n08-cr-hpU"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Realm1234" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIL-D3-nod">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="realm1234" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIL-D3-nod">
                                                 <rect key="frame" x="34" y="323" width="329" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -64,6 +72,11 @@
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="SighInPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6w4-0x-ciO"/>
                                                 </connections>
@@ -84,16 +97,21 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY9-Fr-qzQ">
-                                                <rect key="frame" x="314" y="329" width="27" height="22"/>
+                                                <rect key="frame" x="315" y="329" width="26" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
-                                                <state key="normal" image="eye" catalog="system"/>
+                                                <state key="normal" image="eye.slash.fill" catalog="system"/>
                                                 <connections>
                                                     <action selector="eyePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="86u-Mk-2x8"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="DES-os-Kyv" secondAttribute="trailing" constant="134" id="mXZ-0k-Gb1"/>
+                                            <constraint firstItem="DES-os-Kyv" firstAttribute="top" secondItem="0i7-RM-Svu" secondAttribute="top" constant="28" id="psP-NE-tMb"/>
+                                            <constraint firstItem="DES-os-Kyv" firstAttribute="leading" secondItem="0i7-RM-Svu" secondAttribute="leading" constant="110" id="q1T-ik-fNb"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -131,7 +149,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="eye" catalog="system" width="128" height="81"/>
+        <image name="adam-stefanca-hdMSxGizchk-unsplash" width="2000" height="2666.5"/>
+        <image name="eye.slash.fill" catalog="system" width="128" height="82"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
