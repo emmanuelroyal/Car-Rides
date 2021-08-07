@@ -50,35 +50,36 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let cell =  table.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-    
+        let cell =  table.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
+        cell.frame = CGRect(x: 20, y:20 , width: Int(view.frame.width), height: 100)
         cell.textLabel?.text = location[indexPath.row].title
+        cell.textLabel?.textColor = .white
         return cell
-      }
+    }
     
-        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-            table.isHidden = true
-        }
-
-        func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-            searchBar.resignFirstResponder()
-            table.isHidden = false
-            if let text = searchBar.text, !text.isEmpty {
-                LocationManager.shared.getLocations(with: text) {
-                    [weak self] locations in
-                    DispatchQueue.main.async {
-                        self?.location = locations
-                        print(self?.location)
-                        self?.table.reloadData()
-                    }
-                    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        table.isHidden = true
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        table.isHidden = false
+        if let text = searchBar.text, !text.isEmpty {
+            LocationManager.shared.getLocations(with: text) {
+                [weak self] locations in
+                DispatchQueue.main.async {
+                    self?.location = locations
+                    print(self?.location)
+                    self?.table.reloadData()
                 }
+                
             }
-            
         }
-    
-    
         
+    }
+    
+    
+    
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
@@ -100,9 +101,9 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         checkLocationAuthorization()
-       }
-       
-       func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         mapView.camera = GMSCameraPosition(target: CLLocationCoordinate2D(latitude: locationManager.location?.coordinate.latitude ?? 0.0 , longitude: locationManager.location?.coordinate.longitude ?? 0.0), zoom: 10, bearing: 0, viewingAngle: 0)
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: locationManager.location?.coordinate.latitude ?? 0.0 , longitude: locationManager.location?.coordinate.longitude ?? 0.0)
@@ -113,10 +114,10 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
         marker.map = mapView
         let sourceLat = locationManager.location!.coordinate.latitude
         let sourceLon = locationManager.location!.coordinate.longitude
-            self.sourceLat = sourceLat
-            self.sourceLon = sourceLon
+        self.sourceLat = sourceLat
+        self.sourceLon = sourceLon
         
-       }
+    }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("ERROR")
@@ -142,7 +143,7 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
         markers.icon = UIImage(systemName: "person.crop.circle")
         markers.map = mapView
         
-       let url =  "https://maps.googleapis.com/maps/api/directions/json?origin=\(sourceLat),\(sourceLon)&destination=\(destLat),\(destLon)&key=AIzaSyBf5Atsf8AXFvPwh9BrExCYKS5RC10ERCA"
+        let url =  "https://maps.googleapis.com/maps/api/directions/json?origin=\(sourceLat),\(sourceLon)&destination=\(destLat),\(destLon)&key=AIzaSyBf5Atsf8AXFvPwh9BrExCYKS5RC10ERCA"
         
         AF.request(url).responseJSON { response in
             guard let data = response.data else { return }
@@ -160,8 +161,8 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
                     polyline.strokeWidth = 6
                     polyline.strokeColor = .systemBlue
                     polyline.map = self.mapView
-                        
-                    }
+                    
+                }
             }
             catch let error {
                 print(error.localizedDescription)
@@ -177,19 +178,21 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
             self.routes.removeAll()
             self.routes.append(route)
             if self.routes[0].status == "OK" {
-           let pmi = route.routes[0].legs[0].distance.text
-           let dmi = route.routes[0].legs[0].duration.text
-            let time = route.routes[0].legs[0].duration.value
-            DispatchQueue.main.async {
-                if dmi != nil && pmi != nil {
-                self.distanceLbl.text = "distance: \(pmi)"
-                self.durationLabel.text = "duration: \(dmi)"
-                self.priceLbl.text = "\(Int((Double(time) * 0.8) + 250)) Naira"
- }
-        }
-        }
+                let pmi = route.routes[0].legs[0].distance.text
+                let dmi = route.routes[0].legs[0].duration.text
+                let time = route.routes[0].legs[0].duration.value
+                DispatchQueue.main.async {
+                    if dmi != nil && pmi != nil {
+                        self.distanceLbl.text = "distance: \(pmi)"
+                        self.durationLabel.text = "duration: \(dmi)"
+                        self.priceLbl.text = "\(Int((Double(time) * 0.8) + 250)) Naira"
+                    }
+                }
+            }
             else {
                 self.distanceLbl.text = "Invalid address"
+                self.durationLabel.text = ""
+                self.priceLbl.text = ""
             }
         }
         
@@ -197,7 +200,7 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
         let camera = GMSCameraPosition(target: marker.position, zoom: 10)
         mapView.animate(to: camera)
     }
-
+    
     @IBAction func reqPressed(_ sender: Any) {
         
     }

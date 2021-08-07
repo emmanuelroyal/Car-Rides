@@ -31,8 +31,11 @@
                                 <rect key="frame" x="0.0" y="603" width="414" height="133"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnb-Vb-TsI">
-                                        <rect key="frame" x="59" y="59" width="306" height="69"/>
+                                        <rect key="frame" x="59" y="78" width="306" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eJM-P4-3hz"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Request Ride">
                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
@@ -68,7 +71,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1H-Ty-RKX">
-                                        <rect key="frame" x="212" y="53" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="212" y="53" width="0.0" height="19"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -78,17 +81,19 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yRV-4v-BDo">
-                                        <rect key="frame" x="0.0" y="-23" width="414" height="76"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yRV-4v-BDo">
+                                        <rect key="frame" x="0.0" y="-23" width="414" height="95"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableViewCell" rowHeight="25" id="A6d-Rd-dhA">
-                                                <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="25"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableViewCell" rowHeight="48" id="A6d-Rd-dhA">
+                                                <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="48"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A6d-Rd-dhA" id="7Wo-xr-Vwn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="25"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" systemColor="systemTealColor"/>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
