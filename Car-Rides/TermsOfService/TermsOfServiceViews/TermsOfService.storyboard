@@ -63,6 +63,7 @@
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="ZKT-Nn-aIP"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="56" id="cGH-Xj-xpA"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="hqd-rw-LsS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
@@ -143,7 +144,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="nvo-gj-LOP"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -188,6 +189,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" image="eye" catalog="system"/>
+                                                <connections>
+                                                    <action selector="eyePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CAJ-0b-wGL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -300,6 +304,7 @@
                         <outlet property="passwordErrorLbl" destination="S1N-G2-uDJ" id="jrZ-Ia-Tcg"/>
                         <outlet property="passwordImage" destination="uKG-Wg-F77" id="nlH-nL-Frj"/>
                         <outlet property="passwordLine" destination="amD-po-09P" id="ROK-Wm-daJ"/>
+                        <outlet property="secureButton" destination="wfh-Ia-ca8" id="Wb6-Uc-JPl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

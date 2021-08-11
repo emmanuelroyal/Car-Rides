@@ -87,8 +87,8 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
         marker.iconView?.bounds.size = CGSize(width: 20, height: 20)
         marker.icon = UIImage(systemName: "person.crop.circle")
         marker.map = mapView
-        let sourceLat = locationManager.location!.coordinate.latitude
-        let sourceLon = locationManager.location!.coordinate.longitude
+        _ = locationManager.location!.coordinate.latitude
+        _ = locationManager.location!.coordinate.longitude
         
        }
     

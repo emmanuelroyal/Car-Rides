@@ -29,6 +29,7 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
     var destMarker = ""
     var distance = ""
     var duration = ""
+    var destination = ""
     let locationManager = CLLocationManager()
     
     
@@ -63,13 +64,13 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
+        self.destination = searchBar.text!
         table.isHidden = false
         if let text = searchBar.text, !text.isEmpty {
             LocationManager.shared.getLocations(with: text) {
                 [weak self] locations in
                 DispatchQueue.main.async {
                     self?.location = locations
-                    print(self?.location)
                     self?.table.reloadData()
                 }
                 
@@ -182,11 +183,9 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
                 let dmi = route.routes[0].legs[0].duration.text
                 let time = route.routes[0].legs[0].duration.value
                 DispatchQueue.main.async {
-                    if dmi != nil && pmi != nil {
-                        self.distanceLbl.text = "distance: \(pmi)"
-                        self.durationLabel.text = "duration: \(dmi)"
-                        self.priceLbl.text = "\(Int((Double(time) * 0.8) + 250)) Naira"
-                    }
+                    self.distanceLbl.text = "distance: \(pmi)"
+                    self.durationLabel.text = "duration: \(dmi)"
+                    self.priceLbl.text = "\(Int((Double(time) * 0.8) + 250)) Naira"
                 }
             }
             else {
@@ -202,8 +201,37 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @IBAction func reqPressed(_ sender: Any) {
+        if self.destination != "" && self.priceLbl.text
+         != nil {
+        HUD.show(status: "Requesting trip...")
+        var trip = Trip()
+        trip.Destination = self.destination
+        trip.date = "\(getCurrentTime())"
+        trip.price = "\(priceLbl.text!)"
         
+        let request = TripsService()
+        request.createTrips(with: trip) { (result) in
+            switch result {
+            case .success:
+                HUD.hide()
+                let alertController =
+                    UIAlertController(title: "Done",
+                                      message: "Trip successfully requested your driver will contact you soon!", preferredStyle: .alert)
+                let acceptAction = UIAlertAction(title: "Accept", style: .default) { (_) -> Void in
+                    self.navigateToHome()
+                }
+                alertController.addAction(acceptAction)
+                self.present(alertController, animated: true, completion: nil)
+            case .failure(_):
+                HUD.hide()
+                self.showAlert(alertText: "Error",
+    alertMessage: "There was an error requesting trip, please try again.")
+                
+            }
+        }
+        }
     }
+    
     @IBAction func backPressed(_ sender: Any) {
         navigateToHome()
     }

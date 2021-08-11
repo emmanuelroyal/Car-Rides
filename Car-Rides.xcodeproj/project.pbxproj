@@ -48,8 +48,6 @@
 		1807EE0E26B357CE0039A37D /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0D26B357CE0039A37D /* WalletViewController.swift */; };
 		1807EE1026B357EA0039A37D /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE0F26B357EA0039A37D /* WalletViewModel.swift */; };
 		1807EE1226B357F80039A37D /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1126B357F80039A37D /* WalletModel.swift */; };
-		1807EE1426B358280039A37D /* Cash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE1326B358280039A37D /* Cash.storyboard */; };
-		1807EE1626B358340039A37D /* CashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1526B358340039A37D /* CashViewController.swift */; };
 		1807EE1826B358F50039A37D /* AddPaymentMethod.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807EE1726B358F50039A37D /* AddPaymentMethod.storyboard */; };
 		1807EE1A26B359000039A37D /* AddPaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1926B359000039A37D /* AddPaymentMethodViewController.swift */; };
 		1807EE1C26B3592B0039A37D /* AddPaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EE1B26B3592B0039A37D /* AddPaymentMethodViewModel.swift */; };
@@ -167,7 +165,14 @@
 		1807EFD626BDFB870039A37D /* DirectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFD526BDFB870039A37D /* DirectionModel.swift */; };
 		18426B8D26BE1F4E0083006A /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18426B8C26BE1F4E0083006A /* Search.storyboard */; };
 		18426B8F26BE1FE80083006A /* SearchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18426B8E26BE1FE80083006A /* SearchMapViewController.swift */; };
-		18426B9326BEFE0A0083006A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18426B9226BEFE0A0083006A /* GoogleService-Info.plist */; };
+		18E8640C26C44E4B00D18744 /* ProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8640B26C44E4B00D18744 /* ProfileAPI.swift */; };
+		18E8640F26C44E8800D18744 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8640E26C44E8800D18744 /* ProfileService.swift */; };
+		18E8641126C44E9D00D18744 /* MessagesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641026C44E9D00D18744 /* MessagesAPI.swift */; };
+		18E8641326C44EC500D18744 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641226C44EC500D18744 /* MessageService.swift */; };
+		18E8641526C44ED800D18744 /* YourTripsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641426C44ED800D18744 /* YourTripsAPI.swift */; };
+		18E8641726C44F4D00D18744 /* YourTripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641626C44F4D00D18744 /* YourTripService.swift */; };
+		18E8641A26C4585D00D18744 /* ParameterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641926C4585D00D18744 /* ParameterModels.swift */; };
+		18E8641C26C4751F00D18744 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18E8641B26C4751F00D18744 /* GoogleService-Info.plist */; };
 		56AC51B97B792F88AF279135 /* Pods_Car_Rides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */; };
 /* End PBXBuildFile section */
 
@@ -215,8 +220,6 @@
 		1807EE0D26B357CE0039A37D /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		1807EE0F26B357EA0039A37D /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
 		1807EE1126B357F80039A37D /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
-		1807EE1326B358280039A37D /* Cash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cash.storyboard; sourceTree = "<group>"; };
-		1807EE1526B358340039A37D /* CashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashViewController.swift; sourceTree = "<group>"; };
 		1807EE1726B358F50039A37D /* AddPaymentMethod.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPaymentMethod.storyboard; sourceTree = "<group>"; };
 		1807EE1926B359000039A37D /* AddPaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodViewController.swift; sourceTree = "<group>"; };
 		1807EE1B26B3592B0039A37D /* AddPaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodViewModel.swift; sourceTree = "<group>"; };
@@ -320,7 +323,14 @@
 		1807EFD526BDFB870039A37D /* DirectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionModel.swift; sourceTree = "<group>"; };
 		18426B8C26BE1F4E0083006A /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		18426B8E26BE1FE80083006A /* SearchMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapViewController.swift; sourceTree = "<group>"; };
-		18426B9226BEFE0A0083006A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18E8640B26C44E4B00D18744 /* ProfileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPI.swift; sourceTree = "<group>"; };
+		18E8640E26C44E8800D18744 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		18E8641026C44E9D00D18744 /* MessagesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesAPI.swift; sourceTree = "<group>"; };
+		18E8641226C44EC500D18744 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		18E8641426C44ED800D18744 /* YourTripsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YourTripsAPI.swift; path = "Car-Rides/Network/FireBase/FireStore/Service/YourTripsAPI.swift"; sourceTree = SOURCE_ROOT; };
+		18E8641626C44F4D00D18744 /* YourTripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTripService.swift; sourceTree = "<group>"; };
+		18E8641926C4585D00D18744 /* ParameterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterModels.swift; sourceTree = "<group>"; };
+		18E8641B26C4751F00D18744 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7241E200A3748A130B921190 /* Pods-Car-Rides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.debug.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.debug.xcconfig"; sourceTree = "<group>"; };
 		8DFDBD7FF5621B9F36E3E0E6 /* Pods-Car-Rides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.release.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.release.xcconfig"; sourceTree = "<group>"; };
 		8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Car_Rides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -411,8 +421,8 @@
 				1807ED5526B32AE60039A37D /* SceneDelegate.swift */,
 				1807ED5C26B32AE90039A37D /* Assets.xcassets */,
 				1807ED5E26B32AE90039A37D /* LaunchScreen.storyboard */,
-				18426B9226BEFE0A0083006A /* GoogleService-Info.plist */,
 				1807ED6126B32AE90039A37D /* Info.plist */,
+				18E8641B26C4751F00D18744 /* GoogleService-Info.plist */,
 			);
 			path = "Car-Rides";
 			sourceTree = "<group>";
@@ -816,8 +826,6 @@
 		1807ED9926B3307D0039A37D /* cashViews */ = {
 			isa = PBXGroup;
 			children = (
-				1807EE1326B358280039A37D /* Cash.storyboard */,
-				1807EE1526B358340039A37D /* CashViewController.swift */,
 			);
 			path = cashViews;
 			sourceTree = "<group>";
@@ -1573,6 +1581,9 @@
 		1807EF1D26B44ED80039A37D /* FireStore */ = {
 			isa = PBXGroup;
 			children = (
+				18E8641826C4584600D18744 /* Models */,
+				18E8640D26C44E5D00D18744 /* Service */,
+				18E8640A26C44E0500D18744 /* Api */,
 				1807EF1E26B44EEC0039A37D /* Tasks.swift */,
 				1807EF2226B44F5D0039A37D /* RequestParameter.swift */,
 				1807EF2026B44F280039A37D /* FireStoreRouter.swift */,
@@ -1589,6 +1600,34 @@
 				1807EF2B26B4503A0039A37D /* Authentication.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		18E8640A26C44E0500D18744 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				18E8640B26C44E4B00D18744 /* ProfileAPI.swift */,
+				18E8641426C44ED800D18744 /* YourTripsAPI.swift */,
+				18E8641026C44E9D00D18744 /* MessagesAPI.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		18E8640D26C44E5D00D18744 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				18E8640E26C44E8800D18744 /* ProfileService.swift */,
+				18E8641226C44EC500D18744 /* MessageService.swift */,
+				18E8641626C44F4D00D18744 /* YourTripService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		18E8641826C4584600D18744 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18E8641926C4585D00D18744 /* ParameterModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		22EEFCA6388CD545D27A63C4 /* Frameworks */ = {
@@ -1699,7 +1738,6 @@
 				1807EED026B368630039A37D /* VerifyTrip.storyboard in Resources */,
 				1807EE0C26B357B80039A37D /* Wallet.storyboard in Resources */,
 				1807EDD426B354700039A37D /* NotificationAlert.storyboard in Resources */,
-				18426B9326BEFE0A0083006A /* GoogleService-Info.plist in Resources */,
 				1807ED6026B32AE90039A37D /* LaunchScreen.storyboard in Resources */,
 				1807EDCC26B3541F0039A37D /* TermsOfService.storyboard in Resources */,
 				1807EE4126B35D860039A37D /* EditPaymentMethod.storyboard in Resources */,
@@ -1709,7 +1747,6 @@
 				1807EEB226B366F10039A37D /* EditAccount.storyboard in Resources */,
 				1807EDC426B353C50039A37D /* ProfileRegistration.storyboard in Resources */,
 				1807EDFC26B356CD0039A37D /* Messsages.storyboard in Resources */,
-				1807EE1426B358280039A37D /* Cash.storyboard in Resources */,
 				1807EE7E26B363C50039A37D /* Settings.storyboard in Resources */,
 				1807EDF426B356630039A37D /* SideScreen.storyboard in Resources */,
 				1807EE2B26B35A590039A37D /* AddCard.storyboard in Resources */,
@@ -1722,6 +1759,7 @@
 				1807EEE026B3692B0039A37D /* VerifyEmail.storyboard in Resources */,
 				1807EE2226B359AC0039A37D /* AddPassword.storyboard in Resources */,
 				1807EE7426B362690039A37D /* Help.storyboard in Resources */,
+				18E8641C26C4751F00D18744 /* GoogleService-Info.plist in Resources */,
 				1807EE3326B35BEE0039A37D /* ProfileSettings.storyboard in Resources */,
 				1807EE3B26B35CE00039A37D /* EditPersonalName.storyboard in Resources */,
 				1807EEE826B369850039A37D /* ChooseSavedPlace.storyboard in Resources */,
@@ -1835,10 +1873,13 @@
 				1807EE4526B35DB60039A37D /* EditPaymentMethodViewModel.swift in Sources */,
 				1807EE8026B363D20039A37D /* SettingsViewController.swift in Sources */,
 				1807EE3F26B35D2A0039A37D /* EditPersonalNameModel.swift in Sources */,
+				18E8640F26C44E8800D18744 /* ProfileService.swift in Sources */,
 				1807EE6426B361260039A37D /* CarRidesCreditViewController.swift in Sources */,
 				1807EE5326B35EDE0039A37D /* AddVoucherViewModel.swift in Sources */,
+				18E8641126C44E9D00D18744 /* MessagesAPI.swift in Sources */,
 				1807EE0E26B357CE0039A37D /* WalletViewController.swift in Sources */,
 				1807EE1E26B359460039A37D /* AddPaymentMethodModel.swift in Sources */,
+				18E8641A26C4585D00D18744 /* ParameterModels.swift in Sources */,
 				1807EED226B3686E0039A37D /* VerifyTripViewController.swift in Sources */,
 				1807EEBA26B367500039A37D /* AddHomeViewController.swift in Sources */,
 				18426B8F26BE1FE80083006A /* SearchMapViewController.swift in Sources */,
@@ -1851,7 +1892,7 @@
 				1807EF2C26B4503A0039A37D /* Authentication.swift in Sources */,
 				1807EFCF26BDA0620039A37D /* TableViewController.swift in Sources */,
 				1807EEB026B366E60039A37D /* EditAccountViewController.swift in Sources */,
-				1807EE1626B358340039A37D /* CashViewController.swift in Sources */,
+				18E8640C26C44E4B00D18744 /* ProfileAPI.swift in Sources */,
 				1807EFCB26BD66DD0039A37D /* ViewControllers+Extension.swift in Sources */,
 				1807EE4F26B35E680039A37D /* VouchersModel.swift in Sources */,
 				1807EDF026B355E70039A37D /* HomePageViewModel.swift in Sources */,
@@ -1860,6 +1901,7 @@
 				1807EF2526B44F810039A37D /* Request.swift in Sources */,
 				1807EE2426B359C20039A37D /* AddPasswordViewModel.swift in Sources */,
 				1807EDC226B353A20039A37D /* OnboardingModel.swift in Sources */,
+				18E8641326C44EC500D18744 /* MessageService.swift in Sources */,
 				1807EE3126B35BE50039A37D /* ProfileSettingsViewController.swift in Sources */,
 				1807EE8326B363EE0039A37D /* SettingsViewModel.swift in Sources */,
 				1807ED5426B32AE60039A37D /* AppDelegate.swift in Sources */,
@@ -1893,8 +1935,10 @@
 				1807EE5526B35EEF0039A37D /* AddVoucherModel.swift in Sources */,
 				1807EEF426B36A250039A37D /* SetDestinationViewModel.swift in Sources */,
 				1807EDD626B3547E0039A37D /* NotificationAlertViewController.swift in Sources */,
+				18E8641526C44ED800D18744 /* YourTripsAPI.swift in Sources */,
 				1807EECE26B368450039A37D /* MoreSavedPlacesModel.swift in Sources */,
 				1807EE2D26B35A740039A37D /* AddCardViewModel.swift in Sources */,
+				18E8641726C44F4D00D18744 /* YourTripService.swift in Sources */,
 				1807EEC226B367AA0039A37D /* AddWorkViewController.swift in Sources */,
 				1807EE2626B359D60039A37D /* AddPasswordModel.swift in Sources */,
 				1807EDF226B3560C0039A37D /* HomePageModel.swift in Sources */,

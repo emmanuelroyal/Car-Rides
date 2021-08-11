@@ -9,7 +9,8 @@ import Foundation
 enum Collection {
     case users
     case userProfile
-    case userPhotos
+    case userTrips
+    case userMessages
     
     var identifier: String {
         switch self {
@@ -17,8 +18,10 @@ enum Collection {
             return "users"
         case .userProfile:
             return "user_profile"
-        case .userPhotos:
-            return "UserPhotos"
+        case .userTrips:
+            return "user_trips"
+        case .userMessages:
+            return "user_messages"
         }
     }
 }
