@@ -168,11 +168,13 @@
 		18E8640C26C44E4B00D18744 /* ProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8640B26C44E4B00D18744 /* ProfileAPI.swift */; };
 		18E8640F26C44E8800D18744 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8640E26C44E8800D18744 /* ProfileService.swift */; };
 		18E8641126C44E9D00D18744 /* MessagesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641026C44E9D00D18744 /* MessagesAPI.swift */; };
-		18E8641326C44EC500D18744 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641226C44EC500D18744 /* MessageService.swift */; };
 		18E8641526C44ED800D18744 /* YourTripsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641426C44ED800D18744 /* YourTripsAPI.swift */; };
-		18E8641726C44F4D00D18744 /* YourTripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641626C44F4D00D18744 /* YourTripService.swift */; };
 		18E8641A26C4585D00D18744 /* ParameterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641926C4585D00D18744 /* ParameterModels.swift */; };
 		18E8641C26C4751F00D18744 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18E8641B26C4751F00D18744 /* GoogleService-Info.plist */; };
+		18E8641E26C58D2800D18744 /* TripsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641D26C58D2800D18744 /* TripsService.swift */; };
+		18E8642026C58E2500D18744 /* MessagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641F26C58E2500D18744 /* MessagesService.swift */; };
+		18E8642526C5A1EA00D18744 /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8642326C5A1EA00D18744 /* MessagesTableViewCell.swift */; };
+		18E8642626C5A1EA00D18744 /* MessagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8642426C5A1EA00D18744 /* MessagesTableViewCell.xib */; };
 		56AC51B97B792F88AF279135 /* Pods_Car_Rides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */; };
 /* End PBXBuildFile section */
 
@@ -326,11 +328,13 @@
 		18E8640B26C44E4B00D18744 /* ProfileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPI.swift; sourceTree = "<group>"; };
 		18E8640E26C44E8800D18744 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		18E8641026C44E9D00D18744 /* MessagesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesAPI.swift; sourceTree = "<group>"; };
-		18E8641226C44EC500D18744 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		18E8641426C44ED800D18744 /* YourTripsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YourTripsAPI.swift; path = "Car-Rides/Network/FireBase/FireStore/Service/YourTripsAPI.swift"; sourceTree = SOURCE_ROOT; };
-		18E8641626C44F4D00D18744 /* YourTripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTripService.swift; sourceTree = "<group>"; };
 		18E8641926C4585D00D18744 /* ParameterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterModels.swift; sourceTree = "<group>"; };
 		18E8641B26C4751F00D18744 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18E8641D26C58D2800D18744 /* TripsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsService.swift; sourceTree = "<group>"; };
+		18E8641F26C58E2500D18744 /* MessagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesService.swift; sourceTree = "<group>"; };
+		18E8642326C5A1EA00D18744 /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
+		18E8642426C5A1EA00D18744 /* MessagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesTableViewCell.xib; sourceTree = "<group>"; };
 		7241E200A3748A130B921190 /* Pods-Car-Rides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.debug.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.debug.xcconfig"; sourceTree = "<group>"; };
 		8DFDBD7FF5621B9F36E3E0E6 /* Pods-Car-Rides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Car-Rides.release.xcconfig"; path = "Target Support Files/Pods-Car-Rides/Pods-Car-Rides.release.xcconfig"; sourceTree = "<group>"; };
 		8E3810A436819F0D23B4D457 /* Pods_Car_Rides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Car_Rides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -900,6 +904,8 @@
 			isa = PBXGroup;
 			children = (
 				1807EDFB26B356CD0039A37D /* Messsages.storyboard */,
+				18E8642326C5A1EA00D18744 /* MessagesTableViewCell.swift */,
+				18E8642426C5A1EA00D18744 /* MessagesTableViewCell.xib */,
 				1807EDFD26B356D90039A37D /* MesssagesViewController.swift */,
 			);
 			path = MesssagesViews;
@@ -1616,8 +1622,8 @@
 			isa = PBXGroup;
 			children = (
 				18E8640E26C44E8800D18744 /* ProfileService.swift */,
-				18E8641226C44EC500D18744 /* MessageService.swift */,
-				18E8641626C44F4D00D18744 /* YourTripService.swift */,
+				18E8641F26C58E2500D18744 /* MessagesService.swift */,
+				18E8641D26C58D2800D18744 /* TripsService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -1749,6 +1755,7 @@
 				1807EDFC26B356CD0039A37D /* Messsages.storyboard in Resources */,
 				1807EE7E26B363C50039A37D /* Settings.storyboard in Resources */,
 				1807EDF426B356630039A37D /* SideScreen.storyboard in Resources */,
+				18E8642626C5A1EA00D18744 /* MessagesTableViewCell.xib in Resources */,
 				1807EE2B26B35A590039A37D /* AddCard.storyboard in Resources */,
 				1807EEB826B367470039A37D /* AddHome.storyboard in Resources */,
 				1807EECA26B368140039A37D /* MoreSavedPlaces.storyboard in Resources */,
@@ -1848,6 +1855,7 @@
 				1807EE0026B356FB0039A37D /* MesssagesViewModel.swift in Sources */,
 				1807EDC826B353F30039A37D /* ProfileRegistrationViewModel.swift in Sources */,
 				1807EEC426B367CC0039A37D /* AddWorkViewModel.swift in Sources */,
+				18E8641E26C58D2800D18744 /* TripsService.swift in Sources */,
 				1807EEDE26B369070039A37D /* ManageTrustedContactsModel.swift in Sources */,
 				1807EE3526B35C110039A37D /* ProfileSettingsViewModel.swift in Sources */,
 				1807EEFC26B36A760039A37D /* AroundYouViewModel.swift in Sources */,
@@ -1886,6 +1894,7 @@
 				1807EECC26B3682E0039A37D /* MoreSavedPlacesViewModel.swift in Sources */,
 				1807EE4726B35DBF0039A37D /* EditPaymentMethodModel.swift in Sources */,
 				1807EEFA26B36A5F0039A37D /* AroundYouViewController.swift in Sources */,
+				18E8642526C5A1EA00D18744 /* MessagesTableViewCell.swift in Sources */,
 				1807EEC626B367DD0039A37D /* AddWorkModel.swift in Sources */,
 				1807EEEA26B369930039A37D /* ChooseSavedPlaceViewController.swift in Sources */,
 				1807EDFE26B356D90039A37D /* MesssagesViewController.swift in Sources */,
@@ -1901,7 +1910,6 @@
 				1807EF2526B44F810039A37D /* Request.swift in Sources */,
 				1807EE2426B359C20039A37D /* AddPasswordViewModel.swift in Sources */,
 				1807EDC226B353A20039A37D /* OnboardingModel.swift in Sources */,
-				18E8641326C44EC500D18744 /* MessageService.swift in Sources */,
 				1807EE3126B35BE50039A37D /* ProfileSettingsViewController.swift in Sources */,
 				1807EE8326B363EE0039A37D /* SettingsViewModel.swift in Sources */,
 				1807ED5426B32AE60039A37D /* AppDelegate.swift in Sources */,
@@ -1914,6 +1922,7 @@
 				1807EE4D26B35E570039A37D /* VouchersViewModel.swift in Sources */,
 				1807EDD026B354460039A37D /* TermsOfServiceViewModel.swift in Sources */,
 				1807EEEE26B369D40039A37D /* ChooseSavedPlaceModel.swift in Sources */,
+				18E8642026C58E2500D18744 /* MessagesService.swift in Sources */,
 				1807EE2F26B35A7F0039A37D /* AddCardModel.swift in Sources */,
 				1807EEC826B368090039A37D /* MoreSavedPlacesViewController.swift in Sources */,
 				1807EDBE26B3537B0039A37D /* OnboardingViewController.swift in Sources */,
@@ -1938,7 +1947,6 @@
 				18E8641526C44ED800D18744 /* YourTripsAPI.swift in Sources */,
 				1807EECE26B368450039A37D /* MoreSavedPlacesModel.swift in Sources */,
 				1807EE2D26B35A740039A37D /* AddCardViewModel.swift in Sources */,
-				18E8641726C44F4D00D18744 /* YourTripService.swift in Sources */,
 				1807EEC226B367AA0039A37D /* AddWorkViewController.swift in Sources */,
 				1807EE2626B359D60039A37D /* AddPasswordModel.swift in Sources */,
 				1807EDF226B3560C0039A37D /* HomePageModel.swift in Sources */,

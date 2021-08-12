@@ -8,6 +8,7 @@
 import Foundation
 enum Tasks {
     case read
+    case readOrdered
     case qread(type: String )
     case delete(type: String)
     case create(documentData: Parameter)

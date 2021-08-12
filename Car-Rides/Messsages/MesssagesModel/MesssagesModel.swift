@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct MessageTable {
+    var title : String
+    var body: String
+    var time : String
+    var opened: String
+    var messageId: String
+}

@@ -10,9 +10,11 @@ import CoreLocation
 import GoogleMaps
 import Alamofire
 import SwiftyJSON
+import FirebaseAuth
 
 class SearchMapViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UISearchBarDelegate {
     
+    @IBOutlet weak var requestRide: UIButton!
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var table: UITableView!
@@ -35,6 +37,8 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        requestRide.backgroundColor = .red
+        requestRide.isUserInteractionEnabled = false
         table.isHidden = true
         searchBar.delegate = self
         locationManager.delegate = self
@@ -186,6 +190,8 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
                     self.distanceLbl.text = "distance: \(pmi)"
                     self.durationLabel.text = "duration: \(dmi)"
                     self.priceLbl.text = "\(Int((Double(time) * 0.8) + 250)) Naira"
+                    self.requestRide.backgroundColor = .systemBlue
+                    self.requestRide.isUserInteractionEnabled = true
                 }
             }
             else {
@@ -213,24 +219,44 @@ class SearchMapViewController: UIViewController, UITableViewDelegate, UITableVie
         request.createTrips(with: trip) { (result) in
             switch result {
             case .success:
-                HUD.hide()
-                let alertController =
-                    UIAlertController(title: "Done",
-                                      message: "Trip successfully requested your driver will contact you soon!", preferredStyle: .alert)
-                let acceptAction = UIAlertAction(title: "Accept", style: .default) { (_) -> Void in
-                    self.navigateToHome()
+                let createMessage = MessagesService()
+                var message = Message()
+                message.date = Date()
+                message.opened = "false"
+                message.sender = "Car-Rides Driver"
+                if let name = Auth.auth().currentUser?.displayName{
+                message.body = "Hello \(name) i will be with you in the next few minutes as i am only a few blocks away"
                 }
-                alertController.addAction(acceptAction)
-                self.present(alertController, animated: true, completion: nil)
-            case .failure(_):
-                HUD.hide()
-                self.showAlert(alertText: "Error",
-    alertMessage: "There was an error requesting trip, please try again.")
+                message.time = trip.date
+                message.title = "Your \(trip.Destination) trip"
                 
-            }
-        }
-        }
-    }
+                
+                createMessage.createDriverMessage(message: message) { result in
+                    switch result {
+                    case .success(_):
+                        HUD.hide()
+                        let alertController =
+                            UIAlertController(title: "Done",
+                                              message: "Trip successfully requested your driver will contact you soon! Please check your messages", preferredStyle: .alert)
+                        let acceptAction = UIAlertAction(title: "Accept", style: .default) { (_) -> Void in
+                            self.navigateToHome()
+                        }
+                        alertController.addAction(acceptAction)
+                        self.present(alertController, animated: true, completion: nil)
+                    case .failure(_):
+                        HUD.hide()
+                        self.showAlert(alertText: "Error",
+            alertMessage: "There was an error requesting trip, please try again.")
+                        
+                    }
+                }
+                    case .failure(_):
+                        self.showAlert(alertText: "Error",
+            alertMessage: "There was an error requesting trip, please try again.")
+                    }
+                }
+}
+}
     
     @IBAction func backPressed(_ sender: Any) {
         navigateToHome()

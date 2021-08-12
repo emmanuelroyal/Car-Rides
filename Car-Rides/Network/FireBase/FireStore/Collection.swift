@@ -11,6 +11,7 @@ enum Collection {
     case userProfile
     case userTrips
     case userMessages
+    case userMessagesChat
     
     var identifier: String {
         switch self {
@@ -21,7 +22,9 @@ enum Collection {
         case .userTrips:
             return "user_trips"
         case .userMessages:
-            return "user_messages"
+            return "messages"
+        case .userMessagesChat:
+            return "personal_messages"
         }
     }
 }

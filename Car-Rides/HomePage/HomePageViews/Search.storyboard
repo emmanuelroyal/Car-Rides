@@ -40,6 +40,11 @@
                                         <state key="normal" title="Request Ride">
                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="reqPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QnP-JM-ldu"/>
                                         </connections>
@@ -163,6 +168,7 @@
                         <outlet property="durationLabel" destination="JEL-Si-crY" id="Zj4-eL-cVT"/>
                         <outlet property="mapView" destination="MgO-us-6fb" id="35u-4j-AW0"/>
                         <outlet property="priceLbl" destination="A1H-Ty-RKX" id="zM8-FU-jOU"/>
+                        <outlet property="requestRide" destination="cnb-Vb-TsI" id="17Z-Xn-E8i"/>
                         <outlet property="searchBar" destination="cYH-8G-a9F" id="Jhl-aD-dYU"/>
                         <outlet property="table" destination="yRV-4v-BDo" id="OVY-3F-BvD"/>
                     </connections>

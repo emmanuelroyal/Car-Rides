@@ -26,11 +26,23 @@ class Router<T: FirestoreRequest>: FireBaseRouter {
             return delete(request, type: type, completion: completion)
         case .qread(let type) :
             return qread(request, type: type, completion: completion)
+        case .readOrdered:
+            return readOrdered(request, completion: completion)
         }
     }
     
     private func read (_ request: T, completion: @escaping NetworkRouterCompletion) {
         request.collectionReference?.addSnapshotListener { (snapshot, error) in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(snapshot))
+            }
+        }
+    }
+    
+    private func readOrdered (_ request: T, completion: @escaping NetworkRouterCompletion) {
+        request.collectionReference?.order(by: "date").addSnapshotListener { (snapshot, error) in
             if let error = error {
                 completion(.failure(error))
             } else {

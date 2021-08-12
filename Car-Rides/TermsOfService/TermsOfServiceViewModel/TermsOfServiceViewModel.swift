@@ -52,6 +52,7 @@ class SignupViewModel {
         let imageName = passField.isSecureTextEntry ? "eye" : "eye.slash"
         secureButton.setImage(UIImage(systemName: imageName), for: .normal)
     }
+    
     func loginUser(with email: String, password: String, completion: @escaping ((Bool) -> Void)) {
         let manager = AuthManager()
         manager.validateLogin(with: email, password: password) { success in

@@ -61,7 +61,16 @@ class TermsOfServiceViewController: UIViewController {
                             print(error.localizedDescription)
                             HUD.hide()
                         } else {
-                            print(Auth.auth().currentUser?.uid)
+                       let user = Auth.auth().currentUser?.createProfileChangeRequest()
+                            user?.displayName = fullName
+                            user?.commitChanges(completion: { error in
+                                if error != nil {
+                                    HUD.hide()
+                                    self.showAlert(alertText: "Error",
+                                                   alertMessage: "There was an error creating account, please try again.")
+                                    return
+                                }
+                            })
                             
                             if let docId = Auth.auth().currentUser?.uid {
                                 Firestore.firestore().collection("users").document(docId).setData(
