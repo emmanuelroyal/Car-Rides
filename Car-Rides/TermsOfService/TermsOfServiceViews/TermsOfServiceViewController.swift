@@ -36,15 +36,12 @@ class TermsOfServiceViewController: UIViewController {
         super.viewDidLoad()
         firstNameErrorLbl.isHidden = true
         fullNameImage.isHidden = true
-        fullnameErrorImage.isHidden = true
         emailImage.isHidden  = true
-        emailErrorImage.isHidden  = true
         emailErrorLbl.isHidden  = true
         firstName.delegate = self
         email.delegate = self
         passwordErrorLbl.isHidden = true
         passwordImage.isHidden = true
-        passwordErrorImage.isHidden = true
         SignUp.isHidden = true
         password.delegate = self
     }
@@ -68,27 +65,27 @@ class TermsOfServiceViewController: UIViewController {
                             
                             if let docId = Auth.auth().currentUser?.uid {
                                 Firestore.firestore().collection("users").document(docId).setData(
-                                ["email": email, "fullName": fullName, "photo": "" ]) { (error) in
-                                if error != nil {
-                                    HUD.hide()
-                                    self.showAlert(alertText: "Error",
-                                                   alertMessage: "There was an error creating account, please try again.")
-                                } else {
-                                    HUD.hide()
-                                    let alertController =
-                                        UIAlertController(title: "Done",
-                                                          message: "Account created successfully!", preferredStyle: .alert)
-                                    let acceptAction = UIAlertAction(title: "Accept", style: .default) { (_) -> Void in
-                                        self.navigateToWelcome()
+                                    ["email": email, "fullName": fullName, "photo": "" ]) { (error) in
+                                    if error != nil {
+                                        HUD.hide()
+                                        self.showAlert(alertText: "Error",
+                                                       alertMessage: "There was an error creating account, please try again.")
+                                    } else {
+                                        HUD.hide()
+                                        let alertController =
+                                            UIAlertController(title: "Done",
+                                                              message: "Account created successfully!", preferredStyle: .alert)
+                                        let acceptAction = UIAlertAction(title: "Accept", style: .default) { (_) -> Void in
+                                            self.navigateToWelcome()
+                                        }
+                                        alertController.addAction(acceptAction)
+                                        self.present(alertController, animated: true, completion: nil)
                                     }
-                                    alertController.addAction(acceptAction)
-                                    self.present(alertController, animated: true, completion: nil)
                                 }
                             }
                         }
                     }
                 }
-            }
             }
             else {
                 return
@@ -112,11 +109,8 @@ extension TermsOfServiceViewController : UITextFieldDelegate {
                 DispatchQueue.main.async {
                     self.firstNameErrorLbl.isHidden = false
                     self.fullNameImage.isHidden = false
-                    self.fullnameErrorImage.isHidden = false
                     self.firstNameErrorLbl.text = "Please type in your first name"
                     self.firstNameErrorLbl.textColor = .red
-                    self.fullnameErrorImage.tintColor = .red
-                    self.fullnameErrorImage.image = UIImage(systemName: "xmark.square.fill")
                     self.firstNameLine.backgroundColor = .red
                     self.fullNameImage.image = UIImage(systemName: "xmark.square.fill")
                     self.fullNameImage.tintColor = .red
@@ -127,11 +121,8 @@ extension TermsOfServiceViewController : UITextFieldDelegate {
                     
                     self.firstNameErrorLbl.isHidden = false
                     self.fullNameImage.isHidden = false
-                    self.fullnameErrorImage.isHidden = false
                     self.firstNameErrorLbl.text = "Please you need to provide both first and last name"
                     self.firstNameErrorLbl.textColor = .red
-                    self.fullnameErrorImage.image = UIImage(systemName: "xmark.square.fill")
-                    self.fullnameErrorImage.tintColor = .red
                     self.firstNameLine.backgroundColor = .red
                     self.fullNameImage.image = UIImage(systemName: "xmark.square.fill")
                     self.fullNameImage.tintColor = .red
@@ -142,11 +133,8 @@ extension TermsOfServiceViewController : UITextFieldDelegate {
                     
                     self.firstNameErrorLbl.isHidden = false
                     self.fullNameImage.isHidden = false
-                    self.fullnameErrorImage.isHidden = false
                     self.firstNameErrorLbl.text = "Correct"
                     self.firstNameErrorLbl.textColor = .green
-                    self.fullnameErrorImage.image = UIImage(systemName: "checkmark.square.fill")
-                    self.fullnameErrorImage.tintColor = .green
                     self.firstNameLine.backgroundColor = .green
                     self.fullNameImage.image = UIImage(systemName: "checkmark.square.fill")
                     self.fullNameImage.tintColor = .green
@@ -159,11 +147,8 @@ extension TermsOfServiceViewController : UITextFieldDelegate {
                     
                     self.emailImage.isHidden = false
                     self.emailErrorLbl.isHidden = false
-                    self.emailErrorImage.isHidden = false
                     self.emailErrorLbl.text = "Please type in your email"
                     self.emailErrorLbl.textColor = .red
-                    self.emailErrorImage.image = UIImage(systemName: "xmark.square.fill")
-                    self.emailErrorImage.tintColor = .red
                     self.EmailLine.backgroundColor = .red
                     self.emailImage.image = UIImage(systemName: "xmark.square.fill")
                     self.emailImage.tintColor = .red
@@ -174,11 +159,8 @@ extension TermsOfServiceViewController : UITextFieldDelegate {
                     
                     self.emailImage.isHidden = false
                     self.emailErrorLbl.isHidden = false
-                    self.emailErrorImage.isHidden = false
                     self.emailErrorLbl.text = "Please type in a valid email"
                     self.emailErrorLbl.textColor = .red
-                    self.emailErrorImage.image = UIImage(systemName: "xmark.square.fill")
-                    self.emailErrorImage.tintColor = .red
                     self.EmailLine.backgroundColor = .red
                     self.emailImage.image = UIImage(systemName: "xmark.square.fill")
                     self.emailImage.tintColor = .red
@@ -188,11 +170,8 @@ extension TermsOfServiceViewController : UITextFieldDelegate {
                 DispatchQueue.main.async {
                     self.emailImage.isHidden = false
                     self.emailErrorLbl.isHidden = false
-                    self.emailErrorImage.isHidden = false
                     self.emailErrorLbl.text = "Correct"
                     self.emailErrorLbl.textColor = .green
-                    self.emailErrorImage.image = UIImage(systemName: "checkmark.square.fill")
-                    self.emailErrorImage.tintColor = .green
                     self.EmailLine.backgroundColor = .green
                     self.emailImage.image = UIImage(systemName: "checkmark.square.fill")
                     self.emailImage.tintColor = .green
@@ -203,27 +182,34 @@ extension TermsOfServiceViewController : UITextFieldDelegate {
             if password.text?.isEmpty == true {
                 DispatchQueue.main.async {
                     self.passwordImage.isHidden = false
-                    self.passwordErrorImage.isHidden = false
                     self.passwordErrorLbl.isHidden = false
                     self.passwordErrorLbl.text = "Please type in your password"
                     self.passwordErrorLbl.textColor = .red
-                    self.passwordErrorImage.image = UIImage(systemName: "xmark.square.fill")
-                    self.passwordErrorImage.tintColor = .red
                     self.passwordLine.backgroundColor = .red
                     self.passwordImage.image = UIImage(systemName: "xmark.square.fill")
                     self.passwordImage.tintColor = .red
                 }
             }
+            
+            
+            else if  textField.text?.isValidPassword == false && textField.text!.count < 8 {
+                DispatchQueue.main.async {
+                    self.passwordImage.isHidden = false
+                    self.passwordErrorLbl.isHidden = false
+                    self.passwordErrorLbl.text = "Please passwords must contain atleast 8 characters"
+                    self.passwordErrorLbl.textColor = .red
+                    self.passwordLine.backgroundColor = .red
+                    self.passwordImage.image = UIImage(systemName: "xmark.square.fill")
+                    self.passwordImage.tintColor = .red
+                }
+            }
+            
             else if  textField.text?.isValidPassword == false {
                 DispatchQueue.main.async {
-                    
                     self.passwordImage.isHidden = false
-                    self.passwordErrorImage.isHidden = false
                     self.passwordErrorLbl.isHidden = false
-                    self.passwordErrorLbl.text = "Please type in a valid password"
+                    self.passwordErrorLbl.text = "Please provide a valid password, Passwords Must be AlphaNumeric i.e contain numbers and letters"
                     self.passwordErrorLbl.textColor = .red
-                    self.passwordErrorImage.image = UIImage(systemName: "xmark.square.fill")
-                    self.passwordErrorImage.tintColor = .red
                     self.passwordLine.backgroundColor = .red
                     self.passwordImage.image = UIImage(systemName: "xmark.square.fill")
                     self.passwordImage.tintColor = .red
@@ -236,12 +222,9 @@ extension TermsOfServiceViewController : UITextFieldDelegate {
                     self.passwordImage.image = UIImage(systemName: "checkmark.square.fill")
                     self.passwordImage.tintColor = .green
                     self.SignUp.isHidden = false
-                    self.fullnameErrorImage.isHidden = true
                     self.firstNameErrorLbl.isHidden = true
                     self.emailErrorLbl.isHidden = true
-                    self.emailErrorImage.isHidden = true
                     self.passwordErrorLbl.isHidden = true
-                    self.passwordErrorImage.isHidden = true
                 }
             }
         }
