@@ -19,7 +19,7 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var mapView: GMSMapView!
     var menu: SideMenuNavigationController?
-    let locationManager = CLLocationManager()
+    lazy var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,15 +35,14 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
         menu?.leftSide = true
         SideMenuManager.default.leftMenuNavigationController = menu
         SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-
+        
         
     }
     
     @IBAction func menuBtnPressed(_ sender: Any) {
         present(menu!, animated: true)
-        
-        
     }
+    
     @IBAction func EnterPickUpPressed(_ sender: Any) {
         navigateToSearch()
     }
@@ -60,12 +59,12 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
         case .authorizedWhenInUse:
             return
         case .denied:
-            // Show alert instructing them how to turn on permissions
+            showAlert(alertText: "Note", alertMessage: " To use the maps features of this app you have to accept the location access peemission.")
             break
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         case .restricted:
-            // Show an alert letting them know what's up
+            showAlert(alertText: "Note", alertMessage: " To use the maps features of this app you have to accept the location access peemission.")
             break
         case .authorizedAlways:
             break
@@ -76,21 +75,21 @@ class HomePageViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         checkLocationAuthorization()
-       }
-       
-       func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         mapView.camera = GMSCameraPosition(target: CLLocationCoordinate2D(latitude: locationManager.location?.coordinate.latitude ?? 0.0 , longitude: locationManager.location?.coordinate.longitude ?? 0.0), zoom: 8, bearing: 0, viewingAngle: 0)
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: locationManager.location?.coordinate.latitude ?? 0.0 , longitude: locationManager.location?.coordinate.longitude ?? 0.0)
-        marker.title = "Yes"
-        marker.snippet = "Win"
+        marker.title = "Position"
+        marker.snippet = "Marker"
         marker.iconView?.bounds.size = CGSize(width: 20, height: 20)
         marker.icon = UIImage(systemName: "person.crop.circle")
         marker.map = mapView
         _ = locationManager.location!.coordinate.latitude
         _ = locationManager.location!.coordinate.longitude
         
-       }
+    }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("ERROR")

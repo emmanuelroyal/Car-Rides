@@ -72,7 +72,7 @@ class OnboardingViewController: UIViewController {
         }
     }
     @objc func createTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 8.0,
+        timer = Timer.scheduledTimer(timeInterval: 20.0,
                                      target: self,
                                      selector: #selector(toggle),
                                      userInfo: nil,
