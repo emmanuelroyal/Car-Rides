@@ -6,3 +6,8 @@
 //
 
 import Foundation
+struct TripsModel {
+    var price, title, descriptionTag : String
+    
+    
+}

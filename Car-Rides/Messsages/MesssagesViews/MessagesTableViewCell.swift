@@ -16,8 +16,8 @@ class MessagesTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
+    
     func setup(with model: MessageTable) {
         self.readIcon.backgroundColor = model.opened == "true"  ? .gray : .blue
         self.messageTitle.text = model.title

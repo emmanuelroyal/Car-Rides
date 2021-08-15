@@ -165,6 +165,8 @@
 		1807EFD626BDFB870039A37D /* DirectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807EFD526BDFB870039A37D /* DirectionModel.swift */; };
 		18426B8D26BE1F4E0083006A /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18426B8C26BE1F4E0083006A /* Search.storyboard */; };
 		18426B8F26BE1FE80083006A /* SearchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18426B8E26BE1FE80083006A /* SearchMapViewController.swift */; };
+		18E7603C26C93F300056D331 /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7603B26C93F300056D331 /* TripsTableViewCell.swift */; };
+		18E7603E26C949490056D331 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7603D26C949490056D331 /* FavTableViewCell.swift */; };
 		18E8640C26C44E4B00D18744 /* ProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8640B26C44E4B00D18744 /* ProfileAPI.swift */; };
 		18E8640F26C44E8800D18744 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8640E26C44E8800D18744 /* ProfileService.swift */; };
 		18E8641126C44E9D00D18744 /* MessagesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8641026C44E9D00D18744 /* MessagesAPI.swift */; };
@@ -325,6 +327,8 @@
 		1807EFD526BDFB870039A37D /* DirectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionModel.swift; sourceTree = "<group>"; };
 		18426B8C26BE1F4E0083006A /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		18426B8E26BE1FE80083006A /* SearchMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapViewController.swift; sourceTree = "<group>"; };
+		18E7603B26C93F300056D331 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		18E7603D26C949490056D331 /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 		18E8640B26C44E4B00D18744 /* ProfileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPI.swift; sourceTree = "<group>"; };
 		18E8640E26C44E8800D18744 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		18E8641026C44E9D00D18744 /* MessagesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesAPI.swift; sourceTree = "<group>"; };
@@ -879,6 +883,7 @@
 			isa = PBXGroup;
 			children = (
 				1807EE0326B357450039A37D /* YourTrips.storyboard */,
+				18E7603B26C93F300056D331 /* TripsTableViewCell.swift */,
 				1807EE0526B3574F0039A37D /* YourTripsViewController.swift */,
 			);
 			path = YourTripsViews;
@@ -1185,6 +1190,7 @@
 			isa = PBXGroup;
 			children = (
 				1807EE7D26B363C50039A37D /* Settings.storyboard */,
+				18E7603D26C949490056D331 /* FavTableViewCell.swift */,
 				1807EE7F26B363D20039A37D /* SettingsViewController.swift */,
 			);
 			path = SettingsViews;
@@ -1925,12 +1931,14 @@
 				18E8642026C58E2500D18744 /* MessagesService.swift in Sources */,
 				1807EE2F26B35A7F0039A37D /* AddCardModel.swift in Sources */,
 				1807EEC826B368090039A37D /* MoreSavedPlacesViewController.swift in Sources */,
+				18E7603C26C93F300056D331 /* TripsTableViewCell.swift in Sources */,
 				1807EDBE26B3537B0039A37D /* OnboardingViewController.swift in Sources */,
 				1807EEDA26B368D10039A37D /* ManageTrustedContactsViewController.swift in Sources */,
 				1807EE0A26B3578A0039A37D /* YourTripsModel.swift in Sources */,
 				1807EE1026B357EA0039A37D /* WalletViewModel.swift in Sources */,
 				1807EF2726B44FA70039A37D /* Collection.swift in Sources */,
 				1807EE4326B35D930039A37D /* EditPaymentMethodViewController.swift in Sources */,
+				18E7603E26C949490056D331 /* FavTableViewCell.swift in Sources */,
 				1807EED626B3689A0039A37D /* VerifyTripViewModel.swift in Sources */,
 				1807EFD626BDFB870039A37D /* DirectionModel.swift in Sources */,
 				1807EDEE26B355D30039A37D /* HomePageViewController.swift in Sources */,
